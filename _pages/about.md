@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm the first year PhD student at the Institute of Automation, Chinese Academy of Sciences, advised by Prof. [Kang Liu](http://www.nlpr.ia.ac.cn/cip/~liukang/publications.html).
+I'm the first year PhD student at the Institute of Automation, Chinese Academy of Sciences, advised by Prof. [Kang Liu](http://www.nlpr.ia.ac.cn/cip/~liukang/index.html).
 
 **Research Interests**
 
@@ -48,6 +48,8 @@ I'm the first year PhD student at the Institute of Automation, Chinese Academy o
 <br />
 **Fangyu Lei**, Shizhu He, Xiang Li, Jun Zhao, Kang Liu
 </div>
+
+
 
 
 <!-- _(* denotes equal contribution.)_ -->
