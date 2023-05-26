@@ -16,7 +16,7 @@ I'm the first year PhD student at the Institute of Automation, Chinese Academy o
 * Machine Learning: Causal Inference, Out of Distribution Generalization, Domain Adaptation
 * Application: Robust time series classification & forecasting. -->
 * Structed Question Answering: Table, Database, Knowledge Graph
-* Natural Language Processing: QA 
+* Table Reasoning: Text-to-SQL, Table-to-Text 
 
 
 
@@ -33,16 +33,20 @@ I'm the first year PhD student at the Institute of Automation, Chinese Academy o
 
 <div class='paper-box-text' markdown="1">
 
-[S$^3$HQA: A Three-Stage Approach for Multi-hop Text-Table Hybrid Question Answering](https://arxiv.org/abs/2305.11725) \| **ACL, 2023**	 \|
-
-_**Fangyu Lei**, Shizhu He, Xiang Li, Yifan Wei, Yiming Huang, Jun Zhao, Kang Liu_
+[S$^3$HQA: A Three-Stage Approach for Multi-hop Text-Table Hybrid Question Answering](https://arxiv.org/abs/2305.11725) 
+<br />
+**ACL 2023**	
+<br />
+**Fangyu Lei**, Shizhu He, Xiang Li, Yifan Wei, Yiming Huang, Jun Zhao, Kang Liu
 </div>
 
 <div class='paper-box-text' markdown="1">
 
-[Answering Numerical Reasoning Questions in Table-Text Hybrid Contents with Graph-based Encoder and Tree-based Decoder](https://arxiv.org/abs/2209.07692) \| **COLING, 2022**	 \|
-
-_**Fangyu Lei**, Shizhu He, Xiang Li, Jun Zhao, Kang Liu_
+[Answering Numerical Reasoning Questions in Table-Text Hybrid Contents with Graph-based Encoder and Tree-based Decoder](https://arxiv.org/abs/2209.07692) 
+<br />
+**COLING 2022**
+<br />
+**Fangyu Lei**, Shizhu He, Xiang Li, Jun Zhao, Kang Liu
 </div>
 
 
