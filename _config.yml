@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "Beijing-CN"
-title                    : "Fangyu Lei"
+title                    : "Yitong Zhang"
 title_separator          : "-"
-name                     : &name "Fangyu Lei"
+name                     : &name "Yitong Zhang"
 description              : &description "The first year Ph.D. student @CASIA, advised by Prof. Kang Liu."
-url                      : https://lfy79001.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://sirichen2.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "lfy79001/lfy79001.github.io" # TODO
+repository               : "sirichen2/sirichen2.github.io" # TODO
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160

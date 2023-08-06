@@ -1,22 +1,21 @@
 ---
 permalink: /
 title: About Me
-excerpt: "Fangyu Lei's Homepage"
+excerpt: "Yitong Zhang's Homepage"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-I'm the first year PhD student at the Institute of Automation, Chinese Academy of Sciences, advised by Prof. [Kang Liu](http://www.nlpr.ia.ac.cn/cip/~liukang/index.html).
+I am a second-year undergraduate student at Beijing Institute of Technology, and my advisor is Fangyu Lei (lfy79001.github.io
+)
 
 **Research Interests**
 
 <!-- * Computer Vision: Pedestrian Re-IDentification, Object Detection, Deep Generative Models
 * Machine Learning: Causal Inference, Out of Distribution Generalization, Domain Adaptation
 * Application: Robust time series classification & forecasting. -->
-* Structed Question Answering: Table, Database, Knowledge Graph
-* Table Reasoning: Text-to-SQL, Table-to-Text 
+* Structed Question Answering: Table
 
 
 
