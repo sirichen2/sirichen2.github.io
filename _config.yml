@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Fangyu Lei"
+  name             : "Yitong Zhang"
   avatar           : "IMG97.jpg"
-  bio              : "The first year Ph.D. student @CASIA, advised by Prof. Kang Liu"
+  bio              : "The second-year undergraduate student at Beijing Institute of Technology"
   location         : "Beijing, China"
   employer         :
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=1WzAOSkAAAAJ&hl=zh-CN"
-  email            : "leifangyu@qq.com"
+  email            : "2054759275@qq.com"
   #researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "lfy79001"
+  github           : "sirhchen2"
   google_plus      :
   keybase          :
   instagram        :
