@@ -225,7 +225,9 @@ code {
 .news-date {
     color: var(--primary-color);
     font-weight: 600;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
+    display: inline-block;
+    min-width: 75px;
 }
 
 .news-list a {
