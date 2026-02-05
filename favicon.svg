@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <rect width="32" height="32" rx="4" fill="#1a1a2e"/>
-  <!-- Z: 上横线 + 斜线 + 下横线 -->
-  <path d="M6 6 H26 V10 H15 L26 22 V26 H6 V22 H17 L6 10 Z" fill="#00d4ff"/>
+  <!-- 正确的Z: 顶部横线 + 右上到左下斜线 + 底部横线 -->
+  <rect x="6" y="6" width="20" height="4" fill="#00d4ff"/>
+  <polygon points="26,6 26,10 10,22 26,22 26,26 6,26 6,22 22,10 6,10 6,6" fill="#00d4ff"/>
+  <rect x="6" y="22" width="20" height="4" fill="#00d4ff"/>
 </svg>
