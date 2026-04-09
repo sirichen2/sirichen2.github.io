@@ -1,0 +1,49 @@
+{
+  "site": {
+    "title": "Yitong's arXiv Radar",
+    "subtitle": "Daily paper updates for LLMs, agents, and robotics.",
+    "base_url": "https://sirichen2.github.io/arxiv/",
+    "repo_url": "https://github.com/sirichen2/sirichen2.github.io",
+    "profile_url": "https://github.com/sirichen2",
+    "timezone": "Asia/Singapore"
+  },
+  "display_limit": 28,
+  "summary_char_limit": 420,
+  "sources": [
+    {
+      "category": "cs.CL",
+      "title": "Computation and Language",
+      "max_results": 30
+    },
+    {
+      "category": "cs.AI",
+      "title": "Artificial Intelligence",
+      "max_results": 30
+    },
+    {
+      "category": "cs.LG",
+      "title": "Machine Learning",
+      "max_results": 30
+    },
+    {
+      "category": "cs.RO",
+      "title": "Robotics",
+      "max_results": 20
+    }
+  ],
+  "keywords": [
+    "agent",
+    "agents",
+    "llm",
+    "large language model",
+    "reasoning",
+    "tool use",
+    "planning",
+    "rag",
+    "alignment",
+    "multimodal",
+    "robot",
+    "robotics"
+  ],
+  "authors": []
+}

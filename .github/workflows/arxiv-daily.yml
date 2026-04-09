@@ -1,0 +1,41 @@
+name: Daily arXiv Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 01:15 UTC = 09:15 Singapore time.
+    - cron: "15 1 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-arxiv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate arXiv page
+        run: python scripts/update_arxiv.py
+
+      - name: Commit daily refresh
+        env:
+          COMMIT_NAME: "sirichen2"
+          COMMIT_EMAIL: "126844332+sirichen2@users.noreply.github.com"
+        run: |
+          if git diff --quiet; then
+            echo "No tracked file changes detected."
+            exit 0
+          fi
+
+          git config user.name "$COMMIT_NAME"
+          git config user.email "$COMMIT_EMAIL"
+          git add arxiv scripts/update_arxiv.py .github/workflows/arxiv-daily.yml
+          git commit -m "chore: refresh arXiv digest for $(date -u +%F)"
+          git push

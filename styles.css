@@ -417,6 +417,70 @@ code {
     margin-bottom: 8px;
 }
 
+.spotlight-card {
+    align-items: center;
+    background: linear-gradient(135deg, #fff7ef, #f7f9fd);
+    border: 1.5px solid var(--maroon);
+    border-radius: 20px;
+    box-shadow: 0 14px 34px rgba(21, 86, 169, 0.08);
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 22px 24px;
+}
+
+.spotlight-copy {
+    flex: 1 1 auto;
+}
+
+.spotlight-copy h2 {
+    color: var(--navy);
+    font-size: 1.6rem;
+    margin: 6px 0 0;
+}
+
+.spotlight-copy p:last-child {
+    margin: 10px 0 0;
+}
+
+.spotlight-eyebrow {
+    color: var(--maroon);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.spotlight-actions {
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.spotlight-button {
+    background: var(--navy);
+    border: 1px solid var(--navy);
+    border-radius: 999px;
+    color: #ffffff;
+    display: inline-flex;
+    font-weight: 500;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.spotlight-button:hover {
+    color: #ffffff;
+    opacity: 0.92;
+    text-decoration: none;
+}
+
+.spotlight-button.secondary {
+    background: transparent;
+    color: var(--navy);
+}
+
 .pub-note {
     color: var(--muted);
     font-size: 0.92rem;
@@ -659,6 +723,15 @@ code {
 
     .social-media {
         text-align: center;
+    }
+
+    .spotlight-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .spotlight-actions {
+        justify-content: flex-start;
     }
 }
 
