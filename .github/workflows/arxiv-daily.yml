@@ -3,8 +3,10 @@ name: Daily arXiv Sync
 on:
   workflow_dispatch:
   schedule:
-    # 01:15 UTC = 09:15 Singapore time.
-    - cron: "15 1 * * *"
+    # 01:17, 07:17, 13:17 UTC = 09:17, 15:17, 21:17 Singapore time.
+    - cron: "17 1 * * *"
+    - cron: "17 7 * * *"
+    - cron: "17 13 * * *"
 
 permissions:
   contents: write
