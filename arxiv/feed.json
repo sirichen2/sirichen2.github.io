@@ -26,8 +26,8 @@
   "authors": [],
   "meta": {
     "status": "fresh",
-    "generated_at_utc": "2026-04-14 04:19",
-    "generated_at_local": "2026-04-14 12:19",
+    "generated_at_utc": "2026-04-14 08:56",
+    "generated_at_local": "2026-04-14 16:56",
     "paper_count": 84,
     "featured_count": 47,
     "errors": [],
@@ -1554,7 +1554,7 @@
       "pdf_url": "https://arxiv.org/pdf/2604.11730v1",
       "published": "2026-04-13T17:05:38+00:00",
       "updated": "2026-04-13T17:05:38+00:00",
-      "comment": "13 pages, 3 figures",
+      "comment": "13 pages, 3 figures. arXiv admin note: substantial text overlap with arXiv:2505.19328",
       "journal_ref": "",
       "categories": [
         "cs.CV",
