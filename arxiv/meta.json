@@ -1,15 +1,10 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-04-27 15:17",
-  "generated_at_local": "2026-04-27 23:17",
-  "paper_count": 88,
+  "status": "fresh",
+  "generated_at_utc": "2026-04-28 04:44",
+  "generated_at_local": "2026-04-28 12:44",
+  "paper_count": 90,
   "featured_count": 47,
-  "errors": [
-    "cs.CL: HTTP Error 429: Too Many Requests",
-    "cs.AI: HTTP Error 429: Unknown Error",
-    "cs.LG: HTTP Error 429: Unknown Error",
-    "cs.RO: The read operation timed out"
-  ],
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
