@@ -1,10 +1,8 @@
 {
   "site": {
-    "title": "Yitong's arXiv Radar",
+    "title": "arXiv Daily Radar",
     "subtitle": "Daily paper updates for LLMs, agents, and robotics.",
     "base_url": "https://sirichen2.github.io/arxiv/",
-    "repo_url": "https://github.com/sirichen2/sirichen2.github.io",
-    "profile_url": "https://github.com/sirichen2",
     "timezone": "Asia/Singapore"
   },
   "display_limit": 28,

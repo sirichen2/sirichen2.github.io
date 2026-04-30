@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://sirichen2.github.io/sitemap.xml
+Disallow: /

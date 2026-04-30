@@ -69,7 +69,7 @@ def phrase_present(text_blob: str, phrase: str) -> bool:
     return re.search(pattern, text_blob) is not None
 
 
-def fetch_entries(category: str, max_results: int, repo_url: str) -> list[dict[str, Any]]:
+def fetch_entries(category: str, max_results: int) -> list[dict[str, Any]]:
     params = urllib.parse.urlencode(
         {
             "search_query": f"cat:{category}",
@@ -82,10 +82,7 @@ def fetch_entries(category: str, max_results: int, repo_url: str) -> list[dict[s
     request = urllib.request.Request(
         f"{ARXIV_API_URL}?{params}",
         headers={
-            "User-Agent": (
-                "sirichen2-arxiv-radar/1.0 "
-                f"(GitHub Pages: {repo_url}; contact: GitHub issue)"
-            )
+            "User-Agent": "arxiv-daily-radar/1.0 (daily digest)"
         },
     )
     try:
@@ -297,14 +294,12 @@ def render_html(payload: dict[str, Any]) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{escape(site["title"])}</title>
     <meta name="description" content="{escape(site["subtitle"])}">
-    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-    <meta name="author" content="Yitong Zhang">
+    <meta name="robots" content="noindex,nofollow">
     <link rel="canonical" href="{escape(site["base_url"])}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{escape(site["title"])}">
     <meta property="og:description" content="{escape(site["subtitle"])}">
     <meta property="og:url" content="{escape(site["base_url"])}">
-    <meta property="og:image" content="https://sirichen2.github.io/assets/profile.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{escape(site["title"])}">
     <meta name="twitter:description" content="{escape(site["subtitle"])}">
@@ -322,8 +317,7 @@ def render_html(payload: dict[str, Any]) -> str:
                 <h1>{escape(site["title"])}</h1>
                 <p class="hero-text">{escape(site["subtitle"])}</p>
                 <div class="hero-actions">
-                    <a class="primary-button" href="{escape(site["profile_url"])}" target="_blank" rel="noopener noreferrer">GitHub profile</a>
-                    <a class="ghost-button" href="/" rel="noopener noreferrer">Back to homepage</a>
+                    <a class="primary-button" href="/" rel="noopener noreferrer">Back to root</a>
                 </div>
             </div>
             <div class="hero-panel">
@@ -339,7 +333,7 @@ def render_html(payload: dict[str, Any]) -> str:
                 <div class="stat-card">
                     <span class="stat-label">Total papers</span>
                     <strong>{meta["paper_count"]}</strong>
-                    <small>{meta["featured_count"]} matched your radar</small>
+                    <small>{meta["featured_count"]} matched keywords</small>
                 </div>
             </div>
         </section>
@@ -378,7 +372,7 @@ def render_html(payload: dict[str, Any]) -> str:
         </section>
 
         <footer class="page-footer">
-            <p>Generated from the public arXiv API. Source repo: <a href="{escape(site["repo_url"])}" target="_blank" rel="noopener noreferrer">{escape(site["repo_url"])}</a></p>
+            <p>Generated from the public arXiv API.</p>
             <p>Last refreshed at {escape(meta["generated_at_local"])} SGT ({escape(meta["generated_at_utc"])} UTC).</p>
         </footer>
     </main>
@@ -409,7 +403,6 @@ def build_payload() -> dict[str, Any]:
             entries = fetch_entries(
                 source["category"],
                 int(source["max_results"]),
-                site["repo_url"],
             )
             succeeded_sources += 1
         except Exception as exc:  # noqa: BLE001
