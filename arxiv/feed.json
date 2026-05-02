@@ -23,12 +23,17 @@
   ],
   "authors": [],
   "meta": {
-    "status": "fresh",
-    "generated_at_utc": "2026-05-02 08:44",
-    "generated_at_local": "2026-05-02 16:44",
+    "status": "stale",
+    "generated_at_utc": "2026-05-02 14:13",
+    "generated_at_local": "2026-05-02 22:13",
     "paper_count": 91,
     "featured_count": 44,
-    "errors": [],
+    "errors": [
+      "cs.CL: HTTP Error 503: Service Unavailable",
+      "cs.AI: The read operation timed out",
+      "cs.LG: HTTP Error 503: Service Unavailable",
+      "cs.RO: HTTP Error 429: Too Many Requests"
+    ],
     "sources": [
       {
         "category": "cs.CL",
