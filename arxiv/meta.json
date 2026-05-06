@@ -1,15 +1,10 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-05-05 09:23",
-  "generated_at_local": "2026-05-05 17:23",
-  "paper_count": 89,
-  "featured_count": 47,
-  "errors": [
-    "cs.CL: The read operation timed out",
-    "cs.AI: The read operation timed out",
-    "cs.LG: HTTP Error 429: Unknown Error",
-    "cs.RO: HTTP Error 429: Unknown Error"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-05-06 04:44",
+  "generated_at_local": "2026-05-06 12:44",
+  "paper_count": 95,
+  "featured_count": 56,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
