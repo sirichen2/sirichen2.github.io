@@ -1,10 +1,14 @@
 {
-  "status": "fresh",
-  "generated_at_utc": "2026-05-12 04:48",
-  "generated_at_local": "2026-05-12 12:48",
-  "paper_count": 82,
-  "featured_count": 61,
-  "errors": [],
+  "status": "partial",
+  "generated_at_utc": "2026-05-12 10:00",
+  "generated_at_local": "2026-05-12 18:00",
+  "paper_count": 30,
+  "featured_count": 24,
+  "errors": [
+    "cs.AI: HTTP Error 429: Too Many Requests",
+    "cs.LG: The read operation timed out",
+    "cs.RO: HTTP Error 503: Service Unavailable"
+  ],
   "sources": [
     {
       "category": "cs.CL",
@@ -16,19 +20,19 @@
       "category": "cs.AI",
       "title": "Artificial Intelligence",
       "max_results": 30,
-      "visible_papers": 30
+      "visible_papers": 0
     },
     {
       "category": "cs.LG",
       "title": "Machine Learning",
       "max_results": 30,
-      "visible_papers": 30
+      "visible_papers": 0
     },
     {
       "category": "cs.RO",
       "title": "Robotics",
       "max_results": 20,
-      "visible_papers": 20
+      "visible_papers": 0
     }
   ]
 }
