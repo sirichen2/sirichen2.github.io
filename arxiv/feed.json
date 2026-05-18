@@ -23,14 +23,16 @@
   ],
   "authors": [],
   "meta": {
-    "status": "partial",
-    "generated_at_utc": "2026-05-18 11:12",
-    "generated_at_local": "2026-05-18 19:12",
+    "status": "stale",
+    "generated_at_utc": "2026-05-18 16:32",
+    "generated_at_local": "2026-05-19 00:32",
     "paper_count": 46,
     "featured_count": 33,
     "errors": [
-      "cs.LG: HTTP Error 429: Too Many Requests",
-      "cs.RO: HTTP Error 429: Too Many Requests"
+      "cs.CL: HTTP Error 429: Unknown Error",
+      "cs.AI: HTTP Error 429: Unknown Error",
+      "cs.LG: HTTP Error 429: Unknown Error",
+      "cs.RO: HTTP Error 503: Service Unavailable"
     ],
     "sources": [
       {
