@@ -1,15 +1,10 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-05-18 16:32",
-  "generated_at_local": "2026-05-19 00:32",
-  "paper_count": 46,
-  "featured_count": 33,
-  "errors": [
-    "cs.CL: HTTP Error 429: Unknown Error",
-    "cs.AI: HTTP Error 429: Unknown Error",
-    "cs.LG: HTTP Error 429: Unknown Error",
-    "cs.RO: HTTP Error 503: Service Unavailable"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-05-19 05:13",
+  "generated_at_local": "2026-05-19 13:13",
+  "paper_count": 86,
+  "featured_count": 51,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
@@ -27,13 +22,13 @@
       "category": "cs.LG",
       "title": "Machine Learning",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.RO",
       "title": "Robotics",
       "max_results": 20,
-      "visible_papers": 0
+      "visible_papers": 20
     }
   ]
 }
