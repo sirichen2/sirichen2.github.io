@@ -1,27 +1,25 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-05-21 16:22",
-  "generated_at_local": "2026-05-22 00:22",
-  "paper_count": 90,
-  "featured_count": 53,
+  "status": "partial",
+  "generated_at_utc": "2026-05-22 05:13",
+  "generated_at_local": "2026-05-22 13:13",
+  "paper_count": 49,
+  "featured_count": 23,
   "errors": [
-    "cs.CL: HTTP Error 429: Too Many Requests",
-    "cs.AI: HTTP Error 429: Unknown Error",
-    "cs.LG: HTTP Error 429: Unknown Error",
-    "cs.RO: HTTP Error 429: Unknown Error"
+    "cs.CL: HTTP Error 429: Unknown Error",
+    "cs.AI: HTTP Error 429: Unknown Error"
   ],
   "sources": [
     {
       "category": "cs.CL",
       "title": "Computation and Language",
       "max_results": 30,
-      "visible_papers": 30
+      "visible_papers": 0
     },
     {
       "category": "cs.AI",
       "title": "Artificial Intelligence",
       "max_results": 30,
-      "visible_papers": 30
+      "visible_papers": 0
     },
     {
       "category": "cs.LG",
