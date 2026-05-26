@@ -1,15 +1,10 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-05-25 16:02",
-  "generated_at_local": "2026-05-26 00:02",
-  "paper_count": 90,
-  "featured_count": 52,
-  "errors": [
-    "cs.CL: HTTP Error 429: Too Many Requests",
-    "cs.AI: The read operation timed out",
-    "cs.LG: HTTP Error 503: Service Unavailable",
-    "cs.RO: HTTP Error 429: Unknown Error"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-05-26 05:13",
+  "generated_at_local": "2026-05-26 13:13",
+  "paper_count": 87,
+  "featured_count": 55,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
