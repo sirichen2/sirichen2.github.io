@@ -1,21 +1,20 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-06-04 10:45",
-  "generated_at_local": "2026-06-04 18:45",
-  "paper_count": 30,
-  "featured_count": 22,
+  "status": "partial",
+  "generated_at_utc": "2026-06-04 16:28",
+  "generated_at_local": "2026-06-05 00:28",
+  "paper_count": 20,
+  "featured_count": 16,
   "errors": [
     "cs.CL: HTTP Error 429: Unknown Error",
     "cs.AI: HTTP Error 429: Unknown Error",
-    "cs.LG: HTTP Error 429: Unknown Error",
-    "cs.RO: HTTP Error 429: Too Many Requests"
+    "cs.LG: HTTP Error 429: Unknown Error"
   ],
   "sources": [
     {
       "category": "cs.CL",
       "title": "Computation and Language",
       "max_results": 30,
-      "visible_papers": 30
+      "visible_papers": 0
     },
     {
       "category": "cs.AI",
@@ -33,7 +32,7 @@
       "category": "cs.RO",
       "title": "Robotics",
       "max_results": 20,
-      "visible_papers": 0
+      "visible_papers": 20
     }
   ]
 }
