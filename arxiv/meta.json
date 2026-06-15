@@ -1,32 +1,28 @@
 {
-  "status": "partial",
-  "generated_at_utc": "2026-06-14 15:16",
-  "generated_at_local": "2026-06-14 23:16",
-  "paper_count": 20,
-  "featured_count": 15,
-  "errors": [
-    "cs.CL: HTTP Error 429: Unknown Error",
-    "cs.AI: The read operation timed out",
-    "cs.LG: HTTP Error 503: Service Unavailable"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-06-15 06:37",
+  "generated_at_local": "2026-06-15 14:37",
+  "paper_count": 87,
+  "featured_count": 49,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
       "title": "Computation and Language",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.AI",
       "title": "Artificial Intelligence",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.LG",
       "title": "Machine Learning",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.RO",
