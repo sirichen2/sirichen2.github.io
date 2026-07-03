@@ -1,10 +1,12 @@
 {
-  "status": "fresh",
-  "generated_at_utc": "2026-07-02 15:28",
-  "generated_at_local": "2026-07-02 23:28",
-  "paper_count": 82,
-  "featured_count": 50,
-  "errors": [],
+  "status": "partial",
+  "generated_at_utc": "2026-07-03 04:57",
+  "generated_at_local": "2026-07-03 12:57",
+  "paper_count": 72,
+  "featured_count": 42,
+  "errors": [
+    "cs.AI: The read operation timed out"
+  ],
   "sources": [
     {
       "category": "cs.CL",
@@ -16,7 +18,7 @@
       "category": "cs.AI",
       "title": "Artificial Intelligence",
       "max_results": 30,
-      "visible_papers": 30
+      "visible_papers": 0
     },
     {
       "category": "cs.LG",
