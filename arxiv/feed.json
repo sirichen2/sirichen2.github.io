@@ -23,14 +23,12 @@
   ],
   "authors": [],
   "meta": {
-    "status": "partial",
-    "generated_at_utc": "2026-07-03 04:57",
-    "generated_at_local": "2026-07-03 12:57",
-    "paper_count": 72,
-    "featured_count": 42,
-    "errors": [
-      "cs.AI: The read operation timed out"
-    ],
+    "status": "fresh",
+    "generated_at_utc": "2026-07-03 10:10",
+    "generated_at_local": "2026-07-03 18:10",
+    "paper_count": 84,
+    "featured_count": 52,
+    "errors": [],
     "sources": [
       {
         "category": "cs.CL",
@@ -42,7 +40,7 @@
         "category": "cs.AI",
         "title": "Artificial Intelligence",
         "max_results": 30,
-        "visible_papers": 0
+        "visible_papers": 30
       },
       {
         "category": "cs.LG",
@@ -129,6 +127,10 @@
           "title": "Computation and Language"
         },
         {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -144,6 +146,43 @@
       "published_local": "2026-07-03 01:59",
       "updated_local": "2026-07-03 01:59",
       "summary_short": "LLM agents will increasingly act in socially structured settings where role, audience, and relational context can shape what is advantageous or costly to say. We study whether such social structure, without any explicit objective in the prompt, changes what an agent expresses publicly relative to an off-the-record (OTR) channel elicited under the same condition. We introduce a dual-channel debate framework in which..."
+    },
+    {
+      "id": "2605.17965v2",
+      "title": "BLAgent: Agentic RAG for File-Level Bug Localization",
+      "summary": "Bug localization remains a key bottleneck for large language model (LLM)-based software maintenance, where accurately identifying faulty code is essential for debugging, root cause analysis, triage, and automated program repair (APR). File-level bug localization is especially critical in hierarchical localization and repair pipelines, where incorrect file selection can propagate to downstream stages such as function-level localization and patch generation. While Retrieval-Augmented Generation (RAG) offers a promising way to ground LLMs in repository context, existing RAG pipelines often rely on static retrieval and lack the reasoning needed to accurately identify faulty code. In this work, we present BLAgent, a novel agentic RAG framework for file-level bug localization that integrates three key ideas: (i) code structure-aware repository encoding with path-augmented AST-based chunking, (ii) dual-perspective query transformation that captures both structural and behavioral signals from bug reports, and (iii) two-phase agentic reranking that combines symbolic inspection with evidence-grounded reasoning. Unlike prior graph-based or multi-hop agentic approaches, BLAgent adopts a bounded reasoning strategy that limits LLM-based inspection and reranking to a compact, retrieval-filtered set of candidate files, avoiding open-ended repository traversal. This design balances localization accuracy with computational cost. On SWE-bench-Lite, BLAgent attains over 78% Top-1 accuracy with open-source models and over 86% with a closed-source model, while being over 18x cheaper than the strongest baseline using the same model. When integrated into an APR framework, BLAgent improves end-to-end repair success by up to 25%.",
+      "authors": [
+        "Md Afif Al Mamun",
+        "Gias Uddin"
+      ],
+      "abs_url": "https://arxiv.org/abs/2605.17965v2",
+      "pdf_url": "https://arxiv.org/pdf/2605.17965v2",
+      "published": "2026-05-18T07:20:13+00:00",
+      "updated": "2026-07-02T17:09:54+00:00",
+      "comment": "Accepted for publication in ACM Transactions on Software Engineering and Methodology (TOSEM)",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "large language model",
+        "llm",
+        "rag",
+        "reasoning"
+      ],
+      "matched_authors": [],
+      "score": 4,
+      "published_local": "2026-05-18 15:20",
+      "updated_local": "2026-07-03 01:09",
+      "summary_short": "Bug localization remains a key bottleneck for large language model (LLM)-based software maintenance, where accurately identifying faulty code is essential for debugging, root cause analysis, triage, and automated program repair (APR). File-level bug localization is especially critical in hierarchical localization and repair pipelines, where incorrect file selection can propagate to downstream stages such as..."
     },
     {
       "id": "2606.00593v2",
@@ -216,6 +255,10 @@
         {
           "category": "cs.CL",
           "title": "Computation and Language"
+        },
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
         }
       ],
       "matched_keywords": [
@@ -228,6 +271,42 @@
       "published_local": "2026-07-03 01:58",
       "updated_local": "2026-07-03 01:58",
       "summary_short": "Long-form TV dramas present a formidable challenge for comprehensive video understanding, where deciphering complex storyline often relies on \\textbf{speaker recognition}, the task of accurately attributing each spoken utterance to its respective character. In this paper, we advance this field through two primary contributions. (1) We introduce \\textbf{DramaSR-532K}, a large-scale benchmark comprising 532K..."
+    },
+    {
+      "id": "2604.12198v2",
+      "title": "Grounded autonomous scrutiny at scale: emergent critique from reproduction of published computational physics papers",
+      "summary": "Autonomous LLM agents now produce complete research artifacts in machine-learning sandboxes, but real computational physics is harder: experiments are first-principles calculations against re-runnable physical ground truth, and meaningful new work almost always builds on a key existing paper. We ask whether such an agent can perform grounded scrutiny of published computational physics - reading a paper, reproducing it from scratch, and surfacing methodological concerns from execution. We deploy a single Claude Opus 4.6 configuration at two complementary scopes. At scale, across 111 open-access Quantum ESPRESSO papers, an autonomous agent runs the read-plan-compute-compare loop and, although never asked to critique, raises substantive methodological concerns on ~42% of papers; 85 of 88 of these critiques (96.6%) surface only after the agent has actually run a calculation, with a reading-only ceiling of 1.8%. Critique emerges from reproduction, not from reading. In depth, on one Nature Communications paper on multiscale device simulation of a 2D-material MOSFET, a fresh agent inheriting a verified reproduction pipeline autonomously produces a 14-concern physics inventory and a complete, submission-form six-page Comment that revises the paper's L_G = 5 nm headline. Two of its L_G = 5 nm headline-challenging attacks - a source-degeneration contact-resistance bound and a Sb-doping degradation ratio - are absent from the published 21-reviewer peer review.",
+      "authors": [
+        "Haonan Huang"
+      ],
+      "abs_url": "https://arxiv.org/abs/2604.12198v2",
+      "pdf_url": "https://arxiv.org/pdf/2604.12198v2",
+      "published": "2026-04-14T02:06:59+00:00",
+      "updated": "2026-07-02T17:39:41+00:00",
+      "comment": "v2: camera-ready version, accepted at ICML 2026 AI for Science Workshop. Corrects the phase-classification statistics and adds a coding-sensitivity analysis (Methods M6); the agent-produced six-page Comment is reproduced as-is in the final appendix. 24 pages, 4 figures",
+      "journal_ref": "",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.AI",
+        "physics.comp-ph"
+      ],
+      "primary_category": "physics.comp-ph",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "agent",
+        "agents",
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 3,
+      "published_local": "2026-04-14 10:06",
+      "updated_local": "2026-07-03 01:39",
+      "summary_short": "Autonomous LLM agents now produce complete research artifacts in machine-learning sandboxes, but real computational physics is harder: experiments are first-principles calculations against re-runnable physical ground truth, and meaningful new work almost always builds on a key existing paper. We ask whether such an agent can perform grounded scrutiny of published computational physics - reading a paper, reproducing..."
     },
     {
       "id": "2603.22435v2",
@@ -263,6 +342,10 @@
       ],
       "primary_category": "cs.RO",
       "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
         {
           "category": "cs.RO",
           "title": "Robotics"
@@ -405,6 +488,41 @@
       "summary_short": "Human intelligence naturally intertwines omni-modal perception -- spanning vision, audio, and language -- with complex reasoning and tool usage to interact with the world. However, current multi-modal LLMs are primarily confined to bi-modal interactions (e.g., vision-language), lacking the unified cognitive capabilities required for general AI assistants. To bridge this gap, we introduce OmniGAIA, a comprehensive..."
     },
     {
+      "id": "2607.02514v1",
+      "title": "Distributed Attacks in Persistent-State AI Control",
+      "summary": "As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests (PRs) and time its payload for the PR with the best natural cover. To study the resulting dynamics, we introduce Iterative VibeCoding, a setting for AI control, the study of safely deploying capable but potentially untrusted AI. In Iterative VibeCoding, a coding agent builds software over a sequence of PRs in a persistent codebase while pursuing a covert side task. Our benchmark includes two task families: CLI tools and Flask web services, across 20 total task variations. We use Claude Sonnet 4.5 as the attack agent and GPT-4o as the monitor. We compare gradual attacks, which distribute the side task across PRs, against non-gradual attacks concentrated in a single PR. No single monitor is robust to both: which strategy evades best (success while evading the monitor) depends on the monitor type, so a defender cannot close off both gradual and non-gradual attacks with any one monitor. High evasion (>= 65%) generalizes across model attack agent backends (Sonnet 4.5, Gemini 3.1 Pro, Kimi K2.5), confirming this is a property of the persistent-state attack surface rather than a single model's capability. Evasion also remains high across state-of-the-art monitor models and the gap between gradual and non-gradual evasion widens for more capable models. We introduce a stateful link-tracker monitor that tracks suspicious buildup across PRs. On both task families, it detects gradual attacks substantially better than diff monitors that merely see more accumulated history. Combining this stronger monitor with trajectory monitors in a four-monitor ensemble reduces gradual-attack evasion from 93% under the weakest standard diff monitor to 47%.",
+      "authors": [
+        "Josh Hills",
+        "Ida Caspary",
+        "Asa Cooper Stickland"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.02514v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02514v1",
+      "published": "2026-07-02T17:59:56+00:00",
+      "updated": "2026-07-02T17:59:56+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "agent",
+        "agents"
+      ],
+      "matched_authors": [],
+      "score": 2,
+      "published_local": "2026-07-03 01:59",
+      "updated_local": "2026-07-03 01:59",
+      "summary_short": "As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests (PRs) and time its payload for the PR with the best natural cover. To study the resulting dynamics, we introduce Iterative VibeCoding, a setting for AI..."
+    },
+    {
       "id": "2607.02510v1",
       "title": "Online Safety Monitoring for LLMs",
       "summary": "Despite alignment training, LLMs remain prone to generating unsafe outputs at deployment time. Monitoring outputs online and raising an alarm when safety can no longer be assumed is therefore critical. We study a simple real-time monitor that turns a verifier signal from an external model into an alarm decision by thresholding, with the threshold calibrated via risk control. In experiments on mathematical reasoning and red teaming datasets, we show that this simple design is competitive with more advanced monitors based on sequential hypothesis testing.",
@@ -436,6 +554,10 @@
           "title": "Computation and Language"
         },
         {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -449,6 +571,47 @@
       "published_local": "2026-07-03 01:59",
       "updated_local": "2026-07-03 01:59",
       "summary_short": "Despite alignment training, LLMs remain prone to generating unsafe outputs at deployment time. Monitoring outputs online and raising an alarm when safety can no longer be assumed is therefore critical. We study a simple real-time monitor that turns a verifier signal from an external model into an alarm decision by thresholding, with the threshold calibrated via risk control. In experiments on mathematical reasoning..."
+    },
+    {
+      "id": "2607.02509v1",
+      "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+      "summary": "Understanding and reasoning over long contexts has become a key requirement for deploying large language models (LLMs) in realistic applications. Although recent LLMs support increasingly long context windows, they often fail to use relevant evidence that is already present in the input, revealing a gap between context access and effective context utilization. In this work, we propose Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT), a training-free inference method for improving long-context reasoning. RECONTEXT uses model-internal relevance signals to construct a query-conditioned evidence pool and replays it before final generation while preserving the full original context. This recursive selection process separates evidence organization from answer generation without training, external memory, or context pruning. We also provide a theoretical analysis based on associative memory, which characterizes the context as a memory store, the question as a retrieval cue, attention as cue-trace association, and replay as trace reactivation. Experiments on eight long-context datasets with 128K context length show that RECONTEXT consistently improves evidence utilization across Qwen3-4B, Qwen3-8B, and Llama3-8B, achieving the best average rank on all three backbones. Code is available at https://github.com/Yanjun-Zhao/ReContext.",
+      "authors": [
+        "Yanjun Zhao",
+        "Ruizhong Qiu",
+        "Tianxin Wei",
+        "Yuanchen Bei",
+        "Zhining Liu",
+        "Lingjie Chen",
+        "Ismini Lourentzou",
+        "Hanghang Tong",
+        "Jingrui He"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.02509v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02509v1",
+      "published": "2026-07-02T17:59:26+00:00",
+      "updated": "2026-07-02T17:59:26+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "llm",
+        "reasoning"
+      ],
+      "matched_authors": [],
+      "score": 2,
+      "published_local": "2026-07-03 01:59",
+      "updated_local": "2026-07-03 01:59",
+      "summary_short": "Understanding and reasoning over long contexts has become a key requirement for deploying large language models (LLMs) in realistic applications. Although recent LLMs support increasingly long context windows, they often fail to use relevant evidence that is already present in the input, revealing a gap between context access and effective context utilization. In this work, we propose Recursive Evidence Replay as..."
     },
     {
       "id": "2607.02496v1",
@@ -527,6 +690,82 @@
       "summary_short": "Large vision-language models can reason over multimodal inputs by generating textual chains of thought (CoT). A key capability exhibited in CoT reasoning is self-reflection: revisiting earlier decisions and correcting previous errors. However, existing LVLMs often fail to properly attend to visual inputs during reflection, limiting their ability to translate feedback into grounded corrections, especially for..."
     },
     {
+      "id": "2603.13191v2",
+      "title": "From Experiments to Expertise: Scientific Knowledge Consolidation for AI-Driven Computational Physics",
+      "summary": "While large language models (LLMs) have transformed AI agents into proficient executors of computational materials science, performing a hundred simulations does not make a researcher. What distinguishes research from routine execution is the progressive accumulation of knowledge - learning which approaches fail, recognizing patterns across systems, and applying understanding to new problems. However, the prevailing paradigm in AI-driven computational science treats each execution in isolation, largely discarding hard-won insights between runs. Here we present QMatSuite, an open-source platform closing this gap. Agents record findings with full provenance, retrieve knowledge before new calculations, and in dedicated reflection sessions correct erroneous findings and synthesize observations into cross-compound patterns. In benchmarks on a six-step quantum-mechanical simulation workflow, accumulated knowledge reduces reasoning overhead by 67% and improves accuracy from 47% to 3% deviation from literature - and when transferred to an unfamiliar material, achieves 1% deviation with zero pipeline failures.",
+      "authors": [
+        "Haonan Huang"
+      ],
+      "abs_url": "https://arxiv.org/abs/2603.13191v2",
+      "pdf_url": "https://arxiv.org/pdf/2603.13191v2",
+      "published": "2026-03-13T17:25:47+00:00",
+      "updated": "2026-07-02T17:52:34+00:00",
+      "comment": "v2: camera-ready version, accepted at the ICML 2026 Workshop on AI for Physics (AI4Physics@ICML 2026). 20 pages, 6 figures",
+      "journal_ref": "",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.AI",
+        "physics.comp-ph"
+      ],
+      "primary_category": "physics.comp-ph",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "agents",
+        "reasoning"
+      ],
+      "matched_authors": [],
+      "score": 2,
+      "published_local": "2026-03-14 01:25",
+      "updated_local": "2026-07-03 01:52",
+      "summary_short": "While large language models (LLMs) have transformed AI agents into proficient executors of computational materials science, performing a hundred simulations does not make a researcher. What distinguishes research from routine execution is the progressive accumulation of knowledge - learning which approaches fail, recognizing patterns across systems, and applying understanding to new problems. However, the..."
+    },
+    {
+      "id": "2507.22063v2",
+      "title": "RedCoder: Automated Multi-Turn Red Teaming for Code LLMs",
+      "summary": "Large Language Models (LLMs) for code generation (i.e., Code LLMs) have demonstrated impressive capabilities in AI-assisted software development and testing. However, recent studies have shown that these models are prone to generating vulnerable or even malicious code under adversarial settings. Existing red-teaming approaches rely on extensive human effort, limiting their scalability and practicality, and generally overlook the interactive nature of real-world AI-assisted programming, which often unfolds over multiple turns. To bridge these gaps, we present RedCoder, a red-teaming agent that engages victim models in multi-turn conversation to elicit vulnerable code. The pipeline to construct RedCoder begins with a multi-agent gaming process that simulates adversarial interactions, yielding a set of prototype conversations and an arsenal of reusable attack strategies. We then fine-tune an LLM on these prototype conversations to serve as the backbone of RedCoder. Once deployed, RedCoder autonomously engages Code LLMs in multi-turn conversations, dynamically retrieving relevant strategies from the arsenal to steer the dialogue toward vulnerability-inducing outputs. Experiments across multiple Code LLMs show that our approach outperforms prior single-turn and multi-turn red-team methods in inducing vulnerabilities in code generation, offering a scalable and effective tool for evaluating the security boundaries of modern code-generation systems.",
+      "authors": [
+        "Wenjie Jacky Mo",
+        "Qin Liu",
+        "Xiaofei Wen",
+        "Dongwon Jung",
+        "Hadi Askari",
+        "Wenxuan Zhou",
+        "Zhe Zhao",
+        "Muhao Chen"
+      ],
+      "abs_url": "https://arxiv.org/abs/2507.22063v2",
+      "pdf_url": "https://arxiv.org/pdf/2507.22063v2",
+      "published": "2025-06-25T06:20:15+00:00",
+      "updated": "2026-07-02T17:48:45+00:00",
+      "comment": "ACL 2026",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "agent",
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 2,
+      "published_local": "2025-06-25 14:20",
+      "updated_local": "2026-07-03 01:48",
+      "summary_short": "Large Language Models (LLMs) for code generation (i.e., Code LLMs) have demonstrated impressive capabilities in AI-assisted software development and testing. However, recent studies have shown that these models are prone to generating vulnerable or even malicious code under adversarial settings. Existing red-teaming approaches rely on extensive human effort, limiting their scalability and practicality, and..."
+    },
+    {
       "id": "2607.02469v1",
       "title": "TestEvo-Bench: An Executable and Live Benchmark for Test and Code Co-Evolution",
       "summary": "Software tests and code evolve together: a code change should be followed by new or updated tests that record the new software behavior. Yet existing test generation and update benchmarks often isolate the test from the code change, and rely on static metadata that does not verify whether a test is executable or semantically tied to the code change. This makes it difficult to evaluate whether a test automation agent understands how a code change should propagate into the test suite. We introduce TestEvo-Bench, a benchmark of test and code co-evolution tasks mined from software repositories, with two tracks: in test generation, the agent shall write new tests to capture the new software behavior; in test update, the agent shall adapt failing existing tests to the changed software behavior. Each task is anchored to a real commit history and packaged with environment configuration to support execution-grounded metrics such as pass rate, coverage, and mutation score. TestEvo-Bench is also a live benchmark: each task records the timestamp of the test and code changes, and new tasks are periodically mined by our automated pipeline, so evaluation can be restricted to tasks postdating a model's training cutoff to reduce data leakage risk. The current snapshot contains 746 test generation and 509 test update tasks, curated from 59,950 candidate co-evolution records across 152 open-source Java projects. We experiment with four state-of-the-art agents that combine strong harnesses (Claude Code, Gemini CLI, and SWE-Agent) with strong foundation models (Claude Opus 4.7 and Gemini 3.1 Pro). Results show that they achieve up to 77.5% success rate on test generation and 74.6% on test update. However, success rate is materially lower on the most recent benchmark tasks and drops significantly under limited per-task cost.",
@@ -551,6 +790,10 @@
         {
           "category": "cs.CL",
           "title": "Computation and Language"
+        },
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
         }
       ],
       "matched_keywords": [
@@ -587,6 +830,10 @@
       ],
       "primary_category": "cs.RO",
       "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
         {
           "category": "cs.RO",
           "title": "Robotics"
@@ -639,6 +886,10 @@
         {
           "category": "cs.CL",
           "title": "Computation and Language"
+        },
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
         }
       ],
       "matched_keywords": [
@@ -680,6 +931,10 @@
         {
           "category": "cs.CL",
           "title": "Computation and Language"
+        },
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
         }
       ],
       "matched_keywords": [
@@ -691,6 +946,40 @@
       "published_local": "2026-04-02 22:19",
       "updated_local": "2026-07-03 01:08",
       "summary_short": "Rerankers play a pivotal role in refining retrieval results for Retrieval-Augmented Generation. However, current reranking models are typically optimized on static human annotated relevance labels in isolation, decoupled from the downstream generation process. This isolation leads to a fundamental misalignment: documents identified as topically relevant by information retrieval metrics often fail to provide the..."
+    },
+    {
+      "id": "2607.02436v1",
+      "title": "Reasoning effort, not tool access, buys first-try reliability in agentic code generation: an observational study",
+      "summary": "Agentic coding assistants are increasingly given extra capabilities, such as browser based testing tools and design oriented system prompts, on the assumption that more capability yields better software. This study tested that assumption directly. Ninety independent agent runs built the same application, a real time retrospective board, from one detailed specification, each scored on a fixed 14 criterion functional rubric (42 point maximum) and a visual quality review. The runs spanned several model generations, two agent harnesses, two reasoning effort levels, a testing tool, and two design oriented prompts. Capability tier dominated: frontier models clustered near the ceiling while a low cost local model fell to 24 to 37 points. A criterion level analysis revealed what run totals conceal. Container deployment was the dominant defect, failing first try in 44 percent of runs, with its failure rate shifting sharply across model generations while mean totals moved less than a point. The testing tool raised cost by 42 to 68 percent without improving functional score or reliability, even on interface visible criteria. Raising reasoning effort from High to xHigh lifted first try perfect runs from 28 percent to 89 percent and cut corrective prompts about five fold, for 9 to 29 percent more cost. A design oriented prompt raised visual quality, 4.5 versus 3.0 on a 5 point scale, without lifting function, and a one paragraph paraphrase of its directive reproduced the entire lift. The practical lesson is to match the fix to the failure: most first run failures came from weak reasoning, which a stronger model or more effort prevents, not from visible flaws a checking tool would catch.",
+      "authors": [
+        "Achint Mehta"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.02436v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02436v1",
+      "published": "2026-07-02T17:08:21+00:00",
+      "updated": "2026-07-02T17:08:21+00:00",
+      "comment": "22 pages, 5 figures, 10 tables. Dataset and evaluation artifacts: https://doi.org/10.5281/zenodo.21134406",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "agent",
+        "reasoning"
+      ],
+      "matched_authors": [],
+      "score": 2,
+      "published_local": "2026-07-03 01:08",
+      "updated_local": "2026-07-03 01:08",
+      "summary_short": "Agentic coding assistants are increasingly given extra capabilities, such as browser based testing tools and design oriented system prompts, on the assumption that more capability yields better software. This study tested that assumption directly. Ninety independent agent runs built the same application, a real time retrospective board, from one detailed specification, each scored on a fixed 14 criterion functional..."
     },
     {
       "id": "2607.02426v1",
@@ -871,6 +1160,10 @@
           "title": "Computation and Language"
         },
         {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -914,6 +1207,10 @@
           "title": "Computation and Language"
         },
         {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -953,6 +1250,10 @@
       ],
       "primary_category": "cs.LG",
       "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
         {
           "category": "cs.LG",
           "title": "Machine Learning"
@@ -1008,6 +1309,111 @@
       "published_local": "2026-07-03 01:58",
       "updated_local": "2026-07-03 01:58",
       "summary_short": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do not satisfy the runtime contract of embodied deployment:..."
+    },
+    {
+      "id": "2607.02491v1",
+      "title": "G-RRM: Guiding Symbolic Solvers with Recurrent Reasoning Models",
+      "summary": "In this work, we focus on SE-RRMs, a symbol-equivariant instantiation of RRMs that exhibits improved extrapolation to larger problem sizes. We propose a neuro-symbolic approach, ``Guiding with Recurrent Reasoning Models'' (G-RRM), which integrates SE-RRMs with symbolic solvers for constraint satisfaction problems. SE-RRMs act as neural solvers that generate full solution proposals and guide classical symbolic solvers, such as backtracking or SAT-based methods like Glucose 4.1 and CaDiCaL 3.0.0, that produce globally correct solutions. Centrally, we investigate when neural guidance with G-RRM improves the search efficiency of symbolic solvers. % Our experiments show that the efficacy of G-RRM depends on two conditions: first, the problem instances must have an expansive combinatorial search space to expose potential gains, and second, the solver architecture must be capable of dynamically overwriting its branching choices to recover when neural hints are imperfect. When these conditions hold, guidance drives median conflict counts to zero and yields significant wall-clock speedups: on $9\\times9$ Sudoku, where the SE-RRM correctly solves $91.1\\%$ of instances, backtracking accelerates by $33.3\\times$ and Glucose 4.1 by $1.70\\times$ (median, $p<0.001$), with Glucose 4.1 retaining a $1.17\\times$ speedup on perfect-hint $25\\times25$ grids. In contrast, CaDiCaL 3.0.0, whose runtime is overhead-dominated and which always respects the injected branching hints rather than overwriting them, shows no significant speedup (median $1.02\\times$, n.s.) and even a small significant mean slowdown ($0.90\\times$) on $9\\times9$. These results delineate the regimes in which neural guidance translates into practical speedups.",
+      "authors": [
+        "Timo Bertram",
+        "Sidhant Bhavnani",
+        "Richard Freinschlag",
+        "Erich Kobler",
+        "Andreas Mayr",
+        "Günter Klambauer"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.02491v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02491v1",
+      "published": "2026-07-02T17:53:31+00:00",
+      "updated": "2026-07-02T17:53:31+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "reasoning"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-07-03 01:53",
+      "updated_local": "2026-07-03 01:53",
+      "summary_short": "In this work, we focus on SE-RRMs, a symbol-equivariant instantiation of RRMs that exhibits improved extrapolation to larger problem sizes. We propose a neuro-symbolic approach, ``Guiding with Recurrent Reasoning Models'' (G-RRM), which integrates SE-RRMs with symbolic solvers for constraint satisfaction problems. SE-RRMs act as neural solvers that generate full solution proposals and guide classical symbolic..."
+    },
+    {
+      "id": "2607.02484v1",
+      "title": "Combating Textual Noise and Redundancy: Entropy-Aware Dense Visual Token Pruning",
+      "summary": "Visual token pruning is a crucial strategy for accelerating VLMs by compressing redundant image patches, yet existing methods often fail to preserve critical cues under dense instructions and fine-grained queries. In this paper, we investigate this failure and identify two underlying bottlenecks: the widespread dispersion of textual noise that corrupts dense cross-modal scoring, and the feature fragmentation inherent to standard token selection. To address these issues, we propose Entropy-Aware Dense Pruning (EADP), a framework that reformulates pruning as a structured compression problem. EADP first leverages statistical entropy to quantify and filter out textual noise, yielding a robust, fine-grained instruction relevance score. Subsequently, instead of naive Top-K selection, EADP casts token selection as a submodular maximization problem with a spatial prior, explicitly ensuring a holistic and non-redundant visual representation. Extensive experiments demonstrate that EADP improves the accuracy-efficiency trade-off of VLMs, robustly preserving fine-grained visual cues under strict token budgets while achieving SoTA performance on challenging multimodal benchmarks.",
+      "authors": [
+        "Xuehui Wang",
+        "Xuankun Yang",
+        "Wei Shen"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.02484v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02484v1",
+      "published": "2026-07-02T17:50:57+00:00",
+      "updated": "2026-07-02T17:50:57+00:00",
+      "comment": "Accepted to ECCV 2026",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "multimodal"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-07-03 01:50",
+      "updated_local": "2026-07-03 01:50",
+      "summary_short": "Visual token pruning is a crucial strategy for accelerating VLMs by compressing redundant image patches, yet existing methods often fail to preserve critical cues under dense instructions and fine-grained queries. In this paper, we investigate this failure and identify two underlying bottlenecks: the widespread dispersion of textual noise that corrupts dense cross-modal scoring, and the feature fragmentation..."
+    },
+    {
+      "id": "2607.02467v1",
+      "title": "Human Capital, Not Model Benchmarks, Predicts Hybrid Intelligence in Forecasting",
+      "summary": "Whether pairing people with AI helps or hurts is usually reported as a single average effect. Using a real-money prediction market (Polymarket) as an objective, externally resolved benchmark, this pilot shows that the value of human-AI collaboration depends on a specific, measurable form of human capital. Analyzed at the level of the individual forecaster, hybrid performance is trimodal: most people either deferred to the model (matching it) or used it to rubber-stamp a prior guess (performing worse than the model alone), while a minority engaged in genuine complementary reasoning and reached accuracy matching or even exceeding (i.e., lower error than) the market itself. Collaborative traits (perspective-taking, intellectual humility, and curiosity) rather than raw cognitive ability or model benchmarks, distinguished who reached that mode. The results are preliminary but statistically robust, and motivate a pre-registered replication now in preparation.",
+      "authors": [
+        "Vivienne Ming"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.02467v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02467v1",
+      "published": "2026-07-02T17:34:37+00:00",
+      "updated": "2026-07-02T17:34:37+00:00",
+      "comment": "4 pages, 1 figure, PNAS brief style",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CY",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [
+        "reasoning"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-07-03 01:34",
+      "updated_local": "2026-07-03 01:34",
+      "summary_short": "Whether pairing people with AI helps or hurts is usually reported as a single average effect. Using a real-money prediction market (Polymarket) as an objective, externally resolved benchmark, this pilot shows that the value of human-AI collaboration depends on a specific, measurable form of human capital. Analyzed at the level of the individual forecaster, hybrid performance is trimodal: most people either deferred..."
     },
     {
       "id": "2607.01232v2",
@@ -1073,6 +1479,10 @@
       "primary_category": "cs.LG",
       "sources": [
         {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -1113,6 +1523,10 @@
       ],
       "primary_category": "cs.AI",
       "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
         {
           "category": "cs.LG",
           "title": "Machine Learning"
@@ -1191,6 +1605,10 @@
           "title": "Computation and Language"
         },
         {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -1230,6 +1648,10 @@
       ],
       "primary_category": "cs.RO",
       "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
         {
           "category": "cs.RO",
           "title": "Robotics"
@@ -1706,6 +2128,42 @@
       "summary_short": "Sim-to-real transfer in robot learning is often limited by discrepancies between the ideal actuator dynamics assumed during policy training and the nonlinear, hardware-dependent behavior of physical motors. While conventional approaches attempt to bridge this gap by increasing simulator fidelity through system identification, domain randomization, or learned actuator models, we introduce an alternative paradigm:..."
     },
     {
+      "id": "2601.16211v3",
+      "title": "Why Can't I Open My Drawer? Mitigating Object-Driven Shortcuts in Zero-Shot Compositional Action Recognition",
+      "summary": "Zero-Shot Compositional Action Recognition (ZS-CAR) requires recognizing novel verb-object combinations composed of previously observed primitives. In this work, we tackle a key failure mode: models predict verbs via object-driven shortcuts (i.e., relying on the labeled object class) rather than temporal evidence. We argue that sparse compositional supervision and verb-object learning asymmetry can promote object-driven shortcut learning. Our analysis with proposed diagnostic metrics shows that existing methods overfit to training co-occurrence patterns and underuse temporal verb cues, resulting in weak generalization to unseen compositions. To address object-driven shortcuts, we propose Robust COmpositional REpresentations (RCORE) with two components. Co-occurrence Prior Regularization (CPR) adds explicit supervision for unseen compositions and regularizes the model against frequent co-occurrence priors by treating them as hard negatives. Temporal Order Regularization for Composition (TORC) enforces temporal-order sensitivity to learn temporally grounded verb representations. Across Sth-com and EK100-com, RCORE reduces shortcut diagnostics and consequently improves compositional generalization.",
+      "authors": [
+        "Geo Ahn",
+        "Inwoong Lee",
+        "Taeoh Kim",
+        "Minho Shim",
+        "Dongyoon Wee",
+        "Jinwoo Choi"
+      ],
+      "abs_url": "https://arxiv.org/abs/2601.16211v3",
+      "pdf_url": "https://arxiv.org/pdf/2601.16211v3",
+      "published": "2026-01-22T18:59:13+00:00",
+      "updated": "2026-07-02T17:59:55+00:00",
+      "comment": "Project page: https://ahngeo.github.io/assets/html/RCORE.html",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-01-23 02:59",
+      "updated_local": "2026-07-03 01:59",
+      "summary_short": "Zero-Shot Compositional Action Recognition (ZS-CAR) requires recognizing novel verb-object combinations composed of previously observed primitives. In this work, we tackle a key failure mode: models predict verbs via object-driven shortcuts (i.e., relying on the labeled object class) rather than temporal evidence. We argue that sparse compositional supervision and verb-object learning asymmetry can promote..."
+    },
+    {
       "id": "2607.02503v1",
       "title": "VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation",
       "summary": "Contact-rich manipulation requires policies to react to local deformation, pressure, slip, and friction, yet these cues are temporally sparse and often invisible in visual observations. Existing visual-tactile policies usually feed tactile observations directly into action prediction, but rarely model tactile deformation dynamics during action generation. In this paper, we introduce VT-WAM, a Visual-Tactile World Action Model that jointly learns future visual prediction, tactile deformation prediction, and action prediction within a unified flow matching framework. In particular, VT-WAM introduces (1) Asymmetric Mixture-of-Transformers (MoT) attention to bridge a first-frame visual anchor with temporal tactile dynamics, and (2) contact-gated Action-Visual-Tactile Attention Guidance (AVTAG) to encourage action queries to rely on tactile evidence during contact phases. Across six real-world contact-rich manipulation tasks, VT-WAM achieves a 71.67% average success rate, outperforming Fast-WAM by 26.67% and OmniVTLA by 35.84%. Ablations demonstrate that modeling tactile deformation dynamics and guiding contact-phase tactile attention are both important for contact-rich tasks. Project website: https://vt-wam.github.io/.",
@@ -1772,6 +2230,10 @@
       "primary_category": "cs.LG",
       "sources": [
         {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -1818,6 +2280,40 @@
       "published_local": "2026-07-03 01:55",
       "updated_local": "2026-07-03 01:55",
       "summary_short": "Models trained via Contrastive Language-Image Pretraining (CLIP) serve as the foundational vision encoders for most modern Large Vision Language Models (LVLMs). Despite their widespread adoption, CLIP models exhibit a critical yet underexplored failure mode: irrelevant text appearing within images confounds visual representations, biasing them toward lexical meaning rather than true visual semantics. This..."
+    },
+    {
+      "id": "2509.05238v2",
+      "title": "Uncertain but Useful: Leveraging CNN Training Variability into Data Augmentation",
+      "summary": "Deep learning (DL) has transformed neuroimaging by delivering state-of-the-art performance with reduced computation times. Yet, the numerical uncertainty inherent to DL training remains largely underexplored despite its potential to significantly impact the reliability of model outcomes. We show that training the FastSurfer segmentation model introduces substantial numerical uncertainty that exceeds its non-DL counterpart (FreeSurfer 7.3.2) in cortical regions, potentially impacting downstream clinical results. We also characterize this training-time uncertainty using random seed perturbations and demonstrate that seed-induced variability is structurally comparable to numerical variability. We then show that seed variability can be leveraged as a data augmentation technique through ensembling to improve downstream brain age regression performance. These findings position numerical uncertainty during DL training as a substantive factor in neuroimaging reliability, with measurable consequences for downstream tasks, and demonstrate that it can simultaneously be harnessed as a data augmentation technique.",
+      "authors": [
+        "Inés Gonzalez-Pepe",
+        "Vinuyan Sivakolunthu",
+        "Yohan Chatelain",
+        "Tristan Glatard"
+      ],
+      "abs_url": "https://arxiv.org/abs/2509.05238v2",
+      "pdf_url": "https://arxiv.org/pdf/2509.05238v2",
+      "published": "2025-09-05T16:54:26+00:00",
+      "updated": "2026-07-02T17:48:44+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.AI",
+        "math.NA"
+      ],
+      "primary_category": "math.NA",
+      "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2025-09-06 00:54",
+      "updated_local": "2026-07-03 01:48",
+      "summary_short": "Deep learning (DL) has transformed neuroimaging by delivering state-of-the-art performance with reduced computation times. Yet, the numerical uncertainty inherent to DL training remains largely underexplored despite its potential to significantly impact the reliability of model outcomes. We show that training the FastSurfer segmentation model introduces substantial numerical uncertainty that exceeds its non-DL..."
     },
     {
       "id": "2607.02474v1",
@@ -1951,6 +2447,10 @@
       ],
       "primary_category": "cs.CV",
       "sources": [
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
+        },
         {
           "category": "cs.LG",
           "title": "Machine Learning"
@@ -2222,6 +2722,10 @@
         {
           "category": "cs.CL",
           "title": "Computation and Language"
+        },
+        {
+          "category": "cs.AI",
+          "title": "Artificial Intelligence"
         }
       ],
       "matched_keywords": [],
