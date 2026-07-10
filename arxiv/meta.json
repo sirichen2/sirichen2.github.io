@@ -1,25 +1,22 @@
 {
-  "status": "partial",
-  "generated_at_utc": "2026-07-09 16:08",
-  "generated_at_local": "2026-07-10 00:08",
-  "paper_count": 50,
-  "featured_count": 23,
-  "errors": [
-    "cs.CL: HTTP Error 429: Too Many Requests",
-    "cs.AI: HTTP Error 503: Service Unavailable"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-07-10 05:08",
+  "generated_at_local": "2026-07-10 13:08",
+  "paper_count": 89,
+  "featured_count": 57,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
       "title": "Computation and Language",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.AI",
       "title": "Artificial Intelligence",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.LG",
