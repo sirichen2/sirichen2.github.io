@@ -1,15 +1,10 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-07-13 04:47",
-  "generated_at_local": "2026-07-13 12:47",
-  "paper_count": 89,
-  "featured_count": 57,
-  "errors": [
-    "cs.CL: HTTP Error 406: Not Acceptable",
-    "cs.AI: HTTP Error 406: Not Acceptable",
-    "cs.LG: HTTP Error 406: Not Acceptable",
-    "cs.RO: HTTP Error 406: Not Acceptable"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-07-13 10:35",
+  "generated_at_local": "2026-07-13 18:35",
+  "paper_count": 96,
+  "featured_count": 49,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
