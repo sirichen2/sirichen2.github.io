@@ -1,16 +1,18 @@
 {
-  "status": "fresh",
-  "generated_at_utc": "2026-07-22 09:39",
-  "generated_at_local": "2026-07-22 17:39",
-  "paper_count": 89,
-  "featured_count": 62,
-  "errors": [],
+  "status": "partial",
+  "generated_at_utc": "2026-07-22 15:15",
+  "generated_at_local": "2026-07-22 23:15",
+  "paper_count": 68,
+  "featured_count": 46,
+  "errors": [
+    "cs.CL: HTTP Error 503: Service Unavailable"
+  ],
   "sources": [
     {
       "category": "cs.CL",
       "title": "Computation and Language",
       "max_results": 30,
-      "visible_papers": 30
+      "visible_papers": 0
     },
     {
       "category": "cs.AI",
