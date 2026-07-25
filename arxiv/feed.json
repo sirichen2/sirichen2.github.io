@@ -24,8 +24,8 @@
   "authors": [],
   "meta": {
     "status": "fresh",
-    "generated_at_utc": "2026-07-24 15:04",
-    "generated_at_local": "2026-07-24 23:04",
+    "generated_at_utc": "2026-07-25 04:28",
+    "generated_at_local": "2026-07-25 12:28",
     "paper_count": 84,
     "featured_count": 52,
     "errors": [],
@@ -551,7 +551,7 @@
       "pdf_url": "https://arxiv.org/pdf/2607.21340v1",
       "published": "2026-07-23T14:10:58+00:00",
       "updated": "2026-07-23T14:10:58+00:00",
-      "comment": "23 pages. Resubmission of submit/7557765, which expired due to an arXiv system bug (confirmed in support ticket AH-199019); the overfull-box correction requested by moderators has been applied. Original submission held in moderation since 14 May 2026. Therefore, request priority review/approval",
+      "comment": "23 pages. Rubrics, prompts, and demonstration tasks are publicly available.",
       "journal_ref": "",
       "categories": [
         "cs.CL"
