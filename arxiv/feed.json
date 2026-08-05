@@ -24,10 +24,10 @@
   "authors": [],
   "meta": {
     "status": "fresh",
-    "generated_at_utc": "2026-08-05 09:57",
-    "generated_at_local": "2026-08-05 17:57",
+    "generated_at_utc": "2026-08-05 15:25",
+    "generated_at_local": "2026-08-05 23:25",
     "paper_count": 91,
-    "featured_count": 61,
+    "featured_count": 62,
     "errors": [],
     "sources": [
       {
@@ -2227,6 +2227,41 @@
       "summary_short": "Human-in-the-loop reinforcement learning (HIL-RL) enables robots to learn contact-rich manipulation from limited real-world interaction, but deployment exposes three coupled limitations: static visual reward models fail under scene changes; independently sampled actions cause temporally inconsistent motion; and vision-based policies remain sensitive to appearance shifts. We present EvoHIL, a unified framework that..."
     },
     {
+      "id": "2207.12877v3",
+      "title": "Representing Random Utility Choice Models with Neural Networks",
+      "summary": "Motivated by the successes of deep learning, we propose a class of neural network-based discrete choice models, called RUMnets, inspired by the random utility maximization (RUM) framework. This model formulates the agents' random utility function using a sample average approximation. We show that RUMnets sharply approximate the class of RUM discrete choice models: any model derived from random utility maximization has choice probabilities that can be approximated arbitrarily closely by a RUMnet. Reciprocally, any RUMnet is consistent with the RUM principle. Our approach is closely related to ranking-based models and mixtures of multinomial logits proposed in previous literature, in a more general contextual setting. We derive an upper bound on the generalization error of RUMnets fitted on choice data, and provide theoretical insights on their ability to predict choices on new, unseen data depending on critical parameters of the dataset and architecture. The models are estimated by leveraging open-source libraries for training neural networks. We find that RUMnets are competitive against several choice modeling and machine learning methods in terms of predictive accuracy on two real-world datasets. We also conduct synthetic experiments that isolate the effects of each component of the architecture.",
+      "authors": [
+        "Ali Aouad",
+        "Antoine Désir"
+      ],
+      "abs_url": "https://arxiv.org/abs/2207.12877v3",
+      "pdf_url": "https://arxiv.org/pdf/2207.12877v3",
+      "published": "2022-07-26T13:12:22+00:00",
+      "updated": "2026-08-04T16:04:15+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [
+        "agents"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2022-07-26 21:12",
+      "updated_local": "2026-08-05 00:04",
+      "summary_short": "Motivated by the successes of deep learning, we propose a class of neural network-based discrete choice models, called RUMnets, inspired by the random utility maximization (RUM) framework. This model formulates the agents' random utility function using a sample average approximation. We show that RUMnets sharply approximate the class of RUM discrete choice models: any model derived from random utility maximization..."
+    },
+    {
       "id": "2608.03820v1",
       "title": "Designing Social Robots for Inclusive Child Wellbeing Assessment: Insights from Communities Supporting Developmental Language Disorder and Forced Migration",
       "summary": "Assessing children's wellbeing and mental health can be particularly challenging for children experiencing communication barriers, such as children with Developmental Language Disorder (DLD) and children with forced migration backgrounds. During the assessment process, traditional self-report questionnaires place substantial demands on language comprehension and verbal expression. In this context, social robots have emerged as a promising tool for supporting wellbeing assessment without solely relying on self-report questionnaires, yet limited research has examined how such interactions can be designed to be inclusive, appropriate, and ethically acceptable for children with diverse communication needs. To address this gap, we created candidate child--robot interaction activities as design probes and conducted focus groups with parents and professionals supporting children with DLD and children with forced migration backgrounds. Through thematic analysis, we identified considerations relating to robot role and capabilities, interactional dynamics, individual differences, and child agency, alongside population-specific considerations shaped by children's communication needs and lived experiences. Based on these findings, we derive a set of ethical and inclusive design recommendations for robot-mediated wellbeing assessment. By foregrounding these considerations and recommendations, this work contributes design guidance for inclusive robot-mediated wellbeing assessments for children with diverse communication needs.",
@@ -3363,41 +3398,6 @@
       "published_local": "2026-06-10 11:43",
       "updated_local": "2026-08-05 00:18",
       "summary_short": "Recent work has shown that on-policy distillation can internalize privileged context, such as system prompts or task hints, into a student model so that the context is no longer needed at inference time. However, we identify a counterintuitive and previously unstudied phenomenon: reintroducing the original privileged context to the distilled student often degrades its performance, even on instances it already..."
-    },
-    {
-      "id": "2608.03862v1",
-      "title": "CRS-Triage: Confidence- and Reliability-Aware Selective Triage under Incomplete Clinical Evidence",
-      "summary": "Emergency triage requires reliable decisions within a short time period. However, the available electronic health record (EHR) data, including structured data and clinical text, are often incomplete, unreliable, and inconsistent. This makes machine learning (ML)-based triage prediction more challenging, as existing ML models typically rely on complete and reliable EHR data to accurately predict patients' acuity levels. To address this, we propose confidence- and reliability-aware selective triage (CRS-Triage) to predict patients' acuity levels with a confidence score. By comparing the confidence score with a predefined threshold, CRS-Triage can selectively determine whether the model should make the decision or defer the case. Specifically, CRS-Triage separately evaluates the reliability of structured data and clinical text and then jointly considers the consistency between the two modalities to estimate the confidence of each prediction. Moreover, to reduce the risk of missing high-acuity patients, namely under-triage, CRS-Triage prefers to assign patients slightly higher acuity levels, namely over-triage, by penalizing under-triage errors. Experiments on the MIMIC-IV-ED dataset show that CRS-Triage achieves strong predictive performance. It also provides a better risk-coverage trade-off and remains reliable when the available EHR data are incomplete, degraded, or inconsistent across modalities.",
-      "authors": [
-        "Guan Qiang",
-        "Yushen Chen",
-        "Tianlong Liu",
-        "David Rotenberg",
-        "Ethan H. Kim",
-        "Fang Fang"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.03862v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.03862v1",
-      "published": "2026-08-04T16:04:15+00:00",
-      "updated": "2026-08-04T16:04:15+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.LG"
-      ],
-      "primary_category": "cs.LG",
-      "sources": [
-        {
-          "category": "cs.LG",
-          "title": "Machine Learning"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-08-05 00:04",
-      "updated_local": "2026-08-05 00:04",
-      "summary_short": "Emergency triage requires reliable decisions within a short time period. However, the available electronic health record (EHR) data, including structured data and clinical text, are often incomplete, unreliable, and inconsistent. This makes machine learning (ML)-based triage prediction more challenging, as existing ML models typically rely on complete and reliable EHR data to accurately predict patients' acuity..."
     },
     {
       "id": "2608.00600v2",
