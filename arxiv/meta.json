@@ -1,13 +1,10 @@
 {
-  "status": "partial",
-  "generated_at_utc": "2026-08-06 15:25",
-  "generated_at_local": "2026-08-06 23:25",
-  "paper_count": 54,
-  "featured_count": 34,
-  "errors": [
-    "cs.AI: The read operation timed out",
-    "cs.RO: HTTP Error 503: Service Unavailable"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-08-07 04:03",
+  "generated_at_local": "2026-08-07 12:03",
+  "paper_count": 88,
+  "featured_count": 56,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
@@ -19,7 +16,7 @@
       "category": "cs.AI",
       "title": "Artificial Intelligence",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.LG",
@@ -31,7 +28,7 @@
       "category": "cs.RO",
       "title": "Robotics",
       "max_results": 20,
-      "visible_papers": 0
+      "visible_papers": 20
     }
   ]
 }
