@@ -23,18 +23,20 @@
   ],
   "authors": [],
   "meta": {
-    "status": "fresh",
-    "generated_at_utc": "2026-08-11 03:11",
-    "generated_at_local": "2026-08-11 11:11",
-    "paper_count": 85,
-    "featured_count": 54,
-    "errors": [],
+    "status": "partial",
+    "generated_at_utc": "2026-08-11 08:15",
+    "generated_at_local": "2026-08-11 16:15",
+    "paper_count": 68,
+    "featured_count": 45,
+    "errors": [
+      "cs.CL: HTTP Error 429: Too Many Requests"
+    ],
     "sources": [
       {
         "category": "cs.CL",
         "title": "Computation and Language",
         "max_results": 30,
-        "visible_papers": 30
+        "visible_papers": 0
       },
       {
         "category": "cs.AI",
@@ -122,10 +124,6 @@
       ],
       "primary_category": "cs.CL",
       "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
         {
           "category": "cs.LG",
           "title": "Machine Learning"
@@ -261,10 +259,6 @@
       "primary_category": "cs.CL",
       "sources": [
         {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
-        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         }
@@ -279,44 +273,6 @@
       "published_local": "2025-12-08 14:12",
       "updated_local": "2026-08-11 01:59",
       "summary_short": "Multi-agent role-playing has recently shown promise for studying social behavior with language agents, but existing simulations are mostly monolingual without cross-lingual interaction, an essential property of real societies. We introduce MAWM, the first Multilingual Agent-based World Modeling framework that supports multi-turn multilingual interactions among generative agents with diverse sociolinguistic..."
-    },
-    {
-      "id": "2608.09900v1",
-      "title": "Decoding-Level Taboo: A Diagnostic Stress Test for LLM Robustness",
-      "summary": "Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimized generation corridor. In real-world deployments, however, complex system prompts, safety guardrails, and structural constraints continuously force models off this nominal path, driving a divergence between benchmark scores and deployment performance. To address this issue, we introduce Decoding-Level Taboo, a zero-prompt diagnostic stress test that intervenes directly in logit space at runtime, forcing models out of their nominal paths. By dynamically masking primary candidate tokens at word boundaries, Taboo forces machine circumlocution. Evaluating Taboo across several open-weight model families reveals that off-path robustness is heavily influenced by both parameter scale and post-training instruction alignment, with robustness generally improving with model size and alignment. Beyond the results presented in this paper, Taboo provides a novel primitive for generating diverse synthetic datasets, stress-testing runtime safety guardrails, and auditing model reliability prior to real-world deployment.",
-      "authors": [
-        "Tadanobu Chuyo Kamijo",
-        "Ori Rottenstreich",
-        "Javier Conde",
-        "Gonzalo Martínez",
-        "Pedro Reviriego"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09900v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09900v1",
-      "published": "2026-08-10T17:47:24+00:00",
-      "updated": "2026-08-10T17:47:24+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "alignment",
-        "large language model",
-        "llm"
-      ],
-      "matched_authors": [],
-      "score": 3,
-      "published_local": "2026-08-11 01:47",
-      "updated_local": "2026-08-11 01:47",
-      "summary_short": "Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimized generation corridor. In real-world deployments, however, complex system prompts, safety guardrails, and structural constraints continuously force models off this nominal path, driving a divergence between benchmark scores and deployment..."
     },
     {
       "id": "2603.03538v4",
@@ -437,85 +393,6 @@
       "published_local": "2026-08-11 01:07",
       "updated_local": "2026-08-11 01:07",
       "summary_short": "The development of embodied Intelligent Virtual Agents (IVAs) that have cognitive capabilities in real-time interactive virtual environments remains a challenge, even with today's advancements in technology. Existing architectures are often focused on either the implementation of low-level reactive control systems that are constrained by commercial game engines, or high-level representations of reasoning models..."
-    },
-    {
-      "id": "2608.09779v1",
-      "title": "KGCaRe: Explainable Complex Conditional Question Answering using Automatic Knowledge Graph Construction and Context Retrieval with LLMs",
-      "summary": "Answering complex conditional questions using Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) remains a challenge, particularly in domain-specific contexts where general-purpose LLMs and RAG tend to underperform. We hypothesize that augmenting RAG with unstructured and structured knowledge, extracted from both documents and knowledge graphs (KGs), can improve reasoning and answer accuracy for such tasks. To test this, we propose KGCaRe, a hybrid approach that combines neural retrieval with symbolic reasoning over LLM-generated KGs. KGCaRe constructs a KG from documents using a multi-prompt extraction strategy and stores it in a graph database. Simultaneously, the documents are embedded into a vector store to enable neural retrieval. KGCaRe performs innovative iterative graph traversal guided by the LLM to extract relevant triples, prune irrelevant information, and uses additional clue entities to traverse the graph again if the initial traversal does not provide satisfactory context to generate the answer. The relevant triples extracted from the KG in path form, along with semantically retrieved text passages, are then fed into custom KGCaRe prompts to generate answers to the complex conditional questions with explanations. We evaluate KGCaRe on two complex conditional QA datasets. Our results on these datasets show that KGCaRe consistently outperforms existing baselines, including Vanilla LLM, Code Prompt, Text Prompt, Think-on-Graph, Vanilla RAG, and HybridContextQA, across multiple LLMs such as Mistral, Mixtral, GPT-3.5, and GPT-4o. We publicly release the software pipeline that we developed to implement the proposed KGCaRe approach.",
-      "authors": [
-        "Ghanshyam Verma",
-        "Simanta Sarkar",
-        "Devishree Pillai",
-        "Hotaka Shiokawa",
-        "Yourong Xu",
-        "Fiona Veazey",
-        "Peter Hubbert",
-        "Hui Su",
-        "Paul Buitelaar"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09779v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09779v1",
-      "published": "2026-08-10T16:05:58+00:00",
-      "updated": "2026-08-10T16:05:58+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.AI",
-        "cs.CL"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "llm",
-        "rag",
-        "reasoning"
-      ],
-      "matched_authors": [],
-      "score": 3,
-      "published_local": "2026-08-11 00:05",
-      "updated_local": "2026-08-11 00:05",
-      "summary_short": "Answering complex conditional questions using Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) remains a challenge, particularly in domain-specific contexts where general-purpose LLMs and RAG tend to underperform. We hypothesize that augmenting RAG with unstructured and structured knowledge, extracted from both documents and knowledge graphs (KGs), can improve reasoning and answer accuracy for..."
-    },
-    {
-      "id": "2608.09772v1",
-      "title": "PragMatch: Separating Pragmatic Incongruity from Cross-Modal Mismatch in Large Vision-Language Models",
-      "summary": "Large Vision-Language Models (LVLMs) have demonstrated strong performance on multimodal benchmarks, yet it remains unclear whether they genuinely reason about relationships between images and text or rely on superficial correlations, known as shortcut learning. This question is particularly important for multimodal sarcasm detection, where successful prediction depends on recognizing pragmatic incongruity rather than treating sarcasm as simple image-text mismatch. We introduce PragMatch, a controlled benchmark of 3,000 image-text pairs derived from MMSD2.0, including original sarcastic examples and constructed literal and hard-negative pairs. We identify influential shortcut cues through systematic masking and evaluate their impact through targeted injection experiments. Our results show that LVLM predictions are sensitive to lexical, OCR-derived and stylistic cues, with injected surface signals causing substantial changes in model predictions despite unchanged underlying image-text relationships. Our findings reveal limitations in current LVLMs while PragMatch provides a systematic testbed for evaluating multimodal pragmatic reasoning beyond surface-level image-text alignment.",
-      "authors": [
-        "Zhanna Mukhametsharip",
-        "Vera Demberg",
-        "Varsha Suresh"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09772v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09772v1",
-      "published": "2026-08-10T16:00:04+00:00",
-      "updated": "2026-08-10T16:00:04+00:00",
-      "comment": "Under Review",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "alignment",
-        "multimodal",
-        "reasoning"
-      ],
-      "matched_authors": [],
-      "score": 3,
-      "published_local": "2026-08-11 00:00",
-      "updated_local": "2026-08-11 00:00",
-      "summary_short": "Large Vision-Language Models (LVLMs) have demonstrated strong performance on multimodal benchmarks, yet it remains unclear whether they genuinely reason about relationships between images and text or rely on superficial correlations, known as shortcut learning. This question is particularly important for multimodal sarcasm detection, where successful prediction depends on recognizing pragmatic incongruity rather..."
     },
     {
       "id": "2601.10168v3",
@@ -796,10 +673,6 @@
       "primary_category": "cs.AI",
       "sources": [
         {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
-        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         }
@@ -872,10 +745,6 @@
       ],
       "primary_category": "cs.AI",
       "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -957,10 +826,6 @@
       ],
       "primary_category": "cs.AI",
       "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -1115,10 +980,6 @@
       "primary_category": "cs.LG",
       "sources": [
         {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
-        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         },
@@ -1136,54 +997,6 @@
       "published_local": "2026-08-11 00:28",
       "updated_local": "2026-08-11 00:28",
       "summary_short": "Exploration has been a focus of reinforcement learning research for a long time. Recently, there has been growing evidence that it is also an important ingredient in LLM reinforcement learning recipes that can significantly impact downstream performance. Many existing methods control exploration in the action-space, for example, using temperature scaling. However, these methods cannot reorder tokens but only..."
-    },
-    {
-      "id": "2608.09802v1",
-      "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
-      "summary": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and that frontier models can verbatim reproduce gold patches from training data. Code refactoring, which requires coordinated, behavior-preserving changes across many files, offers a substantially harder and more realistic test of agent capability, yet remains underserved by current benchmarks. We introduce SWE-Bench ProMax, an expert-curated, multilingual code refactoring benchmark of 170 instances drawn from real commits across seven programming languages (Python, Java, TypeScript, Go, C, C++, and Rust). Every instance undergoes rigorous, multi-stage curation that directly addresses the quality problems identified in prior benchmarks: issue descriptions are rewritten from scratch to provide precise, unambiguous specifications, and test suites are manually reviewed to remove overly narrow and overly broad tests. Tasks with insufficient complexity or limited cross-file scope are filtered out, yielding a benchmark of challenging, large-scale refactoring tasks that average 11.4 modified files and 261.6 lines of code per instance, substantially exceeding the scale of existing benchmarks. Experiments with frontier models under two agent scaffolds show that the best model achieves only 41.2% resolve rate, confirming that SWE-Bench ProMax presents a meaningful and unsaturated challenge for current AI coding agents. Our benchmark is available at https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax.",
-      "authors": [
-        "Yuling Shi",
-        "Jinghan Xu",
-        "Kelin Fu",
-        "Wenhao Zeng",
-        "Shilin He",
-        "Lei Zhang",
-        "Yue Liu",
-        "Zelin Zhao",
-        "Terry Yue Zhuo",
-        "Jialun Cao",
-        "Siyu Ye",
-        "Tianyu Liu",
-        "Kai Cai",
-        "Shing-Chi Cheung",
-        "Xiaodong Gu"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09802v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09802v1",
-      "published": "2026-08-10T16:23:19+00:00",
-      "updated": "2026-08-10T16:23:19+00:00",
-      "comment": "Published as a conference paper at COLM 2026",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL",
-        "cs.SE"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "agent",
-        "agents"
-      ],
-      "matched_authors": [],
-      "score": 2,
-      "published_local": "2026-08-11 00:23",
-      "updated_local": "2026-08-11 00:23",
-      "summary_short": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and..."
     },
     {
       "id": "2608.09771v1",
@@ -1226,43 +1039,6 @@
       "published_local": "2026-08-10 23:58",
       "updated_local": "2026-08-10 23:58",
       "summary_short": "Vision-language-action policies rely on large multimodal backbones to jointly perform perception, language conditioning, and action generation at every control step. Much of this capacity supports open-domain semantics, whereas continuous robot manipulation primarily requires compact representations of observations, actions, and the transitions induced by actions. Pixel-level world models provide another route, but..."
-    },
-    {
-      "id": "2608.09765v1",
-      "title": "REFRAMED: Towards Realistic Audio Description Generation for Movies",
-      "summary": "Audio Description (AD) is a verbal narration of key visual content in videos, enabling access for visually impaired audiences. Unlike standard video captioning, AD is a structured editorial task: descriptions must be inserted into gaps in dialogue and must convey only what is needed to understand the narrative being told. However, existing approaches formulate AD generation in an artificial setting where both the content and timing of descriptions are pre-specified, reducing the task to clip-level captioning. They further rely on noisy transcription and alignment pipelines, and lack the rich parallel data required for modeling narrative context. We introduce a new formulation of AD generation in which models must jointly decide what to describe and when to do it. To support this, we present REFRAMED, a high-quality dataset of 2,023 videos that span 3,302 scenes from 206 movies, with professional AD transcripts (both American and British versions), professional subtitles and aligned screenplays. We also provide a manually curated challenge set that pairs full movies with multiple AD references, together with evaluation protocols that leverage dialogue gaps and multi-reference comparisons. Experiments with state-of-the-art AD systems and multimodal LLMs show that they outperform trivial baselines but fall far short of expert human performance. Our dataset and benchmark establish a new foundation for research on video understanding.",
-      "authors": [
-        "Igor Sterner",
-        "Mirella Lapata",
-        "Alex Lascarides",
-        "Frank Keller"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09765v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09765v1",
-      "published": "2026-08-10T15:55:56+00:00",
-      "updated": "2026-08-10T15:55:56+00:00",
-      "comment": "COLM 2026",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL",
-        "cs.CV"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "alignment",
-        "multimodal"
-      ],
-      "matched_authors": [],
-      "score": 2,
-      "published_local": "2026-08-10 23:55",
-      "updated_local": "2026-08-10 23:55",
-      "summary_short": "Audio Description (AD) is a verbal narration of key visual content in videos, enabling access for visually impaired audiences. Unlike standard video captioning, AD is a structured editorial task: descriptions must be inserted into gaps in dialogue and must convey only what is needed to understand the narrative being told. However, existing approaches formulate AD generation in an artificial setting where both the..."
     },
     {
       "id": "2608.09762v1",
@@ -1342,55 +1118,6 @@
       "summary_short": "Autonomous vehicles must plan trajectories that satisfy multiple requirements, such as safety, traffic-rule compliance, and passenger comfort. However, in safety-critical scenarios, it is not always possible to satisfy all requirements simultaneously, necessitating their prioritization based on importance. At the same time, the uncertainty in the predicted trajectories of surrounding road users, such as other..."
     },
     {
-      "id": "2604.10015v3",
-      "title": "FinTrace: Holistic Trajectory-Level Evaluation of LLM Tool Calling for Long-Horizon Financial Tasks",
-      "summary": "Recent studies demonstrate that tool-calling capability enables large language models (LLMs) to interact with external environments for long-horizon financial tasks. While existing benchmarks have begun evaluating financial tool calling, they focus on limited scenarios and rely on call-level metrics that fail to capture trajectory-level reasoning quality. To address this gap, we introduce FinTrace, a benchmark comprising 800 expert-annotated trajectories spanning 34 real-world financial task categories across multiple difficulty levels. FinTrace employs a rubric-based evaluation protocol with nine metrics organized along four axes -- action correctness, execution efficiency, process quality, and output quality -- enabling fine-grained assessment of LLM tool-calling behavior. Our evaluation of 13 LLMs reveals that while frontier models achieve strong tool selection, all models struggle with information utilization and final answer quality, exposing a critical gap between invoking the right tools and reasoning effectively over their outputs. To move beyond diagnosis, we construct FinTrace-Training, the first trajectory-level preference dataset for financial tool-calling, containing 8,196 curated trajectories with tool-augmented contexts and preference pairs. We fine-tune Qwen-3-8B/32B using supervised fine-tuning followed by direct preference optimization (DPO) and show that training on FinTrace-Training consistently improves intermediate reasoning metrics, with DPO more effectively suppressing failure modes. However, end-to-end answer quality remains a bottleneck, indicating that trajectory-level improvements do not yet fully propagate to final output quality.",
-      "authors": [
-        "Yupeng Cao",
-        "Haohang Li",
-        "Weijin Liu",
-        "Wenbo Cao",
-        "Anke Xu",
-        "Lingfei Qian",
-        "Xueqing Peng",
-        "Minxue Tang",
-        "Zhiyuan Yao",
-        "Jimin Huang",
-        "K. P. Subbalakshmi",
-        "Zining Zhu",
-        "Jordan W. Suchow",
-        "Yangyang Yu"
-      ],
-      "abs_url": "https://arxiv.org/abs/2604.10015v3",
-      "pdf_url": "https://arxiv.org/pdf/2604.10015v3",
-      "published": "2026-04-11T03:58:39+00:00",
-      "updated": "2026-08-10T15:13:54+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.AI",
-        "cs.CE",
-        "cs.CL",
-        "cs.MM"
-      ],
-      "primary_category": "cs.AI",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "llm",
-        "reasoning"
-      ],
-      "matched_authors": [],
-      "score": 2,
-      "published_local": "2026-04-11 11:58",
-      "updated_local": "2026-08-10 23:13",
-      "summary_short": "Recent studies demonstrate that tool-calling capability enables large language models (LLMs) to interact with external environments for long-horizon financial tasks. While existing benchmarks have begun evaluating financial tool calling, they focus on limited scenarios and rely on call-level metrics that fail to capture trajectory-level reasoning quality. To address this gap, we introduce FinTrace, a benchmark..."
-    },
-    {
       "id": "2608.09930v1",
       "title": "Beyond Naturalness: Probing Automated Text-To-Speech Evaluators on Linguistically Grounded Dimensions",
       "summary": "Automated Text-to-Speech (TTS) evaluation methods (Mean Opinion Score (MOS) predictors and Audio Large Language Models (Audio-LLM) judges) are expected to reflect human perception, yet it is unclear how well they capture the distinct aspects of speech that listeners actually perceive. We deconstruct \"naturalness\" into a linguistically grounded annotation schema spanning 10 distinct perceptual dimensions, and use it to construct the first dimension-level meta-evaluation benchmark for TTS, comprising 860 utterances annotated by trained linguist raters. Results from benchmarking four MOS predictors and four Audio-LLM judges reveal that MOS predictors collapse onto acoustic signal quality, while Audio-LLM judges show selective, prompt-dependent detection that does not generalise across all dimensions. Neither class reliably captures a breadth of linguistically structured speech errors. Our dataset, annotation schema, and evaluation code are publicly released to support more targeted and interpretable TTS evaluation.",
@@ -1418,10 +1145,6 @@
       ],
       "primary_category": "cs.SD",
       "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -1464,10 +1187,6 @@
       "primary_category": "cs.CV",
       "sources": [
         {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
-        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         },
@@ -1509,10 +1228,6 @@
       "primary_category": "cs.CL",
       "sources": [
         {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
-        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         }
@@ -1547,10 +1262,6 @@
       ],
       "primary_category": "cs.CL",
       "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -1675,10 +1386,6 @@
       ],
       "primary_category": "cs.CL",
       "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
         {
           "category": "cs.LG",
           "title": "Machine Learning"
@@ -1960,10 +1667,6 @@
       "primary_category": "cs.LG",
       "sources": [
         {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
-        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -2138,84 +1841,6 @@
       "summary_short": "Program analysis tools often produce large volumes of candidate vulnerability reports that require costly manual review, creating a practical challenge: how can security analysts prioritize the reports most likely to be true vulnerabilities? This paper investigates whether machine learning can be applied to prioritizing vulnerabilities reported by program analysis tools. We focus on Node$.$js packages and collect a..."
     },
     {
-      "id": "2512.11534v3",
-      "title": "HFS: Holistic Query-Aware Frame Selection for Efficient Video Understanding",
-      "summary": "Key frame selection is essentially a set-level optimization problem: the quality of the selected subset depends on the interactions among frames, rather than the score of any single frame. Existing methods generally exhibit three major limitations. Point-wise methods score each frame independently and ignore inter-frame dependencies. Although the training-free set-level methods explicitly model the inter-frame relationships, their selection criteria are fixed and cannot be adapted through downstream task feedback. Learnable methods can leverage data-driven training; however, they lack an explicit, differentiable set-quality objective and rely on offline-generated supervision signals. To address these limitations, we propose an end-to-end trainable and task-adaptive framework for frame selection. A Chain-of-Thought prompt conditions a Small Language Model (SLM) to extract task-specific latent query vectors, which are combined with multimodal features to enable dynamic, query-aware frame scoring. We further formulate a continuous set-level objective function that jointly accounts for relevance, coverage, and redundancy, enabling differentiable set-level optimization via Gumbel-TopK for selecting optimal frame combinations. Finally, we employ a student-teacher mutual learning strategy, in which the student selector (SLM) and teacher reasoner (MLLM) are trained to align their frame-importance distributions via KL divergence. Combined with cross-entropy loss, this design enables fully end-to-end optimization, eliminating reliance on static pseudo-labels. Experiments across multiple benchmarks, including Video-MME, LongVideoBench, MLVU, and NExT-QA, demonstrate that our method significantly outperforms existing frame-selection approaches.",
-      "authors": [
-        "Yiqing Yang",
-        "Yun Li",
-        "Daiqing Qi",
-        "Lehan Yang",
-        "Tianlong Wang",
-        "Wenhao Zhang",
-        "Sheng Li",
-        "Kin-man Lam"
-      ],
-      "abs_url": "https://arxiv.org/abs/2512.11534v3",
-      "pdf_url": "https://arxiv.org/pdf/2512.11534v3",
-      "published": "2025-12-12T13:10:30+00:00",
-      "updated": "2026-08-10T16:04:07+00:00",
-      "comment": "Accepted to the Main Track of ACM Multimedia 2026 (ACM MM '26)",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL",
-        "cs.CV",
-        "cs.MM"
-      ],
-      "primary_category": "cs.CV",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "multimodal"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2025-12-12 21:10",
-      "updated_local": "2026-08-11 00:04",
-      "summary_short": "Key frame selection is essentially a set-level optimization problem: the quality of the selected subset depends on the interactions among frames, rather than the score of any single frame. Existing methods generally exhibit three major limitations. Point-wise methods score each frame independently and ignore inter-frame dependencies. Although the training-free set-level methods explicitly model the inter-frame..."
-    },
-    {
-      "id": "2604.26148v2",
-      "title": "Beyond Screenshots: Evaluating VLMs' Understanding of UI Animations",
-      "summary": "AI agents operating on user interfaces must understand how interfaces communicate state and feedback to act reliably. As a core communicative modality, animations are increasingly used in modern interfaces, serving critical functional purposes beyond mere aesthetics. Thus, understanding UI animation is essential for comprehensive interface interpretation. However, recent studies of Vision Language Models (VLMs) for UI understanding have focused primarily on static screenshots, leaving it unclear how well these models handle dynamic UI animations. To address this gap, we created AniMINT, a novel dataset of 300 densely annotated UI animation videos. We systematically evaluate state-of-the-art VLMs on UI animation understanding, including their abilities to perceive the animation effects, identify animation purposes, and interpret animation meaning. Our results show that VLMs can reliably detect primitive motion. However, their high-level animation interpretation remains inconsistent, with substantial gaps relative to human performance. Finally, we use Motion, Context, and Perceptual Cues (MCPC) to probe factors affecting VLM performance, revealing key bottlenecks and directions for future improvement.",
-      "authors": [
-        "Chen Liang",
-        "Xirui Jiang",
-        "Naihao Deng",
-        "Eytan Adar",
-        "Anhong Guo"
-      ],
-      "abs_url": "https://arxiv.org/abs/2604.26148v2",
-      "pdf_url": "https://arxiv.org/pdf/2604.26148v2",
-      "published": "2026-04-28T22:15:06+00:00",
-      "updated": "2026-08-10T15:31:55+00:00",
-      "comment": "Accepted at ACL 2026 Findings",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL",
-        "cs.HC"
-      ],
-      "primary_category": "cs.HC",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "agents"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-04-29 06:15",
-      "updated_local": "2026-08-10 23:31",
-      "summary_short": "AI agents operating on user interfaces must understand how interfaces communicate state and feedback to act reliably. As a core communicative modality, animations are increasingly used in modern interfaces, serving critical functional purposes beyond mere aesthetics. Thus, understanding UI animation is essential for comprehensive interface interpretation. However, recent studies of Vision Language Models (VLMs) for..."
-    },
-    {
       "id": "2608.09731v1",
       "title": "TAMS: Task-Aware Multi-View Adaptive Streaming for Wireless Telerobotic Manipulation",
       "summary": "Wireless telerobotic manipulation relies on timely multi-view video feedback, but the available uplink bandwidth is often limited and dynamic. This paper presents Task-Aware Multi-View Adaptive Streaming (TAMS), a system that allocates video bitrate according to the current manipulation phase. TAMS infers task phase from lightweight robot-side signals and prioritizes the camera view most relevant to the operator while preserving baseline visibility for secondary views. Experiments on a six-degree-of-freedom (6-DoF) teleoperation testbed under three constrained network conditions show that TAMS improves primary view Structural Similarity Index (SSIM), reduces task completion time, and increases trial success rate compared with equal and static allocation baselines. Under the most constrained bandwidth condition, TAMS reduces mean completion time from 68.9 s to 43.9 s relative to equal allocation and increases trial success rate from 48% to 71%. Code is available at: https://github.com/Dzxx623/TAMS.",
@@ -2251,44 +1876,6 @@
       "published_local": "2026-08-10 23:30",
       "updated_local": "2026-08-10 23:30",
       "summary_short": "Wireless telerobotic manipulation relies on timely multi-view video feedback, but the available uplink bandwidth is often limited and dynamic. This paper presents Task-Aware Multi-View Adaptive Streaming (TAMS), a system that allocates video bitrate according to the current manipulation phase. TAMS infers task phase from lightweight robot-side signals and prioritizes the camera view most relevant to the operator..."
-    },
-    {
-      "id": "2608.09717v1",
-      "title": "How Do Large Language Models Judge Social Attraction? Evidence from Theory-Grounded Persona Ratings Across Multiple LLMs and Humans",
-      "summary": "Large language models (LLMs) are increasingly used to perform subjective evaluations traditionally made by humans, yet their validity as social judges remains unclear. This paper examines whether LLMs can assess social attraction from theory-grounded persona profiles constructed from ten psychological and relational constructs and organized into three tiers: socially attractive, socially mixed, and socially unattractive. We examine LLM ratings in two studies and compare them with human judgments in a third study. In Study 1, 34 LLMs rated 12 profiles across three repeated runs. Although some models tended to give higher or lower ratings overall, they showed strong stability across runs, consistent three-tier ordering, and high agreement in relative profile ordering. Study 2 examined sensitivity to gender presentation using six matched name-and-pronoun profile pairs and a separate pronoun-only test with a gender-neutral name, finding no significant effects in either analysis. In Study 3, 198 human participants evaluated the six matched profiles from Study 2. Their ratings reproduced the three-tier structure and followed a profile ordering consistent with that of the LLMs. However, LLMs rated attractive profiles more positively and unattractive profiles more negatively than humans, while neither group showed a significant overall effect of gender presentation.",
-      "authors": [
-        "Hasan Mahmud",
-        "Khawaja Abaid Ullah",
-        "Mohammad Javad Khojasteh",
-        "Jamison Heard",
-        "Prabu David"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09717v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09717v1",
-      "published": "2026-08-10T15:19:42+00:00",
-      "updated": "2026-08-10T15:19:42+00:00",
-      "comment": "9 pages, 2 figures, 2 tables. Includes technical supplement",
-      "journal_ref": "",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.CY"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [
-        "llm"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-08-10 23:19",
-      "updated_local": "2026-08-10 23:19",
-      "summary_short": "Large language models (LLMs) are increasingly used to perform subjective evaluations traditionally made by humans, yet their validity as social judges remains unclear. This paper examines whether LLMs can assess social attraction from theory-grounded persona profiles constructed from ten psychological and relational constructs and organized into three tiers: socially attractive, socially mixed, and socially..."
     },
     {
       "id": "2608.09658v1",
@@ -2534,38 +2121,6 @@
       "summary_short": "In fair ranked link prediction, demographic parity ($Δ_\\mathrm{DP}$) is a common fairness metric. Yet, Mattos et al. (2025) argue that it fails to detect exposure bias because it ignores where links appear in the ranking. In this study, we reproduce this claim by showing that $Δ_\\mathrm{DP}$ can indicate aggregate parity even when some subgroup-pair links are systematically ranked lower than others. The proposed..."
     },
     {
-      "id": "2507.10810v3",
-      "title": "Testing Hypotheses from the Social Approval Theory of Online Hate: An Analysis of 110 Million Messages from Parler",
-      "summary": "We examined how social approval motivates online hate via the social approval theory, which argues social approval signals on hate messages predict more hate and toxicity. Using 110 million messages from Parler (2018-2021), we observed that upvotes on hate speech posts (e.g., messages broadcast on users' profiles to followers' feeds) predicted a lower probability of hate in the next immediate post but more in the following week's post. In other analyses, upvotes on comments (e.g., messages embedded within conversational threads) negatively predicted hate speech in the next comment but positively predicted toxicity during the next week and month. Between-person effects revealed a similar pattern of negative immediate short-term effects but positive longer-term effects for hate speech. For comments, social disapproval (downvotes) moderated these relationships, making them less positive at weekly through quarterly time-intervals and more strongly negative at six-months. Social approval predicts online hate in time- and message-dependent ways.",
-      "authors": [
-        "David M. Markowitz",
-        "Samuel Hardman Taylor"
-      ],
-      "abs_url": "https://arxiv.org/abs/2507.10810v3",
-      "pdf_url": "https://arxiv.org/pdf/2507.10810v3",
-      "published": "2025-07-14T21:10:39+00:00",
-      "updated": "2026-08-10T17:46:24+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL",
-        "cs.SI"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2025-07-15 05:10",
-      "updated_local": "2026-08-11 01:46",
-      "summary_short": "We examined how social approval motivates online hate via the social approval theory, which argues social approval signals on hate messages predict more hate and toxicity. Using 110 million messages from Parler (2018-2021), we observed that upvotes on hate speech posts (e.g., messages broadcast on users' profiles to followers' feeds) predicted a lower probability of hate in the next immediate post but more in the..."
-    },
-    {
       "id": "2608.05018v2",
       "title": "Short-term load forecasting under EU-AI Act Requirements in Safety-Critical Environments: Results from a 41-day live challenge on the aggregated German transmission-grid load",
       "summary": "Short-term load forecasting (STLF) play a vital role in the electric power industry. It serves infrastructure that European and German law designate as critical. Determinism, reproducibility, and auditability are engineering requirements rather than optional extras. STLF is no longer purely an accuracy problem. It is also a software-engineering and compliance problem. This paper describes results from a 41-day live challenge that evaluated a complete STLF pipeline for the aggregated German transmission-grid load. The pipeline is based on the open-source Python library spotforecast2-safe, which implements the EU-AI Act Requirements in Safety-Critical Environments by design. The pipeline predicts the 24 hourly load values of a target day from European Network of Transmission System Operators for Electricity (ENTSO-E) data. It includes anomaly detection and gap-aware data preparation, calendar and weather covariates, a recursive multi-step forecasting algorithm, and hyperparameter tuning. Forecast accuracy is measured against the official ENTSO-E day-ahead forecast. The EU-AI act compliant spotforecast2-safe pipeline beats the ENTSO-E baseline. In-context models show competitive performance. Transparent, low-cost, and auditable local models (referred to as macl2l in this paper) are competitive with more than 100-million-parameter large, energy-intensive pre-trained foundation models such as chronos-2. The challenge infrastructure, the complete submission history of all teams, and the frozen final leaderboard are publicly available.",
@@ -2696,36 +2251,6 @@
       "published_local": "2026-04-14 03:05",
       "updated_local": "2026-08-11 01:37",
       "summary_short": "Coherent nonlinear wave dynamics are often strongly shaped by a compact set of physically meaningful descriptors of the initial state. Traditional neural operators typically treat the input-output mapping as a largely black-box high-dimensional regression problem, without explicitly exploiting this structured physical context. Common feature-integration strategies usually rely on direct concatenation or FiLM-style..."
-    },
-    {
-      "id": "2605.03742v2",
-      "title": "Benchmarking Parameter-Efficient Fine-Tuning of Large Language Models for Low-Resource Tajik Text Generation with the Tajik Web Corpus",
-      "summary": "We release the Tajik Web Corpus (319k docs, 1.11B chars) and benchmark generative LLMs on prompt continuation in Tajik, a low-resource Cyrillic-script language. Seventeen configurations across nine architectures are evaluated under three fine-tuning strategies: full fine-tuning, LoRA, and QLoRA (ranks 8 and 16). Because perplexity is not directly comparable across model families with different tokenizers, generation quality is assessed through perplexity interpreted within each family, complemented by qualitative analysis performed by a native Tajik speaker. Computational cost is measured via GPU memory and training time. The best quality-cost trade-off is achieved by Mistral 7B with QLoRA rank 8: perplexity 5.11 (within its tokenizer family), coherent Tajik output confirmed by the native speaker, 14.21 GB GPU memory, and approximately 33 minutes of training. Increasing the rank to 16 yields a negligible improvement for Mistral (perplexity 5.03, pairwise p > 0.05) while consuming about 1 GB more memory. Full fine-tuning of small GPT-2 models obtains lower numeric perplexity but leads to catastrophic forgetting (English or gibberish output); in contrast, QLoRA preserves multilingual pretrained knowledge and generates meaningful Tajik text. Encoder-only models perform worst (perplexity approximately 59), confirming their unsuitability for autoregressive generation. To our knowledge, this is the first systematic PEFT benchmark for Tajik text generation. Practical recommendations include using Mistral 7B with QLoRA r=8, avoiding full fine-tuning of small GPT-2 models, and adopting the released corpus and benchmark.",
-      "authors": [
-        "Mullosharaf K. Arabov"
-      ],
-      "abs_url": "https://arxiv.org/abs/2605.03742v2",
-      "pdf_url": "https://arxiv.org/pdf/2605.03742v2",
-      "published": "2026-05-05T13:28:31+00:00",
-      "updated": "2026-08-10T17:28:04+00:00",
-      "comment": "LaTeLL 2026",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-05-05 21:28",
-      "updated_local": "2026-08-11 01:28",
-      "summary_short": "We release the Tajik Web Corpus (319k docs, 1.11B chars) and benchmark generative LLMs on prompt continuation in Tajik, a low-resource Cyrillic-script language. Seventeen configurations across nine architectures are evaluated under three fine-tuning strategies: full fine-tuning, LoRA, and QLoRA (ranks 8 and 16). Because perplexity is not directly comparable across model families with different tokenizers,..."
     },
     {
       "id": "2503.18970v4",
@@ -2915,10 +2440,6 @@
       "primary_category": "cs.CL",
       "sources": [
         {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        },
-        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -2929,42 +2450,6 @@
       "published_local": "2026-08-11 00:52",
       "updated_local": "2026-08-11 00:52",
       "summary_short": "Financial sentiment analysis converts unstructured financial news into quantitative signals that can support market analysis and decision-making. Existing work on resource-efficient financial NLP has largely focused on compressing or adapting pretrained language models, with less attention to combining contextual representations with lightweight rule-derived features. This study develops Rule-Aware FinBERT..."
-    },
-    {
-      "id": "2604.05971v2",
-      "title": "Is CLIP Cross-Eyed? Revealing and Mitigating Center Bias in the CLIP Family",
-      "summary": "Recent research has shown that contrastive vision-language models such as CLIP often lack fine-grained understanding of visual content. While a growing body of work has sought to address this limitation, we identify a distinct failure mode in the CLIP family, which we term center bias, that persists even in recent model variants. Specifically, CLIP tends to disproportionately focus on the central region of an image, overlooking important objects located near the boundaries. This limitation is fundamental as failure to recognize relevant objects makes it difficult to perform any sophisticated tasks that depend on those objects. To understand the underlying causes of the limitation, we conduct analyses from both representation and attention perspectives. Using interpretability methods, i.e., embedding decomposition and attention map analysis, we find that relevant concepts especially those associated with off-center objects vanish from the model's embedding in the final representation due to information loss during the aggregation of visual embeddings, particularly the reliance on pooling mechanisms. Finally, we show that this bias can be alleviated with training-free strategies such as visual prompting and attention redistribution by redirecting models' attention to off-center regions.",
-      "authors": [
-        "Oscar Chew",
-        "Hsiao-Ying Huang",
-        "Kunal Jain",
-        "Tai-I Chen",
-        "Khoa D Doan",
-        "Kuan-Hao Huang"
-      ],
-      "abs_url": "https://arxiv.org/abs/2604.05971v2",
-      "pdf_url": "https://arxiv.org/pdf/2604.05971v2",
-      "published": "2026-04-07T15:04:33+00:00",
-      "updated": "2026-08-10T16:52:17+00:00",
-      "comment": "COLM 2026",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL",
-        "cs.CV"
-      ],
-      "primary_category": "cs.CV",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-04-07 23:04",
-      "updated_local": "2026-08-11 00:52",
-      "summary_short": "Recent research has shown that contrastive vision-language models such as CLIP often lack fine-grained understanding of visual content. While a growing body of work has sought to address this limitation, we identify a distinct failure mode in the CLIP family, which we term center bias, that persists even in recent model variants. Specifically, CLIP tends to disproportionately focus on the central region of an..."
     },
     {
       "id": "2608.09826v1",
@@ -3145,38 +2630,6 @@
       "summary_short": "We show that, in linear Gaussian VAEs, posterior collapse is a form of latent feature selection. Feature importance is set by each latent coordinate's contribution to reconstruction, itself given by the corresponding PCA eigenvalue. Varying the regularizer strength $β$ reveals a ranked spectrum of collapse events, with thresholds set by the utility/PCA spectrum. A mode-by-mode analysis identifies the..."
     },
     {
-      "id": "2608.09792v1",
-      "title": "Comparing British and American Audio Description of Movies",
-      "summary": "Narrating the visual component of movies is known as audio description. It is a narrative technique designed to enable blind and visually impaired individuals to follow the story. However, it is far more constrained than most narratives: the descriptions not only need to convey the story in the movie, but they must also fit into gaps between dialogue and they need to conform to guidelines that exist in each region. In this work, we compare audio description created in the United Kingdom against audio description created in the United States. We use guidelines written for these two regions, alongside the impressions from a practitioner in the field, to motivate specific hypotheses about the differences. We test these hypotheses against our pre-existing corpus, which provides both human-authored American and British audio description for each of 206 movies. Results provide quantitative evidence to uphold all tested hypotheses, including differences in lexicon, the use of the progressive aspect, the use of passive constructions, the use of subjective adjectives and modifiers, when characters are named, how scenes are cued, and degree of overlap with movie dialogue and music. Our work offers a quantitative lens into the narrative technique of audio description.",
-      "authors": [
-        "Igor Sterner",
-        "Alex Lascarides",
-        "Frank Keller"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09792v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09792v1",
-      "published": "2026-08-10T16:14:10+00:00",
-      "updated": "2026-08-10T16:14:10+00:00",
-      "comment": "CMN 2026 Workshop",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-08-11 00:14",
-      "updated_local": "2026-08-11 00:14",
-      "summary_short": "Narrating the visual component of movies is known as audio description. It is a narrative technique designed to enable blind and visually impaired individuals to follow the story. However, it is far more constrained than most narratives: the descriptions not only need to convey the story in the movie, but they must also fit into gaps between dialogue and they need to conform to guidelines that exist in each region...."
-    },
-    {
       "id": "2608.09778v1",
       "title": "RoboSeg: Online Part-Level Semantic Reconstruction for Robotic Manipulation via a Single Eye-in-Hand Camera",
       "summary": "Robotic manipulation requires perception systemsthat identify actionable parts such as handles, rims, triggers,and tool tips, not merely object categories or point clouds. This paper presents RoboSeg, a part-level semantic reconstructionsystem that links vision-language model (VLM) functional-partdiscovery, asynchronous online RGB-D semantic reconstruc-tion, and task-oriented grasp generation without requiring CAD models or pre-scanned meshes. RoboSeg queries a VLM onthe initial RGB observation to obtain compact functional part prompts, then scans with two asynchronous streams: a high-frequency geometry thread for RGB-D odometry and truncated signed distance function (TSDF) fusion, and a keyframe-triggered semantic thread for SAM3 part masks. Projectedmasks are fused by voxel-level temporal voting into a persistentpart-labeled point cloud; RoboSeg uses this map to assign AnyGrasp 6-DoF candidates to semantic parts and select grasps consistent with the task-relevant part label. RoboSeg reaches 83.4% mean part intersection-over-union (mIoU) over manually labeled objects; in a 24-trial physical pilot across fourobjects and eight tasks, the selected grasp contacts the requestedpart in all trials and achieves 21/24 combined task successes.These results characterize RoboSeg as a semantic indexing layerfor task-conditioned manipulation, with AnyGrasp retained asthe proposal generator.",
@@ -3313,164 +2766,6 @@
       "published_local": "2026-08-10 23:58",
       "updated_local": "2026-08-10 23:58",
       "summary_short": "A prediction that is both confident and wrong is a critical reliability failure because it can bypass abstention and human review precisely when the model is mistaken. Empirical risk minimization (ERM) controls average loss but not this failure directly, while calibration, uncertainty estimation, conformal risk control, and selective prediction methods target related reliability properties rather than bounding the..."
-    },
-    {
-      "id": "2608.09767v1",
-      "title": "Structured Phonological Representations for Audio-Articulatory rtMRI Speech Classification",
-      "summary": "Real-time MRI makes it possible to observe vocal-tract articulation during speech, but mapping these articulatory patterns to phonetic and phonological categories remains challenging. We investigate whether PhonoQ, an audio-based model trained to recognize structured phonological features, provides useful information for audio--articulatory modeling. Specifically, we extract representations from PhonoQ's Conformer module, whose training is shaped by supervision for manner, place, voicing, and vowel features. Using articulatory contours with synchronized audio-derived features, we compare WavLM-large and HuBERT-large baselines with models that incorporate PhonoQ-derived representations. Across unseen-speech and unseen-subject settings, these features improve macro-F1 for phonological targets including manner, place, voicing, vowel height, and vowel backness, and also improve fine-grained 39-phoneme classification. In a contour-only inference setting, audio-derived teacher supervision yields modest but consistent gains over contour-only training, indicating that phonological information from synchronized audio can be partially transferred to articulatory models. Finally, posterior analyses show interpretable surface-sensitive patterns consistent with flapping-like /t/ realizations, /t/-/r/ retraction or affrication, and nasal place assimilation.",
-      "authors": [
-        "Abner Hernandez",
-        "Tomás Arias Vergara",
-        "Daiqi Liu",
-        "Andreas Maier",
-        "Paula Andrea Pérez-Toro"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09767v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09767v1",
-      "published": "2026-08-10T15:58:07+00:00",
-      "updated": "2026-08-10T15:58:07+00:00",
-      "comment": "Submitted for review at SLT 2026",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL",
-        "cs.SD",
-        "eess.AS"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-08-10 23:58",
-      "updated_local": "2026-08-10 23:58",
-      "summary_short": "Real-time MRI makes it possible to observe vocal-tract articulation during speech, but mapping these articulatory patterns to phonetic and phonological categories remains challenging. We investigate whether PhonoQ, an audio-based model trained to recognize structured phonological features, provides useful information for audio--articulatory modeling. Specifically, we extract representations from PhonoQ's Conformer..."
-    },
-    {
-      "id": "2608.09766v1",
-      "title": "Cultivar: A Contrastive and Locale-Oriented Translation Benchmark for Investigating Contamination and Localisation Robustness",
-      "summary": "Multilingual translation benchmarks are typically sourced in English and translated into other languages, treating language pairs as the unit of evaluation---a design that is prone to contamination over time and overlooks locale and cultural considerations. We therefore advocate for source-contrastive evaluation and instantiate it with Cultivar, a localised subset of FLORES, which enables locale-specific translation evaluation. When paired with unlocalised counterparts, performance discrepancy allows the probing of data contamination and localisation robustness. We benchmark 32 open-weight models and find that MT-specialised models are less robust, a few models potentially overfit FLORES, and models tend to translate US content better than that of other locales, regardless of language.",
-      "authors": [
-        "Pinzhen Chen",
-        "Koel Dutta Chowdhury",
-        "Xiaoya Xu",
-        "David Tan",
-        "Doreen Osmelak",
-        "Ona de Gibert",
-        "Ariun-Erdene Tumurchuluun",
-        "Ashok Urlana",
-        "Fedor Sizov",
-        "Hale Sirin",
-        "Jesujoba Alabi",
-        "Karrar Talib Abed",
-        "Mateusz Klimaszewski",
-        "Nikolay Bogoychev",
-        "Niyati Bafna",
-        "Patricia Schmidtova",
-        "Preksha Manjunath Shanbhag",
-        "Sherrie Shen",
-        "Vilem Zouhar",
-        "Vivek Iyer",
-        "Yasser Hamidullah",
-        "Yusser Al Ghussin",
-        "Zheng Zhao"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09766v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09766v1",
-      "published": "2026-08-10T15:56:43+00:00",
-      "updated": "2026-08-10T15:56:43+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.AI",
-        "cs.CL"
-      ],
-      "primary_category": "cs.CL",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-08-10 23:56",
-      "updated_local": "2026-08-10 23:56",
-      "summary_short": "Multilingual translation benchmarks are typically sourced in English and translated into other languages, treating language pairs as the unit of evaluation---a design that is prone to contamination over time and overlooks locale and cultural considerations. We therefore advocate for source-contrastive evaluation and instantiate it with Cultivar, a localised subset of FLORES, which enables locale-specific..."
-    },
-    {
-      "id": "2608.09703v1",
-      "title": "Matryoshka Language Model Suites",
-      "summary": "Training a language model suite classically requires training each model separately and serving them independently. We improve both training and inference efficiency by stacking sub-models of increasing size into a single nested architecture trained end-to-end. This Matryoshka training framework reduces the total parameter count of the suite, enables low-cost distillation from the largest to all smaller sub-models at every training step, and is well-suited for speculative decoding as the draft model is contained within the verifier. We validate our approach by training a Matryoshka suite comprising 500M, 1.5B, and 3B sub-models. Our suite is on par with independently trained baselines on benchmark performance and validation and out-of-domain perplexities, while using 36% less training compute and improving the throughput of speculative decoding by 14-26%. We also ablate key architectural choices, offering guidance for building strong Matryoshka LM suites.",
-      "authors": [
-        "Nathan Godey",
-        "Yoav Artzi"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09703v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09703v1",
-      "published": "2026-08-10T15:07:29+00:00",
-      "updated": "2026-08-10T15:07:29+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.AI",
-        "cs.CL"
-      ],
-      "primary_category": "cs.AI",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-08-10 23:07",
-      "updated_local": "2026-08-10 23:07",
-      "summary_short": "Training a language model suite classically requires training each model separately and serving them independently. We improve both training and inference efficiency by stacking sub-models of increasing size into a single nested architecture trained end-to-end. This Matryoshka training framework reduces the total parameter count of the suite, enables low-cost distillation from the largest to all smaller sub-models..."
-    },
-    {
-      "id": "2608.09698v1",
-      "title": "VeriForge: Mitigating Latent Knowledge Gaps in Narrative Drafting via Mixed-Initiative Scaffolding",
-      "summary": "Great fiction earns its verisimilitude through precise details, from how a longsword is gripped to pierce armor gaps to why a bleeding corpse cannot yet smell of decay, weaving domain expertise into the fabric of invented worlds. Current AI writing tools offer limited support for discovering and integrating unfamiliar domain knowledge into narrative. They require explicit queries that authors cannot formulate, generate finished prose that risks homogenizing voice, or assist only within the boundaries of what authors already know. We argue that AI should reveal latent knowledge gaps to writers while preserving their agency to transform discovered knowledge into authentic prose. Grounded in formative interviews with 9 fiction writers, we present VeriForge, a mixed-initiative writing system that divides cognitive labor so that the system assumes initiative over domain discovery while the author retains full initiative over narrative synthesis. VeriForge realizes this through three complementary mechanisms. Proactive inline highlighting flags potential knowledge gaps as authors draft. Dual-stream querying pairs conversational responses with source-anchored Knowledge Cards for direct fact extraction. A spatial Knowledge Canvas allows authors to organize and connect discovered knowledge across their writing. These mechanisms are powered by a graph-based retrieval-augmented generation pipeline grounded in domain-specific source materials. A within-subjects user study (N=12) provides preliminary evidence that this paradigm helps authors recognize previously overlooked knowledge gaps, supports creative exploration, and is perceived by expert raters to produce passages with stronger domain grounding in a controlled cold-start writing task.",
-      "authors": [
-        "Ruqi Sun",
-        "Jiaping Li",
-        "Wenhui Tao",
-        "Ximing Zheng",
-        "Yuefeng Tan",
-        "Jiahao Wei",
-        "Yuxin Ma"
-      ],
-      "abs_url": "https://arxiv.org/abs/2608.09698v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09698v1",
-      "published": "2026-08-10T15:03:26+00:00",
-      "updated": "2026-08-10T15:03:26+00:00",
-      "comment": "14 pages, 5 figures, Accepted by UIST'26",
-      "journal_ref": "",
-      "categories": [
-        "cs.CL",
-        "cs.HC"
-      ],
-      "primary_category": "cs.HC",
-      "sources": [
-        {
-          "category": "cs.CL",
-          "title": "Computation and Language"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-08-10 23:03",
-      "updated_local": "2026-08-10 23:03",
-      "summary_short": "Great fiction earns its verisimilitude through precise details, from how a longsword is gripped to pierce armor gaps to why a bleeding corpse cannot yet smell of decay, weaving domain expertise into the fabric of invented worlds. Current AI writing tools offer limited support for discovering and integrating unfamiliar domain knowledge into narrative. They require explicit queries that authors cannot formulate,..."
     },
     {
       "id": "2608.09653v1",

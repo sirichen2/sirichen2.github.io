@@ -1,16 +1,18 @@
 {
-  "status": "fresh",
-  "generated_at_utc": "2026-08-11 03:11",
-  "generated_at_local": "2026-08-11 11:11",
-  "paper_count": 85,
-  "featured_count": 54,
-  "errors": [],
+  "status": "partial",
+  "generated_at_utc": "2026-08-11 08:15",
+  "generated_at_local": "2026-08-11 16:15",
+  "paper_count": 68,
+  "featured_count": 45,
+  "errors": [
+    "cs.CL: HTTP Error 429: Too Many Requests"
+  ],
   "sources": [
     {
       "category": "cs.CL",
       "title": "Computation and Language",
       "max_results": 30,
-      "visible_papers": 30
+      "visible_papers": 0
     },
     {
       "category": "cs.AI",
