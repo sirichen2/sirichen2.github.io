@@ -23,20 +23,18 @@
   ],
   "authors": [],
   "meta": {
-    "status": "partial",
-    "generated_at_utc": "2026-09-03 05:49",
-    "generated_at_local": "2026-09-03 13:49",
-    "paper_count": 69,
-    "featured_count": 40,
-    "errors": [
-      "cs.CL: HTTP Error 429: Unknown Error"
-    ],
+    "status": "fresh",
+    "generated_at_utc": "2026-09-03 12:07",
+    "generated_at_local": "2026-09-03 20:07",
+    "paper_count": 84,
+    "featured_count": 52,
+    "errors": [],
     "sources": [
       {
         "category": "cs.CL",
         "title": "Computation and Language",
         "max_results": 30,
-        "visible_papers": 0
+        "visible_papers": 30
       },
       {
         "category": "cs.AI",
@@ -280,6 +278,10 @@
       "primary_category": "cs.CL",
       "sources": [
         {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
+        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         }
@@ -294,6 +296,45 @@
       "published_local": "2026-06-19 14:35",
       "updated_local": "2026-09-03 00:28",
       "summary_short": "Long-term memory systems allow LLM agents to preserve information beyond a single context window, but most systems focus on storing and retrieving facts after extraction, leaving the write decision under-specified. What deserves memory can depend on the user's current task, topic, activity, or interaction partner, while uniform extraction applies one notion of importance across these different situations. We..."
+    },
+    {
+      "id": "2609.02783v1",
+      "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+      "summary": "Evaluating LLM agents is essential for guiding their development, yet it has grown prohibitively expensive: a single pass of a frontier model over an agentic benchmark can cost hundreds to thousands of dollars, a price paid repeatedly across iterative development cycles. Prior efforts, centered on benchmark distillation, reduce the number of evaluation tasks but leave the cost of executing each retained task untouched. In this work, we introduce early outcome prediction, a complementary axis of efficiency that instead cuts cost within each task. Our key insight is that an agent's final outcome is often evident from its intermediate behavior well before execution completes. We instantiate this idea in EarlyEval, a lightweight framework that trains a pair of LightGBM success and failure classifiers over behavioral, textual, and reference-solution features, and halts an agent run the moment either classifier crosses a calibrated confidence threshold, adding negligible per-step overhead. Across three benchmarks, SWE-bench Verified, TerminalBench, and Toolathlon, EarlyEval can eliminate 13%-26% of agent steps and up to 44.1% input tokens and 29.4% output tokens at 89%-97% prediction accuracy, while perturbing per-agent resolve rates by only one to two percentage points on average.",
+      "authors": [
+        "Yuling Shi",
+        "Zhensu Sun",
+        "Junsen Dong",
+        "Chengcheng Wan",
+        "David Lo",
+        "Xiaodong Gu"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02783v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02783v1",
+      "published": "2026-09-02T16:15:18+00:00",
+      "updated": "2026-09-02T16:15:18+00:00",
+      "comment": "Code and data available at https://github.com/inphotoo/earlyeval",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "agent",
+        "agents",
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 3,
+      "published_local": "2026-09-03 00:15",
+      "updated_local": "2026-09-03 00:15",
+      "summary_short": "Evaluating LLM agents is essential for guiding their development, yet it has grown prohibitively expensive: a single pass of a frontier model over an agentic benchmark can cost hundreds to thousands of dollars, a price paid repeatedly across iterative development cycles. Prior efforts, centered on benchmark distillation, reduce the number of evaluation tasks but leave the cost of executing each retained task..."
     },
     {
       "id": "2606.16600v2",
@@ -402,6 +443,10 @@
       ],
       "primary_category": "cs.AI",
       "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -540,6 +585,10 @@
       "primary_category": "cs.LG",
       "sources": [
         {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
+        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         },
@@ -600,6 +649,45 @@
       "published_local": "2026-07-14 21:44",
       "updated_local": "2026-09-03 01:17",
       "summary_short": "Access to specialist clinical expertise remains severely limited across sub-Saharan Africa, where physician-to-patient ratios can fall below 1:25,000 in rural settings. Existing AI-assisted diagnostic tools predominantly require reliable internet connectivity and high-specification hardware, rendering them impractical for frontline healthcare workers in district hospitals and health centres. This paper presents..."
+    },
+    {
+      "id": "2609.02796v1",
+      "title": "DiscoSign: Discourse-Aware Text to Sign Language Gloss Translation",
+      "summary": "Sign language processing systems have traditionally operated at the sentence level, ignoring critical discourse phenomena fundamental to sign language comprehension. We introduce DiscoSign, a computational approach for discourse-aware text to sign language gloss translation grounded in linguistic research. We address three key phenomena within our modular Large Language Model (LLM)-based translation framework: (i) spatial coreference resolution, where entities maintain consistent spatial locations throughout discourse; (ii) Question-Answer Clauses (QACs), pseudocleft structures serving specific discourse functions; and (iii) concept-gloss consistency, ensuring stable mappings between English concepts and American Sign Language (ASL) signs. Traditional translation metrics fail to capture discourse-level quality, so we introduce a suite of novel evaluation metrics designed to assess each dimension of discourse coherence addressed by our framework. Experiments on sentence-level and discourse-level datasets show that our approach for discourse-aware processing significantly improves spatial consistency and entity tracking relative to sentence-only translation, while maintaining competitive single-sentence gloss translation quality. Our work establishes the first systematic framework for discourse-level text to sign language gloss translation with corresponding evaluation methodology.",
+      "authors": [
+        "Vasileios Baltatzis",
+        "Mert Inan",
+        "Connor Gillis",
+        "Raja Kushalnagar",
+        "Lorna Quandt",
+        "Leah Findlater",
+        "Colin Lea"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02796v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02796v1",
+      "published": "2026-09-02T16:31:39+00:00",
+      "updated": "2026-09-02T16:31:39+00:00",
+      "comment": "Accepted at EMNLP 2026 Main Conference",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "large language model",
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 2,
+      "published_local": "2026-09-03 00:31",
+      "updated_local": "2026-09-03 00:31",
+      "summary_short": "Sign language processing systems have traditionally operated at the sentence level, ignoring critical discourse phenomena fundamental to sign language comprehension. We introduce DiscoSign, a computational approach for discourse-aware text to sign language gloss translation grounded in linguistic research. We address three key phenomena within our modular Large Language Model (LLM)-based translation framework: (i)..."
     },
     {
       "id": "2609.02774v1",
@@ -665,6 +753,10 @@
       "primary_category": "cs.CL",
       "sources": [
         {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -700,6 +792,10 @@
       ],
       "primary_category": "cs.CL",
       "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -754,6 +850,85 @@
       "summary_short": "Multi-agent LLM systems commonly use an orchestrator to decompose a task for a team of workers and then improve through textual reflection. Despite strong empirical results, these systems lack a unified account of coordination, memory improvement, and the role of external verification. We model orchestrator-worker interaction as a bilevel coordination game: under bounded coupling, the workers' local-update game is..."
     },
     {
+      "id": "2609.02745v1",
+      "title": "Incremental Pooled LLM Evaluation for Cost-Effective Retrieval Model Selection",
+      "summary": "Selecting a retrieval model for a production RAG system requires reliable comparative evaluation, but obtaining relevance judgments at scale is expensive and difficult to repeat as new candidate systems arrive. We study pooled LLM evaluation, in which an LLM judges the union of documents retrieved by the current set of candidate systems, and the pool is then expanded incrementally as new systems are introduced by judging only the new documents they contribute. These judgments are reused to evaluate all systems on a common basis. We validate this approach on four retrieval benchmarks with 11 systems spanning dense, sparse, and hybrid configurations, and deploy it to compare 62 retrieval configurations for a financial news QA system. Pooled LLM rankings correlate strongly with gold-standard evaluation across datasets, and 97% of pairwise system orderings are preserved once bootstrap uncertainty in the qrels is taken into account. In production, document overlap yields 65-80% judgment reuse and up to 4.9x lower evaluation cost, allowing teams to benchmark new retrieval candidates without re-judging previously assessed documents. These results suggest pooled LLM evaluation is a practical and cost-effective workflow for incremental retrieval model selection in deployed systems.",
+      "authors": [
+        "Max Nelson",
+        "Hanoz Bhathena",
+        "Aviral Joshi",
+        "Saket Sharma"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02745v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02745v1",
+      "published": "2026-09-02T15:47:49+00:00",
+      "updated": "2026-09-02T15:47:49+00:00",
+      "comment": "10 pages, 1 figure",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "llm",
+        "rag"
+      ],
+      "matched_authors": [],
+      "score": 2,
+      "published_local": "2026-09-02 23:47",
+      "updated_local": "2026-09-02 23:47",
+      "summary_short": "Selecting a retrieval model for a production RAG system requires reliable comparative evaluation, but obtaining relevance judgments at scale is expensive and difficult to repeat as new candidate systems arrive. We study pooled LLM evaluation, in which an LLM judges the union of documents retrieved by the current set of candidate systems, and the pool is then expanded incrementally as new systems are introduced by..."
+    },
+    {
+      "id": "2609.02730v1",
+      "title": "CORAL: An LLM-Native Harness for Production Recommender Systems",
+      "summary": "Production recommender systems shape what billions of people see, and sustaining their performance requires continual optimization: as content, user behavior, and upstream models shift, the choices governing retrieval, ranking, and serving must be revisited. Traditionally, human engineers test such changes through online experiments--a slow, reactive process limited by engineering effort, leaving parts of the system unrevised as conditions change. Although large language models have been applied to ranking, user modeling, and offline model development, few systems place an agent in a continual closed loop that acts on a live recommender and learns from the measured effects of its decisions. We present CORAL (Constraint-Optimized Recommender via an Agentic Loop), an LLM-native harness that closes this loop: each cycle, the agent observes operating signals, reasons over a memory of past decisions and outcomes, and invokes tools--including a numerical optimizer that keeps changes within a fixed operating budget--to reconfigure the recommender, with measured outcomes informing the next cycle. We formulate this as a partially observed, non-stationary, constrained optimization problem in which the policy improves in context, without parameter updates, from its prior actions. Across two large-scale social platforms, evaluated with A/B experiments, the same harness improves engagement at no additional serving cost on one and reduces serving cost without degrading engagement on the other, spanning the engagement-efficiency frontier. Performance improves as the loop iterates, suggesting that a single agentic loop can automate continual optimization work traditionally performed by human algorithm engineers under explicit guardrails.",
+      "authors": [
+        "Muhammad Rafay Azhar",
+        "Yuhang Zhou",
+        "Gilbert Jiang",
+        "Yuchen Wang",
+        "Rahul Sharma",
+        "Matthew DeSousa",
+        "Jiayi Liu",
+        "Xin Guo",
+        "Lizhu Zhang",
+        "Xiangjun Fan"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02730v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02730v1",
+      "published": "2026-09-02T15:40:36+00:00",
+      "updated": "2026-09-02T15:40:36+00:00",
+      "comment": "Accepted by RecSys '26 OARS Workshop",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "agent",
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 2,
+      "published_local": "2026-09-02 23:40",
+      "updated_local": "2026-09-02 23:40",
+      "summary_short": "Production recommender systems shape what billions of people see, and sustaining their performance requires continual optimization: as content, user behavior, and upstream models shift, the choices governing retrieval, ranking, and serving must be revisited. Traditionally, human engineers test such changes through online experiments--a slow, reactive process limited by engineering effort, leaving parts of the..."
+    },
+    {
       "id": "2609.02685v1",
       "title": "DKL: Decoupled Knowledge Learning for Instruction-Tuned Language Models",
       "summary": "RAG has become the de facto method for incorporating new, corpus-specific knowledge into an instruction following LLM (Instruct LLM). Although RAG-based prompting improves factual grounding, it fails when retrieval is incorrect or incomplete, leading to hallucinations. Finetuning methods such as RAFT and PA-RAG enhance RAG by injecting new knowledge into the model's parameters, but require generating a massive amount of synthetic QA that covers the entire corpus. Extended Pre-Training (EPT) on the text corpus avoids the need for comprehensive synthetic data generation but compromises an Instruct LLM's instruction-following capabilities, necessitating instruction fine-tuning (IFT) after pre-training. However, IFT is costly and may be infeasible due to the unavailability of an instruction-tuning corpus. In this work, we propose DKL-Decoupled Knowledge Learning for Instruction-Tuned Language Models. Instead of doing EPT on the Instruct LLM, DKL performs EPT on its corresponding base LLM to infuse new knowledge. These knowledge infused weights are then merged with the Instruct LLM, imparting new knowledge without affecting their instruction-following capabilities. DKL is a lightweight method that avoids expensive instruction fine-tuning and relies on model merging to infuse the new knowledge into the Instruct LLM without destroying its instruction following capabilities. Empirical results show that DKL improves RAG accuracy from 54.17 to 79.26 on retrieval failure cases, while outperforming prior approaches with substantially less training data.",
@@ -781,6 +956,10 @@
       ],
       "primary_category": "cs.CL",
       "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -874,6 +1053,75 @@
       "published_local": "2026-09-02 22:26",
       "updated_local": "2026-09-02 22:26",
       "summary_short": "Humans can perform complex manipulations given a simple intent through an overall instruction, while continuously adapting to evolving visual observations. However, current vision-language action (VLA) models and other action policies struggle to realize this high-level intelligent behavior under dense, evolving visual inputs and sparse language guidance. Visual correlations can then dominate semantic intent,..."
+    },
+    {
+      "id": "2603.16848v2",
+      "title": "Mediocrity is the key for LLM as a Judge Anchor Selection",
+      "summary": "The ``LLM-as-a-judge'' paradigm has become a standard method for evaluating open-ended generation. To address the quadratic scalability costs of pairwise comparisons, popular benchmarks like Arena-Hard and AlpacaEval compare all models against a single anchor. However, despite its widespread use, the impact of anchor selection on the reliability of the results remains largely unexplored. In this work, we systematically investigate the effect of anchor selection by evaluating 22 different anchors on the Arena-Hard-v2.0 dataset. We find that the choice of anchor is critical: a poor anchor can dramatically reduce correlation with human rankings. We identify that common anchor choices (best-performing and worst-performing models) make poor anchors. Because these extreme anchors are consistently better or worse than all other models, they are seldom indicative of the relative ranking of the models. We further quantify the effect size of anchor selection, showing it is comparable to the selection of a judge model. We conclude with actionable recommendations. First, we conduct a power analysis, and compute sufficient benchmark sizes for anchor-based evaluation, finding that standard benchmark sizes are insufficient for pairwise evaluation and fail to distinguish between competitive models reliably. Second, we provide guidelines for selecting informative anchors to ensure reliable and efficient evaluation practices.",
+      "authors": [
+        "Shachar Don-Yehiya",
+        "Asaf Yehudai",
+        "Leshem Choshen",
+        "Omri Abend"
+      ],
+      "abs_url": "https://arxiv.org/abs/2603.16848v2",
+      "pdf_url": "https://arxiv.org/pdf/2603.16848v2",
+      "published": "2026-03-17T17:54:08+00:00",
+      "updated": "2026-09-02T17:51:48+00:00",
+      "comment": "ACL 2026",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-03-18 01:54",
+      "updated_local": "2026-09-03 01:51",
+      "summary_short": "The ``LLM-as-a-judge'' paradigm has become a standard method for evaluating open-ended generation. To address the quadratic scalability costs of pairwise comparisons, popular benchmarks like Arena-Hard and AlpacaEval compare all models against a single anchor. However, despite its widespread use, the impact of anchor selection on the reliability of the results remains largely unexplored. In this work, we..."
+    },
+    {
+      "id": "2609.02859v1",
+      "title": "User Feedback Provides a Unique Signal that LLMs Can not Detect",
+      "summary": "Harnessing naturally occurring feedback from user interactions offers a promising learning signal for Large Language Models (LLMs). However, recent studies suggest this feedback is inherently noisy and difficult to leverage effectively. We challenge this conception by demonstrating that user feedback is a highly actionable signal for improvement, and that its perceived ineffectiveness stems from a systematic bias in current evaluation paradigms. To isolate the usefulness of feedback, we construct synthetic data with a definitive ground truth, alongside naturalistic data to validate that our findings hold in real-world scenarios. By comparing model revisions generated with and without access to feedback across both settings, we show that feedback-informed revisions resolve targeted issues at significantly higher rates than baseline revisions. Finally, we expose the root of the evaluation bias: when a model successfully fixes an issue exclusively due to feedback, LLM judges frequently fail to identify the genuinely corrected response, systematically preferring inferior baseline outputs instead.",
+      "authors": [
+        "Shachar Don-Yehiya",
+        "Leshem Choshen",
+        "Omri Abend"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02859v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02859v1",
+      "published": "2026-09-02T17:42:44+00:00",
+      "updated": "2026-09-02T17:42:44+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-09-03 01:42",
+      "updated_local": "2026-09-03 01:42",
+      "summary_short": "Harnessing naturally occurring feedback from user interactions offers a promising learning signal for Large Language Models (LLMs). However, recent studies suggest this feedback is inherently noisy and difficult to leverage effectively. We challenge this conception by demonstrating that user feedback is a highly actionable signal for improvement, and that its perceived ineffectiveness stems from a systematic bias..."
     },
     {
       "id": "2609.02852v1",
@@ -1087,6 +1335,10 @@
       "primary_category": "cs.CL",
       "sources": [
         {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -1099,6 +1351,42 @@
       "published_local": "2026-02-05 00:36",
       "updated_local": "2026-09-03 00:25",
       "summary_short": "Adapting general-purpose LLMs into domain-specialized dense retrievers typically requires large-scale training on mixed-domain data. We show that merging independently trained domain-specialized experts consistently exceeds this approach across four decoder-only LLM families (0.6B-7B), four merging methods, and twelve medical and general retrieval tasks from MTEB, suggesting that parameter-space composition..."
+    },
+    {
+      "id": "2609.02780v1",
+      "title": "ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding",
+      "summary": "Streaming video understanding is a critical capability for real-world applications, including embodied intelligence, autonomous driving, industrial monitoring, surveillance and early warning, and wearable assistants. However, processing continuous video streams with multimodal large language models (MLLMs) is computationally expensive. Existing efforts have explored reducing streaming overhead through visual token pruning, token merging, quantization, on-demand frame retrieval, and context offloading. However, most existing methods overlook the dimension of model depth. Repeatedly executing full-depth MLLM prefill over incoming frames is prohibitively expensive, incurring substantial computational overhead and causing the KV cache to grow at a rate directly proportional to the prefill depth. To address these challenges, we propose ShallowStream, a novel framework that leverages the shallow layers of an MLLM to simultaneously perform frame encoding and retrieval index building. During stream processing, ShallowStream maintains an always-on lightweight index using the KV cache of shallow layers. During query-time answering, we leverage the attention scores generated by the shallow layers to score context frames and employ a diversity-aware selection strategy to retrieve precise and comprehensive evidence. ShallowStream achieves performance on par with the strongest existing streaming methods, while reducing per-frame prefill latency and 10-second end-to-end latency by up to 52.1x and 11.9x, respectively. Our code is available at https://github.com/CURRENTF/ShallowStream.",
+      "authors": [
+        "Jitai Hao",
+        "Ke Yang",
+        "Qiang Huang",
+        "Jun Yu"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02780v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02780v1",
+      "published": "2026-09-02T16:14:48+00:00",
+      "updated": "2026-09-02T16:14:48+00:00",
+      "comment": "Work in Progress",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "multimodal"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-09-03 00:14",
+      "updated_local": "2026-09-03 00:14",
+      "summary_short": "Streaming video understanding is a critical capability for real-world applications, including embodied intelligence, autonomous driving, industrial monitoring, surveillance and early warning, and wearable assistants. However, processing continuous video streams with multimodal large language models (MLLMs) is computationally expensive. Existing efforts have explored reducing streaming overhead through visual token..."
     },
     {
       "id": "2602.05863v4",
@@ -1125,6 +1413,10 @@
       ],
       "primary_category": "cs.LG",
       "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
         {
           "category": "cs.LG",
           "title": "Machine Learning"
@@ -1186,6 +1478,41 @@
       "published_local": "2026-06-15 15:43",
       "updated_local": "2026-09-03 00:08",
       "summary_short": "Predictive modeling for clinical decision support requires both strong predictive performance and transparent, auditable, and human-reviewable decision logic. Although deep learning and tree-based ensemble methods can achieve high accuracy, their black-box nature remains a major obstacle to trustworthy clinical deployment. Moreover, clinical prediction often operates under practical constraints, including limited..."
+    },
+    {
+      "id": "2609.02772v1",
+      "title": "HyperStyler: Low-resource Authorship Style Transfer via Context-aware Style Navigation and Hypernetworks",
+      "summary": "Low-resource authorship style transfer (LAST) aims to rewrite text into the style of an arbitrary target author using only a few reference examples while preserving the original meaning. Existing methods often struggle to achieve both high style fidelity and semantic preservation because they compress diverse references into a single static author embedding, which averages out context-dependent stylistic variation, and rely on hidden representations for style control, which entangle style with content. We propose HyperStyler, a novel architecture that decouples LAST into style selection and style realization. Stylo-navigator predicts style coordinates by jointly modeling the source context and target-author references, and Stylo-hypernet realizes them via dynamic parameter modulation instead of hidden-state injection. Our experiments on Reddit, Blog, and News datasets demonstrate that HyperStyler consistently outperforms prior methods including LLM-based approaches and generalizes robustly across domains. Notably, HyperStyler achieves superior performance with as few as 2.4% additional parameters over T5-large, while being over 1.8x faster than LLMs at inference.",
+      "authors": [
+        "Jongkyung Shin",
+        "Minguk Jeon",
+        "Chanwoo Park",
+        "Chiehyeon Lim"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02772v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02772v1",
+      "published": "2026-09-02T16:07:42+00:00",
+      "updated": "2026-09-02T16:07:42+00:00",
+      "comment": "Accepted to EMNLP 2026 (Main)",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-09-03 00:07",
+      "updated_local": "2026-09-03 00:07",
+      "summary_short": "Low-resource authorship style transfer (LAST) aims to rewrite text into the style of an arbitrary target author using only a few reference examples while preserving the original meaning. Existing methods often struggle to achieve both high style fidelity and semantic preservation because they compress diverse references into a single static author embedding, which averages out context-dependent stylistic variation,..."
     },
     {
       "id": "2603.16077v4",
@@ -1258,6 +1585,79 @@
       "published_local": "2026-09-03 00:00",
       "updated_local": "2026-09-03 00:00",
       "summary_short": "On-premise assistants can give factory workers conversational access to machine documentation, but models capable of the task rarely fit shop-floor hardware. We show that after structural compression and retrieval-grounded adaptation, model size is no longer a reliable predictor of adapted answer quality: general capability falls almost linearly with parameter count, while judged retrieval-augmented answer quality..."
+    },
+    {
+      "id": "2603.16749v3",
+      "title": "Probing Cultural Signals in Large Language Models through Author Profiling",
+      "summary": "Large language models (LLMs) are increasingly deployed in applications with societal impact, raising concerns about the cultural biases they encode. We probe these representations by evaluating whether LLMs can perform author profiling from song lyrics in a zero-shot setting, inferring singers' gender and ethnicity without task-specific fine-tuning. Across several open-source models evaluated on more than 10,000 lyrics, we find that LLMs achieve non-trivial profiling performance but demonstrate systematic cultural alignment: most models default toward North American ethnicity, while DeepSeek-1.5B aligns more strongly with Asian ethnicity. This finding emerges from both the models' prediction distributions and an analysis of their generated rationales. To quantify these disparities, we introduce two fairness metrics, Modality Accuracy Divergence (MAD) and Recall Divergence (RD), and show that Ministral-8B displays the strongest ethnicity bias among the evaluated models, whereas Gemma-12B shows the most balanced behavior. Our code is available on [GitHub](https://github.com/ValentinLafargue/CulturalProbingLLM) and results on [HuggingFace](https://huggingface.co/datasets/ValentinLAFARGUE/AuthorProfilingResults).",
+      "authors": [
+        "Valentin Lafargue",
+        "Ariel Guerra-Adames",
+        "Emmanuelle Claeys",
+        "Elouan Vuichard",
+        "Jean-Michel Loubes"
+      ],
+      "abs_url": "https://arxiv.org/abs/2603.16749v3",
+      "pdf_url": "https://arxiv.org/pdf/2603.16749v3",
+      "published": "2026-03-17T16:27:47+00:00",
+      "updated": "2026-09-02T15:54:44+00:00",
+      "comment": "",
+      "journal_ref": "In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026), Association for Computational Linguistics",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "alignment"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-03-18 00:27",
+      "updated_local": "2026-09-02 23:54",
+      "summary_short": "Large language models (LLMs) are increasingly deployed in applications with societal impact, raising concerns about the cultural biases they encode. We probe these representations by evaluating whether LLMs can perform author profiling from song lyrics in a zero-shot setting, inferring singers' gender and ethnicity without task-specific fine-tuning. Across several open-source models evaluated on more than 10,000..."
+    },
+    {
+      "id": "2606.15517v2",
+      "title": "SHARD: Safe and Helpful Alignment via Self-Reframing Distillation",
+      "summary": "Large language models often struggle with sensitive prompts. They may refuse outright, provide generic safety boilerplate, or fail to address the user's legitimate informational needs that can be answered safely. We introduce SHARD, a self-reframing distillation method to improve safe-helpfulness. It first rewrites sensitive prompts to surface benign intent using philosophical guidelines, then reframes its original responses into safe, more helpful ones, and finally fine-tunes the model on its self-reframed responses. Across DNA and the English subset of LINGUASAFE, SHARD improves helpfulness for most model families while preserving safety. It also remains competitive with distillation from a larger teacher model, suggesting that models can internalize safe and helpful behavior elicited from their own. Warning: This paper contains content that may be offensive or harmful.",
+      "authors": [
+        "Viswonathan Manoranjan",
+        "Amogh Gupta",
+        "Anvesh Rao Vijjini",
+        "Thomas Hofweber",
+        "Snigdha Chaturvedi"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.15517v2",
+      "pdf_url": "https://arxiv.org/pdf/2606.15517v2",
+      "published": "2026-06-14T00:12:53+00:00",
+      "updated": "2026-09-02T15:50:25+00:00",
+      "comment": "EMNLP 2026",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "alignment"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-06-14 08:12",
+      "updated_local": "2026-09-02 23:50",
+      "summary_short": "Large language models often struggle with sensitive prompts. They may refuse outright, provide generic safety boilerplate, or fail to address the user's legitimate informational needs that can be answered safely. We introduce SHARD, a self-reframing distillation method to improve safe-helpfulness. It first rewrites sensitive prompts to surface benign intent using philosophical guidelines, then reframes its original..."
     },
     {
       "id": "2511.03913v3",
@@ -1368,6 +1768,78 @@
       "summary_short": "Soft robotic substrates are promising for Physical Reservoir Computing (PRC) because their compliant nonlinear dynamics can provide temporal memory, high-dimensional state transformations, and efficient inference. However, physical reservoirs are often adopted as-is rather than pretrained or co-optimized, potentially limiting soft robotic PRC performance relative to digital reservoirs. We investigate whether a..."
     },
     {
+      "id": "2607.10103v2",
+      "title": "LLM Watermarking as Big Data Provenance: A Deployment-Oriented Systematization",
+      "summary": "As large language models (LLMs) become widely deployed, their outputs can be copied, transformed, and redistributed at scale without reliable evidence of origin, creating risks for trust, accountability, intellectual property (IP) protection, and high-stakes decision-making. LLM watermarking addresses this problem by embedding detectable signals into text during or after generation. However, existing methods vary in design assumptions, threat models, and evaluation criteria, while deployment choices such as watermark placement, detection authority, and key management affect reliability, security, and scalability. This paper systematizes LLM watermarking as provenance infrastructure for large-scale data ecosystems. We organize existing approaches along four deployment dimensions: insertion point, verification authority, operational state, and transformation threat model, and relate them to the big data requirements of Volume, Velocity, Variety, Veracity, and Value. We further introduce a Big Data Watermarking Readiness framework centered on four deployment workloads: online generation, streaming detection, transformation pipelines, and ecosystem governance. The framework connects these workloads to system-level requirements including throughput, false-positive control, robustness, cross-domain reliability, governance, and downstream utility. Our analysis highlights a gap between benchmark performance and deployment readiness: false positives accumulate at scale, repeated transformations weaken watermark signals, computational overhead can limit online deployment, and centralized verification can create governance bottlenecks. We conclude with an evaluation blueprint and research directions for scalable, trustworthy provenance in big data ecosystems.",
+      "authors": [
+        "Huy Phan",
+        "Kieu Dang",
+        "Ojaswi Dulal",
+        "Aiham AL Shukairi",
+        "Abby Shine",
+        "Chase Garner",
+        "Phung Lai"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.10103v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.10103v2",
+      "published": "2026-07-11T03:42:17+00:00",
+      "updated": "2026-09-02T15:17:28+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-07-11 11:42",
+      "updated_local": "2026-09-02 23:17",
+      "summary_short": "As large language models (LLMs) become widely deployed, their outputs can be copied, transformed, and redistributed at scale without reliable evidence of origin, creating risks for trust, accountability, intellectual property (IP) protection, and high-stakes decision-making. LLM watermarking addresses this problem by embedding detectable signals into text during or after generation. However, existing methods vary..."
+    },
+    {
+      "id": "2609.02702v1",
+      "title": "Trace as State: Reasoning Traces as Conditional States for Long-Context Transformers",
+      "summary": "Transformers process information causally, but long-context reasoning may depend on task state discovered only later. We formalize this mismatch through conditional state update tasks. For causal state update processors, providing the condition first can require exponentially less memory in the worst case than providing it last. Motivated by this principle, we introduce Trace as State. We use collected reasoning traces as a textual proxy for task state and place it before the long-context block on a fresh pass, allowing information derived previously to guide rereading. We conduct extensive experiments on Trace as State and Trace Append, a matched control that uses the same task state proxy but put it after the context. Across three models and three long-context datasets, Trace as State outperforms Trace Append in 26 of 27 reported combinations of model, task, and metric. On GraphWalks Parents, exact match lifts DeepSeek V4 Pro Preview from 29.2% on the initial pass and 43.0% with Trace Appendto 81.8% with Trace as State, and from 66.4% and 83.2% to 100.0% for GLM-5.2. These results show that placing traces before the context can improve long-context reasoning while retaining the causal transformer structure.",
+      "authors": [
+        "Xu Zou",
+        "Jie Tang"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02702v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02702v1",
+      "published": "2026-09-02T15:06:46+00:00",
+      "updated": "2026-09-02T15:06:46+00:00",
+      "comment": "preprint",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [
+        "reasoning"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-09-02 23:06",
+      "updated_local": "2026-09-02 23:06",
+      "summary_short": "Transformers process information causally, but long-context reasoning may depend on task state discovered only later. We formalize this mismatch through conditional state update tasks. For causal state update processors, providing the condition first can require exponentially less memory in the worst case than providing it last. Motivated by this principle, we introduce Trace as State. We use collected reasoning..."
+    },
+    {
       "id": "2609.02688v1",
       "title": "From Proxy Learning to Driving Decisions: A Transfer-Based Framework for Evaluating Future-Aware Autonomous Driving Planners",
       "summary": "Future-aware representations and world models are increasingly used in proposal-based autonomous-driving planners to improve trajectory selection. However, improvements in proxy objectives or restricted subsets are often interpreted as planning gains without verifying proposal ordering, selected trajectories, full-scale utility, and critical driving components. We propose the Proxy-to-Decision Transfer (PDT) Framework, an analysis framework that evaluates when learned future information supports a reliable driving-performance improvement claim. Its Decision-Transfer Decomposition Module localizes value loss through score margins, switch-conditioned utility, and support-versus-selection regret. Its Reliability-Constrained Validation Module requires exact pairing, a minimum meaningful effect, scale-expanded confirmation, safety non-compensation, sequential comparability, and family-level robustness. On a representative future-aware planner evaluated with NAVSIM-v1, component BCE decreases from 0.705 to 0.530 while held selected PDM decreases from 0.963 to 0.961. A separate candidate improves a 512-record prefix by 0.00909, with a scene-bootstrap 95% interval of [0.000744, 0.0177], but its 2048-record and complete-support intervals include zero. A proposal-level replay further confirms the switch-utility decomposition, yet none of 432 screened configurations passes the two-half, two-seed robustness gate. PDT therefore identifies where decision transfer fails or remains indeterminate across proxy, subset, aggregate, and selection evidence.",
@@ -1424,6 +1896,10 @@
       ],
       "primary_category": "cs.CL",
       "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -1867,6 +2343,39 @@
       "summary_short": "Meshfree methods such as smoothed particle hydrodynamics (SPH) with kernel corrections, radial basis function-generated finite differences (RBF-FD), and the local anisotropic basis function method (LABFM) construct discrete differential operators by imposing polynomial consistency on a local stencil. For stencils containing more nodes than there are consistency constraints, the resulting linear system is..."
     },
     {
+      "id": "2510.07177v2",
+      "title": "CARPAS: Towards Content-Aware Refinement of Provided Aspects for Summarization in Large Language Models",
+      "summary": "Aspect-based summarization has attracted significant attention for its ability to generate more fine-grained and user-aligned summaries. While most existing approaches assume a set of predefined aspects as input, real-world scenarios often present challenges where these given aspects may be incomplete, irrelevant, or entirely missing from the document. Users frequently expect systems to adaptively refine or filter the provided aspects based on the actual content. In this paper, we initiate this novel task setting, termed Content-Aware Refinement of Provided Aspects for Summarization (CARPAS), with the aim of dynamically adjusting the provided aspects based on the document context before summarizing. We construct three new datasets and conduct pilot experiments with four representative prompting strategies. Our analysis reveals that LLMs often over-generate aspects, resulting in excessively long and misaligned summaries. Building on this observation, we introduce a two-stage framework that derives lightweight scope guidance before aspect refinement and summarization, improving focus and reducing over-generation. Our extensive experiments show that the proposed approach significantly improves performance across all datasets. Moreover, our deeper analyses uncover LLMs' compliance when the requested number of aspects differs from their own estimations, establishing a crucial insight for the deployment of LLMs in similar real-world applications.",
+      "authors": [
+        "Yong-En Tian",
+        "Yu-Chien Tang",
+        "An-Zi Yen",
+        "Wen-Chih Peng"
+      ],
+      "abs_url": "https://arxiv.org/abs/2510.07177v2",
+      "pdf_url": "https://arxiv.org/pdf/2510.07177v2",
+      "published": "2025-10-08T16:16:46+00:00",
+      "updated": "2026-09-02T17:15:30+00:00",
+      "comment": "EMNLP2026 FinNLP workshop",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2025-10-09 00:16",
+      "updated_local": "2026-09-03 01:15",
+      "summary_short": "Aspect-based summarization has attracted significant attention for its ability to generate more fine-grained and user-aligned summaries. While most existing approaches assume a set of predefined aspects as input, real-world scenarios often present challenges where these given aspects may be incomplete, irrelevant, or entirely missing from the document. Users frequently expect systems to adaptively refine or filter..."
+    },
+    {
       "id": "2609.02830v1",
       "title": "Toward Robust LiDAR Semantic Segmentation for Real-World Deployment: Evaluation under Coarse Labels, Adverse Conditions, and Domain Shifts",
       "summary": "LiDAR-based semantic segmentation is a core perception module for autonomous vehicles and mobile robots. Despite the strong performance of recent state-of-the-art methods on standard benchmarks, existing evaluation protocols remain focused on clean, single-domain settings and fine-grained label taxonomies, leaving deployment readiness largely unassessed. Real-world systems must handle safety-critical label semantics, degraded sensing conditions, and cross-domain variability, yet no unified protocol currently addresses all three aspects together. In this paper, we propose a structured evaluation protocol that assesses the deployment readiness of LiDAR semantic segmentation models along three complementary dimensions: (i) coarse-label evaluation aligned with autonomous driving safety priorities, revealing how label granularity affects different methods; (ii) robustness under eight types of LiDAR corruptions designed to emulate real-world atmospheric, geometric, and sensor degradations; and (iii) domain generalization across datasets without adaptation. The evaluation includes inference speed measured on an embedded Jetson AGX Orin platform, directly reflecting deployment constraints. Our results show that fine-grained benchmark rankings do not always reflect safety-relevant performance, that all methods experience substantial degradation under corruptions with architecture-dependent robustness characteristics, and that current domain generalization remains insufficient for reliable deployment. These findings expose concrete gaps between benchmark performance and deployment readiness, and provide a reference protocol for more practically grounded evaluation of LiDAR semantic segmentation.",
@@ -2160,6 +2669,10 @@
       "primary_category": "econ.GN",
       "sources": [
         {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
+        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         },
@@ -2198,6 +2711,10 @@
       ],
       "primary_category": "cs.AI",
       "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -2267,6 +2784,10 @@
       "primary_category": "cs.CL",
       "sources": [
         {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
+        {
           "category": "cs.LG",
           "title": "Machine Learning"
         }
@@ -2301,6 +2822,10 @@
       ],
       "primary_category": "cs.CL",
       "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
@@ -2418,6 +2943,10 @@
       "primary_category": "cs.CL",
       "sources": [
         {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
+        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         }
@@ -2428,6 +2957,39 @@
       "published_local": "2026-09-02 23:43",
       "updated_local": "2026-09-02 23:43",
       "summary_short": "Language models spend most of their attention on a small fraction of context, yet they read the entire KV cache to find the few tokens that matter. If the user asks about a previous detail in a 1M-token conversation, global attention layers must scan the full context to generate each token of the reply. A prominent approach mitigates this cost by pre-selecting relevant tokens via lightweight proxy scores, but this..."
+    },
+    {
+      "id": "2609.02735v1",
+      "title": "Choosing a PEFT Variant for Per-Patient Dysarthric ASR: A Single-Speaker Case Study on Two ASR Bases",
+      "summary": "Per-patient adapters are the preferred production architecture for dysarthric automatic speech recognition (ASR), yet parameter-efficient fine-tuning (PEFT) variants have not been compared in the speaker-dependent, per-patient regime. We present a single-speaker case study comparing seven LoRA-family methods (LoRA, QLoRA, AdaLoRA, DoRA, LoHA, VeRA, VB-LoRA) on two production bases (Whisper-large-v3 with Hungarian fine-tuning, and a multilingual Qwen3-ASR-1.7B checkpoint) for one post-stroke Hungarian male speaker (S1, 409 utterances; severe dysarthria on auditory-perceptual clinical assessment). Attention-projection adapters substantially improve CER on both bases. Across three seeds, a paired bootstrap detects no significant LoRA-DoRA difference (p>0.5; 13.86/13.90 % CER on Whisper, 28.10/28.33 % on Qwen3-ASR), so we adopt the simpler, cheaper LoRA. Real 4-bit (NF4) QLoRA is worse on every seed and both bases (14.56/30.09 % CER) with no memory saving at this scale, and LoHA, VeRA, VB-LoRA and AdaLoRA do not reach the LoRA family, though LoHA still gives an 18.6 % relative CER reduction on Whisper. On the same base, full fine-tuning is more accurate (11.43 % CER), but a 115 MB LoRA that also adapts the feed-forward blocks reaches within 0.66 pp of it at approximately 3.7 % of the per-patient storage. A 6-point enrollment grid shows about 5 min of patient audio captures 45.6 % of the zero-shot-to-30-min CER reduction, with further gains at 10 and 30 min (caveat: one speaker, one language, severe post-stroke dysarthria). Training scripts and recipes will be released, source-available under a research-use licence, on publication.",
+      "authors": [
+        "Bernard Muller",
+        "László Tóth",
+        "LaVonne Roberts"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.02735v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02735v1",
+      "published": "2026-09-02T15:42:48+00:00",
+      "updated": "2026-09-02T15:42:48+00:00",
+      "comment": "2 figures. Submitted to Speech Communication (Elsevier)",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-09-02 23:42",
+      "updated_local": "2026-09-02 23:42",
+      "summary_short": "Per-patient adapters are the preferred production architecture for dysarthric automatic speech recognition (ASR), yet parameter-efficient fine-tuning (PEFT) variants have not been compared in the speaker-dependent, per-patient regime. We present a single-speaker case study comparing seven LoRA-family methods (LoRA, QLoRA, AdaLoRA, DoRA, LoHA, VeRA, VB-LoRA) on two production bases (Whisper-large-v3 with Hungarian..."
     },
     {
       "id": "2609.02731v1",
@@ -2561,6 +3123,10 @@
       "primary_category": "cs.AI",
       "sources": [
         {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        },
+        {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
         }
@@ -2571,6 +3137,38 @@
       "published_local": "2026-09-02 23:08",
       "updated_local": "2026-09-02 23:08",
       "summary_short": "Does the door-in-the-face technique work on language models? In humans, a large request that is refused makes a smaller follow-up request more likely to be granted. We test this on nine production models from three providers: each model refuses a large request, then receives a smaller version of the same request, and we compare its compliance with asking directly. The answer depends on the model. On Anthropic's..."
+    },
+    {
+      "id": "2605.28346v3",
+      "title": "When Discourse Pressures Conflict: Information Structure in Vision-Language Model Outputs",
+      "summary": "Vision-language models (VLMs) are increasingly evaluated for whether they identify the right visual content, but little is known about whether they express such content in a discourse-appropriate form. We address this research gap using information structure (IS), testing whether VLMs distinguish discourse-old Topics from discourse-new Foci in visually grounded question answering. We exploit Hungarian, a language in which Topic and Focus map onto dedicated syntactic positions, making IS choices observable in text. Comparing six VLMs with human participants, we find that models produce IS-relevant constructions, but over-regularise this sensitivity. Under the interacting pressures of discourse status, grammatical role (preference for subject Topics) and definiteness (preference for indefinite Foci), humans choose variable strategies for IS realisation. VLMs, by contrast, collapse onto narrow response templates, resembling mode collapse (Kirk et al., 2024). Our findings suggest that VLM evaluation should look beyond content accuracy to how content is packaged for the discourse.",
+      "authors": [
+        "Marcell Fekete",
+        "Johannes Bjerva",
+        "Tamás Káldi"
+      ],
+      "abs_url": "https://arxiv.org/abs/2605.28346v3",
+      "pdf_url": "https://arxiv.org/pdf/2605.28346v3",
+      "published": "2026-05-27T11:50:56+00:00",
+      "updated": "2026-09-02T15:04:06+00:00",
+      "comment": "Accepted to EMNLP 2026 as a main conference paper",
+      "journal_ref": "",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "sources": [
+        {
+          "category": "cs.CL",
+          "title": "Computation and Language"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-05-27 19:50",
+      "updated_local": "2026-09-02 23:04",
+      "summary_short": "Vision-language models (VLMs) are increasingly evaluated for whether they identify the right visual content, but little is known about whether they express such content in a discourse-appropriate form. We address this research gap using information structure (IS), testing whether VLMs distinguish discourse-old Topics from discourse-new Foci in visually grounded question answering. We exploit Hungarian, a language..."
     },
     {
       "id": "2609.02575v1",

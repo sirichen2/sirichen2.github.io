@@ -1,18 +1,16 @@
 {
-  "status": "partial",
-  "generated_at_utc": "2026-09-03 05:49",
-  "generated_at_local": "2026-09-03 13:49",
-  "paper_count": 69,
-  "featured_count": 40,
-  "errors": [
-    "cs.CL: HTTP Error 429: Unknown Error"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-09-03 12:07",
+  "generated_at_local": "2026-09-03 20:07",
+  "paper_count": 84,
+  "featured_count": 52,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
       "title": "Computation and Language",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.AI",
