@@ -1,10 +1,15 @@
 {
-  "status": "fresh",
-  "generated_at_utc": "2026-09-12 16:16",
-  "generated_at_local": "2026-09-13 00:16",
+  "status": "stale",
+  "generated_at_utc": "2026-09-13 06:11",
+  "generated_at_local": "2026-09-13 14:11",
   "paper_count": 85,
   "featured_count": 40,
-  "errors": [],
+  "errors": [
+    "cs.CL: HTTP Error 429: Unknown Error",
+    "cs.AI: HTTP Error 429: Too Many Requests",
+    "cs.LG: HTTP Error 429: Unknown Error",
+    "cs.RO: HTTP Error 429: Unknown Error"
+  ],
   "sources": [
     {
       "category": "cs.CL",
