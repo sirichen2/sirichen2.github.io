@@ -23,12 +23,15 @@
   ],
   "authors": [],
   "meta": {
-    "status": "partial",
-    "generated_at_utc": "2026-09-17 12:36",
-    "generated_at_local": "2026-09-17 20:36",
+    "status": "stale",
+    "generated_at_utc": "2026-09-17 17:36",
+    "generated_at_local": "2026-09-18 01:36",
     "paper_count": 71,
     "featured_count": 34,
     "errors": [
+      "cs.CL: HTTP Error 406: Not Acceptable",
+      "cs.AI: HTTP Error 406: Not Acceptable",
+      "cs.LG: HTTP Error 406: Not Acceptable",
       "cs.RO: HTTP Error 406: Not Acceptable"
     ],
     "sources": [
