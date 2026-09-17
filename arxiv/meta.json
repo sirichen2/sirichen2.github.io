@@ -1,13 +1,10 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-09-17 06:08",
-  "generated_at_local": "2026-09-17 14:08",
-  "paper_count": 92,
-  "featured_count": 50,
+  "status": "partial",
+  "generated_at_utc": "2026-09-17 12:36",
+  "generated_at_local": "2026-09-17 20:36",
+  "paper_count": 71,
+  "featured_count": 34,
   "errors": [
-    "cs.CL: HTTP Error 406: Not Acceptable",
-    "cs.AI: HTTP Error 406: Not Acceptable",
-    "cs.LG: HTTP Error 406: Not Acceptable",
     "cs.RO: HTTP Error 406: Not Acceptable"
   ],
   "sources": [
@@ -33,7 +30,7 @@
       "category": "cs.RO",
       "title": "Robotics",
       "max_results": 20,
-      "visible_papers": 20
+      "visible_papers": 0
     }
   ]
 }
