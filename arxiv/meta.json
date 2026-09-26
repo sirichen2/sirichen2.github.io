@@ -1,14 +1,14 @@
 {
   "status": "stale",
-  "generated_at_utc": "2026-09-25 17:56",
-  "generated_at_local": "2026-09-26 01:56",
+  "generated_at_utc": "2026-09-26 06:09",
+  "generated_at_local": "2026-09-26 14:09",
   "paper_count": 71,
   "featured_count": 34,
   "errors": [
-    "cs.CL: HTTP Error 406: Not Acceptable",
-    "cs.AI: HTTP Error 406: Not Acceptable",
-    "cs.LG: HTTP Error 406: Not Acceptable",
-    "cs.RO: HTTP Error 406: Not Acceptable"
+    "cs.CL: HTTP Error 429: Unknown Error",
+    "cs.AI: HTTP Error 429: Unknown Error",
+    "cs.LG: HTTP Error 429: Unknown Error",
+    "cs.RO: HTTP Error 429: Unknown Error"
   ],
   "sources": [
     {
