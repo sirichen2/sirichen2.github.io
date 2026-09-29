@@ -1,13 +1,10 @@
 {
-  "status": "partial",
-  "generated_at_utc": "2026-09-29 14:05",
-  "generated_at_local": "2026-09-29 22:05",
-  "paper_count": 54,
-  "featured_count": 31,
-  "errors": [
-    "cs.LG: HTTP Error 503: Service Unavailable",
-    "cs.RO: HTTP Error 503: Service Unavailable"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-09-29 18:36",
+  "generated_at_local": "2026-09-30 02:36",
+  "paper_count": 87,
+  "featured_count": 50,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
@@ -25,13 +22,13 @@
       "category": "cs.LG",
       "title": "Machine Learning",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.RO",
       "title": "Robotics",
       "max_results": 20,
-      "visible_papers": 0
+      "visible_papers": 20
     }
   ]
 }
