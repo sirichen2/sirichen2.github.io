@@ -23,12 +23,17 @@
   ],
   "authors": [],
   "meta": {
-    "status": "fresh",
-    "generated_at_utc": "2026-10-04 17:33",
-    "generated_at_local": "2026-10-05 01:33",
+    "status": "stale",
+    "generated_at_utc": "2026-10-05 07:03",
+    "generated_at_local": "2026-10-05 15:03",
     "paper_count": 84,
     "featured_count": 54,
-    "errors": [],
+    "errors": [
+      "cs.CL: HTTP Error 429: Unknown Error",
+      "cs.AI: HTTP Error 503: Service Unavailable",
+      "cs.LG: HTTP Error 429: Unknown Error",
+      "cs.RO: HTTP Error 503: Service Unavailable"
+    ],
     "sources": [
       {
         "category": "cs.CL",
