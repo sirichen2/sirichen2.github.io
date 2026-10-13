@@ -23,12 +23,14 @@
   ],
   "authors": [],
   "meta": {
-    "status": "fresh",
-    "generated_at_utc": "2026-10-12 21:42",
-    "generated_at_local": "2026-10-13 05:42",
-    "paper_count": 100,
-    "featured_count": 45,
-    "errors": [],
+    "status": "partial",
+    "generated_at_utc": "2026-10-13 07:43",
+    "generated_at_local": "2026-10-13 15:43",
+    "paper_count": 82,
+    "featured_count": 33,
+    "errors": [
+      "cs.RO: The read operation timed out"
+    ],
     "sources": [
       {
         "category": "cs.CL",
@@ -52,54 +54,11 @@
         "category": "cs.RO",
         "title": "Robotics",
         "max_results": 20,
-        "visible_papers": 20
+        "visible_papers": 0
       }
     ]
   },
   "papers": [
-    {
-      "id": "2610.13862v1",
-      "title": "BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation",
-      "summary": "Deploying language-model agents onboard mobile robots requires task reasoning and responsive execution within limited compute and memory. We propose BT-Agent, an onboard architecture combining LLM-driven task decisions with predefined behavior-tree (BT) skills. These skills enforce execution conditions and return structured failure feedback. We demonstrate fully onboard operation with a 9B model on a quadruped across five task categories. Intervention tests show that local checks stop ongoing navigation without waiting for another model decision, while the agent remains active to retry or report constraints. To compare agent designs efficiently, we introduce a 161-task multi-fidelity benchmark, evaluated in text on all tasks and in Habitat on 39. Text supports 10.9$\\times$ higher evaluation throughput, while simulation reveals how perception and motion failures change task outcomes. BT-Agent's largest success gains over the strongest Act/ReAct baseline occur at 4B and 9B: approximately 10 and 5 percentage points. Ablations identify structured tool calls and informative failure feedback as the most useful components.",
-      "authors": [
-        "Fabio Hübel",
-        "Adam Lilja",
-        "Yue Yin",
-        "Siming He",
-        "Claire Tomlin",
-        "Shankar Sastry",
-        "Jonas Frey",
-        "Marco Pavone"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13862v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13862v1",
-      "published": "2026-10-09T17:08:45+00:00",
-      "updated": "2026-10-09T17:08:45+00:00",
-      "comment": "9 pages, 7 figures",
-      "journal_ref": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "agent",
-        "agents",
-        "llm",
-        "reasoning",
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 5,
-      "published_local": "2026-10-10 01:08",
-      "updated_local": "2026-10-10 01:08",
-      "summary_short": "Deploying language-model agents onboard mobile robots requires task reasoning and responsive execution within limited compute and memory. We propose BT-Agent, an onboard architecture combining LLM-driven task decisions with predefined behavior-tree (BT) skills. These skills enforce execution conditions and return structured failure feedback. We demonstrate fully onboard operation with a 9B model on a quadruped..."
-    },
     {
       "id": "2608.07418v2",
       "title": "ResidencyRL: Reinforcement Learning in Simulated Clinical Environments",
@@ -244,44 +203,6 @@
       "published_local": "2026-01-20 13:02",
       "updated_local": "2026-10-10 01:18",
       "summary_short": "NLP systems increasingly aggregate claims from retrieved passages, documents, and generated reasoning steps. Yet current factuality methods mostly verify claims individually or compare pairs of claims, leaving open the question of whether the entire aggregated claim set can be retained coherently. This misses a fundamental failure mode: claims may be locally plausible and pairwise compatible while still being..."
-    },
-    {
-      "id": "2610.13849v1",
-      "title": "HorizonNav: Geometry-Guided Video Diffusion for Anticipatory 3D Robot Navigation",
-      "summary": "We present HorizonNav, a video diffusion-based framework for anticipatory robot navigation that transforms a single RGB image and a text prompt into a geometrically aligned representation of plausible surrounding 3D space. Given the initial observation and a textual description of the reconstruction objective, a vision-language model, guided by designed instructions, interprets the scene and constructs structured prompts for a video diffusion model. The resulting video sequence provides plausible future observations of the environment, which are subsequently processed using monocular ORB-SLAM3 for camera pose estimation and Video Depth Anything for dense depth prediction. Our central contribution is a geometry-guided depth alignment stage that combines the estimated camera poses with triangulated visual landmarks to constrain dense depth predictions across multiple views. This alignment improves the geometric consistency of the reconstructed 3D environment, addressing inconsistencies that temporal coherence of the generated video alone cannot resolve. The experimental evaluation of navigation in imagined 3D environment shows that across a 19-scene horizon study, planning-feasible scenes increase from 13/19 at P20 to 15/19 at P81, while successful RRT trials increase from 62/90 to 75/90. In a separate corridor study, 6 of 25 evaluable generated-camera trajectories violate the reconstructed collision constraints; RRT planner recovers feasible alternatives in 5 of those 6 cases. A larger archive contains 58 usable reconstructions from 67 attempted cases, of which 36 support a downstream plan and 22 do not, exposing reconstruction and free-space failure modes rather than hiding them without lidar. Across 15 corridor reconstructions, the mean reconstruction error is approximately 0.30 m at matched structural landmarks.",
-      "authors": [
-        "Hajira Amjad",
-        "Valerii Serpiva",
-        "Viacheslav Liubimov",
-        "Didar Seyidov",
-        "Dzmitry Tsetserukou"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13849v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13849v1",
-      "published": "2026-10-09T16:57:08+00:00",
-      "updated": "2026-10-09T16:57:08+00:00",
-      "comment": "8 pages, 2 figures, 4 tables. Submitted to IEEE ICRA 2027",
-      "journal_ref": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "alignment",
-        "planning",
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 3,
-      "published_local": "2026-10-10 00:57",
-      "updated_local": "2026-10-10 00:57",
-      "summary_short": "We present HorizonNav, a video diffusion-based framework for anticipatory robot navigation that transforms a single RGB image and a text prompt into a geometrically aligned representation of plausible surrounding 3D space. Given the initial observation and a textual description of the reconstruction objective, a vision-language model, guided by designed instructions, interprets the scene and constructs structured..."
     },
     {
       "id": "2610.13823v1",
@@ -620,10 +541,6 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
-        },
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
         }
       ],
       "matched_keywords": [
@@ -746,84 +663,6 @@
       "summary_short": "How well can vision-language models (VLMs) reason about what is missing from an image? We study this question with OccludeBench, a manually curated benchmark for recovering fully occluded objects from the visual evidence that remains. OccludeBench distinguishes direct cases, where the hidden object must be recovered from a specific physical cue such as a shadow or reflection, from inferential cases, where it can be..."
     },
     {
-      "id": "2610.13772v1",
-      "title": "MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS",
-      "summary": "Multi-agent reinforcement learning (MARL) has become a prominent research direction, particularly within collective robotics, where the ARGoS simulator is widely used to study emergent swarm behavior. Yet despite this growth, systematic support for reuse and reproducibility in MARL-based swarm robotics remains limited and insufficiently standardized: a single experiment is assembled from manually aligned simulator files, training scripts, configuration values, paths, seeds, and environment details, so reuse and reproduction stay fragile even within one research group. To address this gap, we introduce MARGoS, a lightweight, configuration-driven platform developed in this project that elevates these experiment-defining inputs to first-class, platform-managed artifacts. MARGoS enables reproducible experimentation through configuration hashing, end-to-end seed propagation, frozen (immutable) configurations, structured logging, environment fingerprinting, and exportable experiment bundles that facilitate sharing, replay, and verification of results across machines and over time. A five-dimension evaluation (architecture, efficiency, reproducibility, usability, and collaboration) supports our claim that managing experiment variation as a platform responsibility makes ARGoS+MARL experiments easier to reuse, reproduce, and hand off. Our code is available at https://github.com/tombackert/margos.",
-      "authors": [
-        "Tom Philipp Backert",
-        "Mohammad D. Soorati",
-        "Javad Ghofrani"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13772v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13772v1",
-      "published": "2026-10-09T15:55:16+00:00",
-      "updated": "2026-10-09T15:55:16+00:00",
-      "comment": "Submitted version (prior to peer review) of a paper published in the VARIABILITY 2026 Satellite Events proceedings (Project Showcase Track), LNCS 17104, Springer. 11 pages, 3 figures, 3 tables",
-      "journal_ref": "Software and Systems Reuse, Product Lines, and Configuration - VARIABILITY 2026 Satellite Events, LNCS 17104, pp. 251-261, Springer (2027)",
-      "categories": [
-        "cs.MA",
-        "cs.RO",
-        "cs.SE"
-      ],
-      "primary_category": "cs.SE",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "agent",
-        "robotics"
-      ],
-      "matched_authors": [],
-      "score": 2,
-      "published_local": "2026-10-09 23:55",
-      "updated_local": "2026-10-09 23:55",
-      "summary_short": "Multi-agent reinforcement learning (MARL) has become a prominent research direction, particularly within collective robotics, where the ARGoS simulator is widely used to study emergent swarm behavior. Yet despite this growth, systematic support for reuse and reproducibility in MARL-based swarm robotics remains limited and insufficiently standardized: a single experiment is assembled from manually aligned simulator..."
-    },
-    {
-      "id": "2610.13732v1",
-      "title": "LAPT-Scale: Scaling Embodied Policies with Latent Action Pre-Training on Human Videos",
-      "summary": "Scaling generalist robotic policies is limited by the high cost of collecting embodied interaction data. Large-scale egocentric human videos offer a rich alternative, but they lack robot action labels, and existing action annotation methods are often noisy under real-world visual complexity and diverse manipulation dynamics. We introduce LAPT-Scale, a scalable latent action pre-training paradigm with two components: LAPT-Scale-LAM learns continuous latent actions by explaining frame-to-frame visual transitions in human videos and uses them as human-derived supervision, while LAPT-Scale-Policy trains a VLA policy through human-video latent-action pre-training, target-robot embodiment alignment, and task-specific post-training. Unlike prior vector-quantized LAMs, LAPT-Scale-LAM uses a continuous latent space to preserve fine-grained motion and interaction dynamics. We further combine perceptual, semantic, and optical-flow alignment signals to improve transition-level supervision beyond pixel reconstruction. Trained on 23.3K hours of egocentric video, LAPT-Scale-LAM provides implicit action supervision for policy pre-training, yielding consistent scaling gains and improving real-robot success from 63.3% to 85.0% as annotated human video scales from 1K to 5K hours. The learned policy also generalizes to unseen visual conditions.",
-      "authors": [
-        "Zhiyuan Xiang",
-        "Peidong Liu",
-        "Mingyang Li",
-        "Jiawei Li",
-        "Wenhow Li",
-        "Wenbo Ding",
-        "Xiang Deng"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13732v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13732v1",
-      "published": "2026-10-09T15:29:20+00:00",
-      "updated": "2026-10-09T15:29:20+00:00",
-      "comment": "Accepted at CoRL 2026; 24 pages including appendix",
-      "journal_ref": "",
-      "categories": [
-        "cs.AI",
-        "cs.CV",
-        "cs.RO"
-      ],
-      "primary_category": "cs.CV",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "alignment",
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 2,
-      "published_local": "2026-10-09 23:29",
-      "updated_local": "2026-10-09 23:29",
-      "summary_short": "Scaling generalist robotic policies is limited by the high cost of collecting embodied interaction data. Large-scale egocentric human videos offer a rich alternative, but they lack robot action labels, and existing action annotation methods are often noisy under real-world visual complexity and diverse manipulation dynamics. We introduce LAPT-Scale, a scalable latent action pre-training paradigm with two..."
-    },
-    {
       "id": "2610.13672v1",
       "title": "Inject a Turn, Not a Token: Learning Where to Redirect LLM Reasoning for Self-Correction",
       "summary": "Large language models struggle to reliably identify and correct errors in their own reasoning. Unlike prior training-based approaches that fine-tune an LLM to generate revisions or feedback, we learn where to intervene in failed rollouts and determine how to redirect them. To choose where to intervene, we train a 130K-parameter MLP head on a frozen encoder using only final-answer correctness. For redirection, we find that under a fixed generation budget, the tested inline injections fail to reliably redirect reasoning, whereas presenting the same instruction in a new user turn changes the model's course. The resulting correction framework, UPTURN (User-Prompt TURN injection at a learned position), requires no LLM fine-tuning: it retains a selected prefix, injects an instruction as a new user turn, and regenerates the suffix. Across four reasoners and six math benchmarks, UPTURN improves average accuracy in every setting over a 32-rollout baseline. It outperforms self-correction and reflection-token injection baselines under matched correction budgets, transfers across reasoners and to GPQA-Diamond without retraining, and complements GRPO and self-correction methods.",
@@ -935,44 +774,6 @@
       "summary_short": "User simulators are gaining attention as environments to train LLM assistants that can better cope with the nuances of multi-turn conversations with real users. Prior work on user simulation has emphasized generating realistic user utterances, leaving unexplored their potential as a source of direct feedback on the assistant's responses. Such evaluation signals may not be explicitly communicated in language, but..."
     },
     {
-      "id": "2610.13943v1",
-      "title": "Noise Space Learning for VLA Adaptation",
-      "summary": "Pretrained vision-language-action (VLA) models encode broad manipulation priors, yet adapting them to specific tasks requires balancing limited robot interaction, computational resources, and safety constraints. Noise space learning (NSL) adapts flow-matching-based VLAs by learning a context-conditioned distribution over noise while keeping the pretrained VLA fixed. Building on prior noise-steering methods, we formulate NSL as an interface for VLA adaptation that accommodates different learning algorithms and instantiate it with PPO, SAC, and AWR. Theoretically, we provide an information-theoretic analysis of how NSL enables efficient adaptation. Empirically, we study these NSL algorithms on LIBERO, RoboTwin, and four real-robot manipulation tasks under interaction, computation, and execution constraints. Across these settings, we develop a suite of effective NSL variants and derive practical recommendations for choosing among them under different resource and deployment regimes.",
-      "authors": [
-        "Junjie Lu",
-        "Chuheng Zhang",
-        "Yucen Wang",
-        "Yuhua Jiang",
-        "Xinyao Qin",
-        "Min Xu",
-        "Li Zhao"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13943v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13943v1",
-      "published": "2026-10-09T17:58:50+00:00",
-      "updated": "2026-10-09T17:58:50+00:00",
-      "comment": "26 pages",
-      "journal_ref": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-10-10 01:58",
-      "updated_local": "2026-10-10 01:58",
-      "summary_short": "Pretrained vision-language-action (VLA) models encode broad manipulation priors, yet adapting them to specific tasks requires balancing limited robot interaction, computational resources, and safety constraints. Noise space learning (NSL) adapts flow-matching-based VLAs by learning a context-conditioned distribution over noise while keeping the pretrained VLA fixed. Building on prior noise-steering methods, we..."
-    },
-    {
       "id": "2603.18048v3",
       "title": "DEAF: A Benchmark for Diagnostic Evaluation of Acoustic Faithfulness in Audio Language Models",
       "summary": "Recent Audio Multimodal Large Language Models (Audio MLLMs) demonstrate impressive performance on speech benchmarks, yet it remains unclear whether these models genuinely process acoustic signals or rely on text-based semantic inference. To systematically study this question, we introduce DEAF (Diagnostic Evaluation of Acoustic Faithfulness), a benchmark of over 2,700 conflict stimuli spanning three acoustic dimensions: emotional prosody, background sounds, and speaker identity. Then, we design a controlled multi-level evaluation framework that progressively increases textual influence, ranging from semantic conflicts in the content to misleading prompts and their combination, allowing us to disentangle content-driven bias from prompt-induced sycophancy. We further introduce diagnostic metrics to quantify model reliance on textual cues over acoustic signals. Our evaluation of seven Audio MLLMs reveals a consistent pattern of text dominance: models are sensitive to acoustic variations, yet predictions are predominantly driven by textual inputs, revealing a gap between high performance on standard speech benchmarks and genuine acoustic understanding.",
@@ -1013,41 +814,6 @@
       "published_local": "2026-03-17 23:52",
       "updated_local": "2026-10-10 01:56",
       "summary_short": "Recent Audio Multimodal Large Language Models (Audio MLLMs) demonstrate impressive performance on speech benchmarks, yet it remains unclear whether these models genuinely process acoustic signals or rely on text-based semantic inference. To systematically study this question, we introduce DEAF (Diagnostic Evaluation of Acoustic Faithfulness), a benchmark of over 2,700 conflict stimuli spanning three acoustic..."
-    },
-    {
-      "id": "2610.13929v1",
-      "title": "Chronos Policy: Learning Robot Policies on Physical Time",
-      "summary": "Robot policies often convert sensing and control into fixed-rate observation-action sequences, leaving physical time implicit in sequence position. This assumption breaks when observation rates or delays vary, or when inference latency changes. We introduce Chronos Policy, which makes physical time explicit by conditioning on observation capture times and desired action execution times. We study two ways to incorporate time into a diffusion transformer: adding timestamp embeddings to token features, or encoding physical time in positional encoding through time-aware rotary positional encodings (time-aware RoPE). We find that time-aware RoPE is more robust, allowing attention to depend directly on physical time while keeping token content unchanged. During training, we temporally randomize which observations are sampled and when the action chunk begins, exposing the policy to a wider range of sensing and execution schedules that may occur during deployments. This also enables learning from asynchronous, multi-rate data without forcing all measurements onto a fixed temporal grid. Across simulation and real-world experiments, Chronos Policy improves performance on dynamic tasks, where observation-to-action timing is critical, and on multisensory tasks, where the relative timing between observations matters. On standard quasi-static tasks, it preserves nominal performance while improving robustness to changes in sensing and inference timing.",
-      "authors": [
-        "Changhao Wang",
-        "Jaden Clark",
-        "Shuran Song"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13929v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13929v1",
-      "published": "2026-10-09T17:55:20+00:00",
-      "updated": "2026-10-09T17:55:20+00:00",
-      "comment": "Project website: https://changhaowang.github.io/chronospolicy/",
-      "journal_ref": "",
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-10-10 01:55",
-      "updated_local": "2026-10-10 01:55",
-      "summary_short": "Robot policies often convert sensing and control into fixed-rate observation-action sequences, leaving physical time implicit in sequence position. This assumption breaks when observation rates or delays vary, or when inference latency changes. We introduce Chronos Policy, which makes physical time explicit by conditioning on observation capture times and desired action execution times. We study two ways to..."
     },
     {
       "id": "2610.13912v1",
@@ -1159,42 +925,6 @@
       "summary_short": "Coding agents often make useful progress before they fail, but retry-from-scratch discards the machine state created along the way. This makes failure recovery an interesting search problem: if intermediate environment states preserve meaningful progress, restoring and branching from them could outperform repeatedly restarting from the initial state. We implement Go-Explore-style search over full Daytona snapshots..."
     },
     {
-      "id": "2610.13838v1",
-      "title": "Mapless, Stabilizing, and Anti-Stuck Flipper Control for Articulated Tracked Robots",
-      "summary": "Nearly every autonomous or semi-autonomous flipper controller assumes access to an elevation map of the terrain under and in front of the robot. The terrain beneath the chassis is occluded in the sensors, so the map is remembered through odometry integration, whose drift corrupts it. We present Stabilizing Anti-Stuck (SAS), a mapless controller that combines a stabilization term for body roll and pitch with an anti-stuck term that frees the robot when it gets stuck. As input, SAS uses the IMU, the flipper joint angles, and a motion cue that only tells whether the robot is moving. The cue is computed over a short window and never accumulated, so SAS does not inherit the odometry-integration drift that corrupts the map. We deploy SAS on a tracked robot with four flippers and evaluate it against manual teleoperation and prior flipper controllers in a large comparison, both in simulation and on a real obstacle. In simulation and on the real robot, SAS achieves traversal quality comparable to state-of-the-art map-based controllers. On a log hidden in tall grass, invisible to the LiDAR, the best map-based controller gets stuck while SAS traverses the hidden obstacle without a problem.",
-      "authors": [
-        "Valentýn Číhala",
-        "Pavel Sarga",
-        "Martin Pecka",
-        "Tomáš Svoboda",
-        "Karel Zimmermann"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13838v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13838v1",
-      "published": "2026-10-09T16:48:23+00:00",
-      "updated": "2026-10-09T16:48:23+00:00",
-      "comment": "8 pages, 3 figures and 2 tables",
-      "journal_ref": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-10-10 00:48",
-      "updated_local": "2026-10-10 00:48",
-      "summary_short": "Nearly every autonomous or semi-autonomous flipper controller assumes access to an elevation map of the terrain under and in front of the robot. The terrain beneath the chassis is occluded in the sensors, so the map is remembered through odometry integration, whose drift corrupts it. We present Stabilizing Anti-Stuck (SAS), a mapless controller that combines a stabilization term for body roll and pitch with an..."
-    },
-    {
       "id": "2606.22338v4",
       "title": "RoboMME-Interference: Benchmarking Robot Memory Under Interference",
       "summary": "Robots deployed in realistic settings will accumulate experience across many sessions and tasks over their deployment. The robot's tasks may often require it to remember information from multiple sessions ago, making long-context robot memory important for real-world deployments. However, most robot-memory benchmarks today are based on single episodes or a short context. To measure how current robot memory systems perform on longer sessions with more distractions, we introduce RoboMME-Interference, a cross-session benchmark built on RoboMME (Dai et al., 2026). For each query episode, we construct a session history using the query's relevant prior demonstration followed by a controlled number of unrelated sessions, which we provide to the VLA as memory and measure accuracy. Running RoboMME's released memory-augmented $π_{0.5}$ variants unmodified through this benchmark, we find that while perceptual memory variants improve success when given the history without any distractors, they decay strongly and steadily as unrelated sessions accumulate. The subgoal variants, which read the history with a vision-language model and pass written subgoals to the policy, improve less at their best but hold more of that improvement as distractors accumulate. Adding a retrieval step to the strongest perceptual variant, which selects the section of history most visually similar to the robot's current view and passes only that section to the policy, restores its no-distractor success rate at every interference level. With this release, we emphasize the importance of long-context memory and robustness to interference and show that current systems largely fail on such capabilities. The project page, videos, code, and data are at https://robotmemorybench.com.",
@@ -1221,10 +951,6 @@
         {
           "category": "cs.LG",
           "title": "Machine Learning"
-        },
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
         }
       ],
       "matched_keywords": [
@@ -1272,45 +998,6 @@
       "published_local": "2026-10-10 00:35",
       "updated_local": "2026-10-10 00:35",
       "summary_short": "Recent advances in automatic pronunciation assessment (APA) have driven a shift from scripted to free-form assessment. However, existing methods often rely on multi-stage pipelines with forced alignment and separate feature extractors, limiting their practicality across response settings. In light of this, we propose OpenPA, a novel APA framework that leverages Whisper's cross-attention mechanism to jointly predict..."
-    },
-    {
-      "id": "2610.13816v1",
-      "title": "Dream to Remember: Continual Steering of Generalist Robot Policies with World Models",
-      "summary": "Generalist robot policies are trained with imitation learning and are bounded by the quality and coverage of their demonstrations. Reinforcement learning can improve and extend them, either by fine-tuning the policy weights or by training a small module to steer the input noise of a frozen generative policy. When tasks arrive sequentially, both approaches suffer from catastrophic forgetting. Fine-tuning on a task degrades prior tasks, and steering only shifts forgetting to the shared steering module. We propose Dream to Remember (D2R), which continually steers a frozen generalist policy toward new tasks, while retaining its earlier skills. As the steering module learns a new task, a frozen pretrained world model rehearses prior tasks through imagined rollouts, anchoring the module to its earlier behavior without a replay buffer or new data. When the world model is faithful enough, D2R learns the new task entirely in imagination. Otherwise, it learns the task in the environment while using the world model only to rehearse prior tasks. On CALVIN, D2R improves eight tasks in sequence entirely in imagination, raising average success from 63.7% to 74.8%, while LoRA fine-tuning on the same sequence drops it to 11.7%. With a frozen off-the-shelf generalist policy and world model, $π_0$ and A2World, D2R learns unseen LIBERO-90 tasks in the environment while keeping $π_0$'s performance on the LIBERO suites it was fine-tuned on, even though the world model is not accurate enough for policy optimization. Finally, on a real Franka robot, D2R improves three tasks in sequence entirely in imagination while retaining the earlier improvements.",
-      "authors": [
-        "Bahey Tharwat",
-        "Iman Nematollahi",
-        "Marvin Alles",
-        "Xingyuan Zhang",
-        "Akshay L Chandra",
-        "Abhinav Valada"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13816v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13816v1",
-      "published": "2026-10-09T16:28:01+00:00",
-      "updated": "2026-10-09T16:28:01+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.CV",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-10-10 00:28",
-      "updated_local": "2026-10-10 00:28",
-      "summary_short": "Generalist robot policies are trained with imitation learning and are bounded by the quality and coverage of their demonstrations. Reinforcement learning can improve and extend them, either by fine-tuning the policy weights or by training a small module to steer the input noise of a frozen generative policy. When tasks arrive sequentially, both approaches suffer from catastrophic forgetting. Fine-tuning on a task..."
     },
     {
       "id": "2610.13811v1",
@@ -1387,41 +1074,6 @@
       "published_local": "2026-10-10 00:07",
       "updated_local": "2026-10-10 00:07",
       "summary_short": "Discourse particles subtly shape the flow of discourse by reflecting conversational context and interlocutor attitudes, often leaving the truth-conditional meaning untouched. They are also often polyfunctional, with distinct senses which partially overlap with other particles; for example, the exclusive use of English \"just\" and \"only\" (\"John only/just drinks water\"). Despite the frequency of these words in natural..."
-    },
-    {
-      "id": "2610.13788v1",
-      "title": "When LiDAR Fades, Radar Takes Over: LiDAR Reliability-Aware Adaptive Localization Under Airborne Obscurants",
-      "summary": "LiDAR-inertial odometry (LIO) is widely used for real-time localization and mapping, but its reliability can degrade substantially in subterranean environments affected by smoke, dust, and other airborne obscurants, whereas radar remains comparatively robust. This article presents a one-class temporal learning framework for LiDAR degradation detection and reliability-aware localization under such conditions. A broad set of degradation-sensitive cues, including spatial, cross-modal, geometric/motion, intensity, and measurement-recency features, is evaluated to characterize changes in LiDAR sensing quality. Their temporal evolution is modelled over sliding windows using an LSTM autoencoder trained exclusively on nominal operation, enabling deviations from healthy sensor behaviour to be detected without requiring labelled degradation data. The resulting LiDAR reliability estimate governs adaptive selection between LIO and radar inertial odometry (RIO), retaining LIO during reliable sensing and transferring localization authority to RIO when degradation is detected. The framework is evaluated using real-world ground robot data collected in GNSS-denied subterranean tunnels under nominal and dense-smoke conditions. Experimental results demonstrate degradation detection, adaptive modality switching, and continued localization output under severe LiDAR degradation. A feature family ablation study further shows that a reduced feature representation can improve degradation-aware localization performance in the evaluated dense-smoke scenarios, highlighting the importance of feature parsimony in one-class sensor degradation detection. The code will be released as open source to support reproducibility and further research.",
-      "authors": [
-        "Moumita Mukherjee",
-        "Avijit Banerjee",
-        "Anton Koval",
-        "George Nikolakopoulo"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13788v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13788v1",
-      "published": "2026-10-09T16:04:41+00:00",
-      "updated": "2026-10-09T16:04:41+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-10-10 00:04",
-      "updated_local": "2026-10-10 00:04",
-      "summary_short": "LiDAR-inertial odometry (LIO) is widely used for real-time localization and mapping, but its reliability can degrade substantially in subterranean environments affected by smoke, dust, and other airborne obscurants, whereas radar remains comparatively robust. This article presents a one-class temporal learning framework for LiDAR degradation detection and reliability-aware localization under such conditions. A..."
     },
     {
       "id": "2610.13783v1",
@@ -1539,42 +1191,6 @@
       "summary_short": "On-policy self-distillation promises to replace the sparse outcome signal of verifiable-reward RL with dense token-level credit: a teacher conditioned on the reference solution scores the student's own rollout, and the resulting distributional shift is distilled back into the policy. We investigate whether this scoring signal actually contains corrective credit. Using gold error spans in student rollouts, we test..."
     },
     {
-      "id": "2610.13740v1",
-      "title": "SmolWAM: A Latent World-Action Model for Robotic Manipulation on Edge Devices",
-      "summary": "World-action models (WAMs) predict a robot's actions together with the observations those actions will produce. However, the strongest models rely on video diffusion transformers that are far too computationally expensive for resource-constrained edge devices. We present SmolWAM, a latent WAM that we derive from the 2B-parameter Cosmos Policy by keeping its pretrained trunk and rebuilding its inference interface: single-frame visual latents, cached text features that preserve the trunk's attention sinks, 12 of 28 transformer blocks, and 1,008 tokens from which actions and future visual latents are read out in one rectified-flow step. Trained in 3.6 GPU-hours, SmolWAM succeeds in 95.5% of 400 LIBERO episodes at 57 ms and 2.3 TFLOP per 16-action chunk with 2.4 GiB of GPU memory, 11x faster than its teacher with 18.5x fewer FLOPs and 3.2x less memory, and its world head still forecasts scene motion.",
-      "authors": [
-        "Timi Owolabi",
-        "Hikmah Olawore",
-        "Frances Adelakun",
-        "Ayotomiwa Oyewumi"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13740v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13740v1",
-      "published": "2026-10-09T15:34:33+00:00",
-      "updated": "2026-10-09T15:34:33+00:00",
-      "comment": "Accepted at the NeurIPS 2026 Robot Learning with World Models Workshop. Code: https://github.com/iitimii/SmolWAM Project: https://smolwam.vercel.app/",
-      "journal_ref": "",
-      "categories": [
-        "cs.LG",
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-10-09 23:34",
-      "updated_local": "2026-10-09 23:34",
-      "summary_short": "World-action models (WAMs) predict a robot's actions together with the observations those actions will produce. However, the strongest models rely on video diffusion transformers that are far too computationally expensive for resource-constrained edge devices. We present SmolWAM, a latent WAM that we derive from the 2B-parameter Cosmos Policy by keeping its pretrained trunk and rebuilding its inference interface:..."
-    },
-    {
       "id": "2610.13722v1",
       "title": "Enhancing Legal Reasoning in Pre-trained Language Models via Knowledge Graph-Guided Multi-Task Pre-training",
       "summary": "Legal language understanding requires reasoning over semi-structured regulatory documents, yet standard pre-training objectives do not explicitly target this structural capability. Because current legal language models rely solely on masked language modeling, they treat statutory text as flat token sequences and ignore the underlying hierarchical constraints. To bridge this gap, we present a multi-task pre-training approach for German traffic law (StVO). Our approach combines three complementary objectives: Next Sentence Prediction (NSP), Knowledge Graph (KG) Guided Clustering (CLU), and Knowledge Graph (KG) Aware Paragraph Classification (CLS). This approach explicitly encodes structured legal knowledge directly into the model weights. This encoding enables zero-shot legal reasoning at inference time and removes the need for discrete graph traversal. We evaluate our approach across nine Transformer-based encoders and 324 experimental runs. On synthetic StVO question answering, our models demonstrate consistent relative improvements between 10.3% and 155.0% over baselines. Furthermore, relative to the established LexGLUE baselines (Chalkidis et al., 2022), our models improve over prior results on four of seven legal benchmarks. It also achieves consistent zero-shot transfer gains between 3.4% and 15.8% on Austrian driving regulations. These experimental results indicate that our training approach generalizes successfully beyond the initial training legal domain.",
@@ -1606,42 +1222,6 @@
       "published_local": "2026-10-09 23:21",
       "updated_local": "2026-10-09 23:21",
       "summary_short": "Legal language understanding requires reasoning over semi-structured regulatory documents, yet standard pre-training objectives do not explicitly target this structural capability. Because current legal language models rely solely on masked language modeling, they treat statutory text as flat token sequences and ignore the underlying hierarchical constraints. To bridge this gap, we present a multi-task pre-training..."
-    },
-    {
-      "id": "2602.18655v3",
-      "title": "Infinite-Dimensional Closed-Loop Inverse Kinematics for Soft Robots via Neural Operators",
-      "summary": "For fully actuated rigid robots, kinematic inversion is a purely geometric problem, efficiently solved by closed-loop inverse kinematics (CLIK) schemes that compute joint velocities to position the robot body in space. For underactuated soft robots, however, not all configurations are attainable through control action, making kinematic inversion extremely ill-posed. Extensions of CLIK address this by introducing end-to-end mappings from actuation to task space for the controller to operate on, but typically assume finite dimensions of the underlying virtual configuration space. In this work, we formulate CLIK in the infinite-dimensional domain to reason about the entire soft robot shape while solving tasks, thereby skipping intermediate approximation steps. We do this by composing an actuation-to-shape map with a shape-to-task map, deriving the differential end-to-end kinematics via an infinite-dimensional chain rule, and thereby obtaining a Jacobian-based CLIK algorithm. Since complex soft-robot models are rarely available in closed form, and neither the actuation-to-shape mapping nor its Jacobian can typically be obtained analytically, we propose to learn it using differentiable neural operator networks. We first present an analytical study on a constant-curvature segment, and then apply the neural version of the algorithm to a three-fiber soft robotic arm whose underlying model relies on morphoelasticity and active filament theory.",
-      "authors": [
-        "Carina Veil",
-        "Moritz Flaschel",
-        "Ellen Kuhl",
-        "Cosimo Della Santina"
-      ],
-      "abs_url": "https://arxiv.org/abs/2602.18655v3",
-      "pdf_url": "https://arxiv.org/pdf/2602.18655v3",
-      "published": "2026-02-20T23:11:56+00:00",
-      "updated": "2026-10-09T15:19:47+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.RO",
-        "eess.SY"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "robot"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-02-21 07:11",
-      "updated_local": "2026-10-09 23:19",
-      "summary_short": "For fully actuated rigid robots, kinematic inversion is a purely geometric problem, efficiently solved by closed-loop inverse kinematics (CLIK) schemes that compute joint velocities to position the robot body in space. For underactuated soft robots, however, not all configurations are attainable through control action, making kinematic inversion extremely ill-posed. Extensions of CLIK address this by introducing..."
     },
     {
       "id": "2610.06650v3",
@@ -1678,46 +1258,6 @@
       "published_local": "2026-10-06 00:29",
       "updated_local": "2026-10-09 23:06",
       "summary_short": "Wikidata is one of the largest open knowledge bases, yet answering a complex question over it still requires a SPARQL query that names the right entities and properties and chains their relations. Language models offer a natural-language alternative but answer largely from memory, which is least reliable for less prominent entities. We study agents that instead answer by exploring the graph, and argue that two..."
-    },
-    {
-      "id": "2605.19469v2",
-      "title": "Sampling-Based Safe Reinforcement Learning",
-      "summary": "Safe exploration remains a fundamental challenge in reinforcement learning (RL), limiting the deployment of RL agents in the real world. We propose Sampling-Based Safe Reinforcement Learning (SBSRL), a model-based RL algorithm that maintains safety throughout the learning process by enforcing constraints jointly across a finite set of dynamics samples. This formulation approximates an intractable worst-case optimization over uncertain dynamics and enables practical safety guarantees in continuous domains. We further introduce an exploration strategy based on constraining epistemic uncertainty, eliminating the need for explicit exploration bonuses. Under regularity conditions, we derive high-probability guarantees of safety throughout learning and a finite-time sample complexity bound for recovering a near-optimal policy. Empirically, SBSRL achieves safe and efficient exploration both in simulation and in real robotic hardware, and readily extends to practical deep-ensemble implementations that scale to high-dimensional continuous control problems.",
-      "authors": [
-        "Luca Vignola",
-        "Bruce D. Lee",
-        "Manish Prajapat",
-        "Manuel Wendl",
-        "Melanie Zeilinger",
-        "Andreas Krause",
-        "Yarden As"
-      ],
-      "abs_url": "https://arxiv.org/abs/2605.19469v2",
-      "pdf_url": "https://arxiv.org/pdf/2605.19469v2",
-      "published": "2026-05-19T07:21:53+00:00",
-      "updated": "2026-10-09T15:01:32+00:00",
-      "comment": "",
-      "journal_ref": "",
-      "categories": [
-        "cs.AI",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "primary_category": "cs.LG",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [
-        "agents"
-      ],
-      "matched_authors": [],
-      "score": 1,
-      "published_local": "2026-05-19 15:21",
-      "updated_local": "2026-10-09 23:01",
-      "summary_short": "Safe exploration remains a fundamental challenge in reinforcement learning (RL), limiting the deployment of RL agents in the real world. We propose Sampling-Based Safe Reinforcement Learning (SBSRL), a model-based RL algorithm that maintains safety throughout the learning process by enforcing constraints jointly across a finite set of dynamics samples. This formulation approximates an intractable worst-case..."
     },
     {
       "id": "2610.13627v1",
@@ -1824,42 +1364,6 @@
       "published_local": "2026-10-10 01:59",
       "updated_local": "2026-10-10 01:59",
       "summary_short": "Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires specialist linguistic or scientific knowledge. We used the Wikipedia Game to test language models on an analogous information retrieval task. In the game, players must reach a target article using only article links. We compared sentence embedding models and..."
-    },
-    {
-      "id": "2610.13945v1",
-      "title": "Splat2Act: From Captured Scenes to Personalized VLA Manipulation",
-      "summary": "A user who brings a generalist manipulation policy into their home or office wants it to pick up their objects from their shelves, counters, and tables. Yet even a strong generalist like $π_{0.5}$ achieves 0% pickup success in our captured deployment scenes without adaptation, and collecting real demonstrations in every user's environment is prohibitively expensive. We present Splat2Act, an automated real-to-sim-to-real pipeline that personalizes a pretrained vision-language-action (VLA) policy to a specific scene and object set using only a handheld phone scan and images of the user's objects. Unlike prior real-to-sim work that reconstructs individual tabletops, Splat2Act operates on building-scale indoor environments: it builds a photorealistic digital twin with 3D Gaussian Splatting and collision geometry, automatically discovers tabletop and non-tabletop receptacles, constructs feasible pickup tasks, and generates successful demonstrations with a privileged simulation oracle, with only scene and object capture required from a human. Applied to 101 scanned campus environments with a median navigable area of 104.87 m$^2$ and 7 receptacles, the pipeline yields 852 receptacles and over 68,000 pickup demonstrations. We fine-tune $π_{0.5}$ in two stages: Stage 1 adapts to hundreds of public object assets, drawn either from the deployment scene alone or from all 101 scenes; Stage 2 personalizes to the user's own objects on the deployment scene's receptacles. Our strongest personalized policy reaches 62.5% aggregate pickup success in the target scene. Deployed on a real Stretch 3, the same policy achieves 63.9% success on a 12-task subset, closely tracking its 66.7% simulated success on those tasks. These results suggest that automated real-to-sim-to-real training can personalize VLA manipulation policies using only simulation-oracle data.",
-      "authors": [
-        "Xiaomeng Ye",
-        "Krishna Jaganathan",
-        "Gyubeum Lim",
-        "Gunjan Chhablani",
-        "Muhammad Zubair Irshad",
-        "Zsolt Kira"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13945v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13945v1",
-      "published": "2026-10-09T17:59:06+00:00",
-      "updated": "2026-10-09T17:59:06+00:00",
-      "comment": "Project page: https://splat2act.github.io",
-      "journal_ref": "",
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-10-10 01:59",
-      "updated_local": "2026-10-10 01:59",
-      "summary_short": "A user who brings a generalist manipulation policy into their home or office wants it to pick up their objects from their shelves, counters, and tables. Yet even a strong generalist like $π_{0.5}$ achieves 0% pickup success in our captured deployment scenes without adaptation, and collecting real demonstrations in every user's environment is prohibitively expensive. We present Splat2Act, an automated..."
     },
     {
       "id": "2610.03220v2",
@@ -2282,38 +1786,6 @@
       "summary_short": "Large language models reuse the same attention heads across tasks, but identifying these shared heads does not explain what they do differently in each task. A natural source of inspiration is task-dependent interactions among shared brain regions, which motivate a network view of language-model computation. Here, we compare fixed model components across tasks using identical graph facts, statements specifying..."
     },
     {
-      "id": "2610.13891v1",
-      "title": "Beyond the Snowflakes: Disentangling Weather Effects from Confounding Meta-Factors in LiDAR Object Detection",
-      "summary": "Light Detection and Ranging (LiDAR) is critical for autonomous perception, yet its performance is known to degrade in adverse weather. While existing literature models snow as atmospheric noise that degrades performance, our granular evaluation on the WADS-3D and CADC datasets reveals a counter-intuitive phenomenon: detection accuracy consistently improves as snow intensity increases. Through ablation study and meta-information analysis, we reconcile this by confirming that while falling snow acts as noise, its negative impact is outweighed by a dominant, concurrent factor: significantly increased object point count. We hypothesize that this object point count boost acts as a geometric enhancement, driven by snow accumulation increasing vehicle surface area and a shift from specular to diffuse reflectance. Our findings demonstrate that evaluating perception systems using broad weather-severity bins without accounting for correlated object-level data can lead to misleading conclusions about detector robustness. We conclude that accurate evaluation requires decoupling atmospheric noise from surface accumulation effects and outline future research to validate these physical models. The WADS-3D dataset is available at: https://digitalcommons.mtu.edu/wads-3d/.",
-      "authors": [
-        "Yiming Yang",
-        "Jeremy P. Bos"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13891v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13891v1",
-      "published": "2026-10-09T17:38:30+00:00",
-      "updated": "2026-10-09T17:38:30+00:00",
-      "comment": "IROS 2026, 8 pages, 8 figures",
-      "journal_ref": "",
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "primary_category": "cs.CV",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-10-10 01:38",
-      "updated_local": "2026-10-10 01:38",
-      "summary_short": "Light Detection and Ranging (LiDAR) is critical for autonomous perception, yet its performance is known to degrade in adverse weather. While existing literature models snow as atmospheric noise that degrades performance, our granular evaluation on the WADS-3D and CADC datasets reveals a counter-intuitive phenomenon: detection accuracy consistently improves as snow intensity increases. Through ablation study and..."
-    },
-    {
       "id": "2601.05500v6",
       "title": "The Illusion of AI Expertise Under Uncertainty: A Probabilistic Paradigm to Interpret Results Under Ground Truth Variation",
       "summary": "Benchmarking the capabilities of AI systems, including Large Language Models (LLMs) and Vision Models, typically ignores the impact of uncertainty in the underlying ground truth answers from experts. This ambiguity is not just limited to human preferences, but is also consequential even in safety critical domains such as medicine where uncertainty is pervasive. In this paper, we introduce a probabilistic paradigm to theoretically explain how high certainty in ground truth answers is almost always necessary for even an expert to achieve high scores. In contrast, in datasets with high variation in ground truth answers, the expert performance drops substantially resulting in almost no difference between a random labeller and an expert. This characteristic also manifests when comparing models, where uncertainty obfuscates differences between poor and high performing models. Therefore, ignoring uncertainty in ground truth evaluation data can result in the misleading conclusion that a non-expert has similar performance to that of an expert. Given ground truth answer variability and commonly used F1 and accuracy metrics, we bring forth a simple and explainable probabilistic coin toss model to estimate expected accuracyand expected F1 and compare the estimated scores with those that experts (human or model) achieve across multiple domains -- including radiology and models such as GPT-5 and Gemini-3. The results lead to the recommendation that stratification by the probability of the ground truth answer becomes critical when expert performance is relatively low. Under stratified evaluation, performance comparison becomes more reliable in high certainty bins, mitigating the effect of the key confounding factor --- uncertainty.",
@@ -2517,38 +1989,6 @@
       "summary_short": "A memory that reproduces every current prediction may still have forgotten how to learn from the next observation. We characterize this distinction for exact cumulative learning and attention. For smooth convex residual losses with unrestricted real features and labels, a continuous recurrent state of fixed dimension exists exactly when the loss is polynomial. With ordinary, unweighted observations, degree $D$..."
     },
     {
-      "id": "2610.13872v1",
-      "title": "Tracking the Invisible: Self-Supervised Wheel Track Detection with Thermal-RGB Fusion",
-      "summary": "Accurate detection of drivable area is essential for autonomous driving and advanced driver assistance systems. While state-of-the-art methods focus on general traversability estimation, they prove inadequate for snow-covered roads where following existing wheel tracks offers crucial advantages: improved traction, predictable vehicle dynamics, and verified path stability. To address this, we propose a low-cost, self-supervised approach detecting safety-critical wheel tracks using synchronized RGB-I (RGB + Long-Wave Infrared) imagery. Our method automatically generates training labels by projecting future wheel trajectories from recorded GNSS data. A neural network is designed to identify wheel tracks with the 4-channel RGB-I images from challenging, white-out road surfaces. Experimental results demonstrate the effectiveness of our approach in visually monotonous and featureless adverse environment, offering a robust and cost-effective alternative for winter autonomy. The newly introduced ThermalTrack dataset is available at: https://digitalcommons.mtu.edu/thermaltrack/.",
-      "authors": [
-        "Yiming Yang",
-        "Jeremy P. Bos"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13872v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13872v1",
-      "published": "2026-10-09T17:21:28+00:00",
-      "updated": "2026-10-09T17:21:28+00:00",
-      "comment": "IROS 2026, 8 pages, 6 figures",
-      "journal_ref": "",
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "primary_category": "cs.CV",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-10-10 01:21",
-      "updated_local": "2026-10-10 01:21",
-      "summary_short": "Accurate detection of drivable area is essential for autonomous driving and advanced driver assistance systems. While state-of-the-art methods focus on general traversability estimation, they prove inadequate for snow-covered roads where following existing wheel tracks offers crucial advantages: improved traction, predictable vehicle dynamics, and verified path stability. To address this, we propose a low-cost,..."
-    },
-    {
       "id": "2610.13871v1",
       "title": "Partially Informed Stochastic Optimization via Zeroth-Order Residual Tracking",
       "summary": "Many optimization problems provide direct access to only part of the gradient, while the remaining component must be inferred from function evaluations. This structure arises in performative prediction, performative reinforcement learning, and bilevel optimization with a black-box lower level. We introduce Partially Informed Stochastic Optimization (PISO), which combines the available gradient component with a running estimate of the residual. By centring each zeroth-order observation on this estimate, PISO makes the variance due to random probing depend on the tracking error rather than the residual's magnitude. This yields a randomized sketch iteration with an explicit contraction mechanism and a principled interpretation of momentum. For smooth nonconvex objectives, we establish convergence guarantees that depend on the residual's variation and initial magnitude, without requiring a uniform bound on the unavailable gradient component. With independently sampled function evaluations and Gaussian or spherical probes, PISO attains leading function-evaluation complexities of \\(O(d^{2}\\varepsilon^{-6})\\) under Lipschitz gradients and \\(O(d^{2}\\varepsilon^{-5})\\) under an additional Lipschitz-Hessian assumption. These rates require only one probe direction, two function samples, and one known-component sample per update. The analysis also quantifies how batching trades observations for fewer deployments. Across five settings, PISO variants improve on the tested baselines with comparable oracle access in three, reach a comparable solution faster in bilevel routing, and perform best among methods without response-model derivatives in performative reinforcement learning.",
@@ -2640,39 +2080,6 @@
       "published_local": "2026-09-30 11:31",
       "updated_local": "2026-10-10 01:16",
       "summary_short": "We study the last iterate of standard importance-weighted temporal-difference (TD) learning from a single trajectory of a finite Markov decision process. The trajectory follows a behavior policy $b$ with an irreducible, possibly periodic state chain; a target policy $π$ covered by $b$ is evaluated with action importance ratios bounded by $\\varrho$. Write $H=(1-γ)^{-1}$, with $μ_{\\min}$ the minimum stationary..."
-    },
-    {
-      "id": "2411.15533v2",
-      "title": "Development of a Low-Cost Prosthetic Hand Using Electromyography and Machine Learning",
-      "summary": "Electromyography (EMG) is a measure of muscular electrical activity and is used in many clinical/biomedical disciplines and modern human computer interaction. Myo-electric prosthetics analyze and classify the electrical signals recorded from the residual limb. The classified output is then used to control the position of motors in a robotic hand and a movement is produced. The aim of this project is to develop a low-cost and effective myo-electric prosthetic hand that would meet the needs of amputees in developing countries. The proposed prosthetic hand should be able to accurately classify five different patterns (gestures) using EMG recordings from three muscles and control a robotic hand accordingly. The robotic hand is composed of two servo motors allowing for two degrees of freedom. After establishing an efficient signal acquisition and amplification system, EMG signals were thoroughly analyzed in the frequency and time domains. Features were extracted from both domains and a shallow neural network was trained on the two sets of data. Results yielded an average classification accuracy of 94.8% and 93.2% for the time and frequency domains respectively. Furthermore, results showed a faster computation and response for the time domain analysis; hence, it was adopted for the classification system. A wrist rotation mechanism was designed and tested to add significant functionality to the prosthetic. The mechanism is controlled by two of the five gestures, one for each direction. Which added a third degree of freedom to the overall design. Finally, a tactile sensory feedback system which uses force sensors and vibration motors was developed to enable sensation of the force inflicted on the hand for the user.",
-      "authors": [
-        "Mosab Diab",
-        "Ashraf Mohammed",
-        "Yinlai Jiang"
-      ],
-      "abs_url": "https://arxiv.org/abs/2411.15533v2",
-      "pdf_url": "https://arxiv.org/pdf/2411.15533v2",
-      "published": "2024-11-23T12:05:14+00:00",
-      "updated": "2026-10-09T17:09:21+00:00",
-      "comment": "6 pages, 9 figures",
-      "journal_ref": "",
-      "categories": [
-        "cs.HC",
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2024-11-23 20:05",
-      "updated_local": "2026-10-10 01:09",
-      "summary_short": "Electromyography (EMG) is a measure of muscular electrical activity and is used in many clinical/biomedical disciplines and modern human computer interaction. Myo-electric prosthetics analyze and classify the electrical signals recorded from the residual limb. The classified output is then used to control the position of motors in a robotic hand and a movement is produced. The aim of this project is to develop a..."
     },
     {
       "id": "2602.00183v2",
@@ -2841,38 +2248,6 @@
       "published_local": "2026-10-10 00:54",
       "updated_local": "2026-10-10 00:54",
       "summary_short": "Generative molecular design typically relies on over-generation and post-hoc filtering. Inference-time steering methods like Feynman-Kac (FK) steering improve efficiency by biasing trajectories toward high-reward candidates, yet they optimize within a single fixed configuration. In de novo nanobody design, upfront commitment to conditioning choices like scaffold identity or target epitope creates a bottleneck...."
-    },
-    {
-      "id": "2604.06058v2",
-      "title": "Staggered Integral Online Conformal Prediction for Safe Dynamics Adaptation with Multi-Step Coverage Guarantees",
-      "summary": "Safety-critical control of uncertain, adaptive systems often relies on conservative, worst-case uncertainty bounds that limit closed-loop performance. Online conformal prediction is a powerful data-driven method for quantifying uncertainty when truth values of predicted outputs are revealed online; however, for systems that adapt the dynamics without measurements of the state derivatives, standard online conformal prediction is insufficient to quantify the model uncertainty. We propose Staggered Integral Online Conformal Prediction (SI-OCP), an algorithm utilizing an integral score function to quantify the lumped effect of disturbance and learning error. This approach provides long-run coverage guarantees, resulting in long-run safety when synthesized with safety-critical controllers, including robust tube model predictive control. Finally, we validate the proposed approach through a numerical simulation of an all-layer deep neural network (DNN) adaptive quadcopter using robust tube (MPC), highlighting the applicability of our method to complex learning parameterizations and control strategies.",
-      "authors": [
-        "Daniel M. Cherenson",
-        "Dimitra Panagou"
-      ],
-      "abs_url": "https://arxiv.org/abs/2604.06058v2",
-      "pdf_url": "https://arxiv.org/pdf/2604.06058v2",
-      "published": "2026-04-07T16:44:06+00:00",
-      "updated": "2026-10-09T16:53:06+00:00",
-      "comment": "Accepted to CDC 2026",
-      "journal_ref": "",
-      "categories": [
-        "cs.RO",
-        "eess.SY"
-      ],
-      "primary_category": "eess.SY",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-04-08 00:44",
-      "updated_local": "2026-10-10 00:53",
-      "summary_short": "Safety-critical control of uncertain, adaptive systems often relies on conservative, worst-case uncertainty bounds that limit closed-loop performance. Online conformal prediction is a powerful data-driven method for quantifying uncertainty when truth values of predicted outputs are revealed online; however, for systems that adapt the dynamics without measurements of the state derivatives, standard online conformal..."
     },
     {
       "id": "2609.38612v3",
@@ -3540,38 +2915,6 @@
       "published_local": "2026-10-09 23:02",
       "updated_local": "2026-10-09 23:02",
       "summary_short": "Long-context serving runs out of KV memory before the hardware reaches its useful throughput. HiSparse stores history in host memory and fetches only the selected entries, but it uses one cache budget at every load and does not handle draft-model speculative decoding such as DSpark and DFlash2. We present Adaptive DHiSparse, which supports speculative decoding over hierarchical sparse KV and adapts residency to..."
-    },
-    {
-      "id": "2610.13688v1",
-      "title": "Towards a Unified Taxonomy of Agricultural Harvesting Technologies: Linking Physical Interaction, Automation, and Selectivity",
-      "summary": "Harvesting technologies have evolved from conventional mechanized systems based on bulk mechanical interaction toward increasingly automated and robotic systems capable of perception, decision-making, and localized actuation. This evolution has also created a classification problem, as harvesting systems are commonly described according to crop type, mechanical removal principle, sensing technology, robotic architecture, or degree of automation, making direct comparison difficult. This paper proposes a unified taxonomy for agricultural harvesting technologies based on two primary classification axes: the physical principle governing plant-machine interaction and the level of automation incorporated into the harvesting process. Selectivity is treated as an emergent functional attribute that expresses the biological and spatial scale at which perception and decision-making influence physical actuation. Conventional mechanized methods, including cutting, pulling, vibration, impact, brushing, pneumatic action, and combined systems, are analyzed together with semi-automated and robotic harvesting approaches. The analysis shows that increasing automation does not necessarily result in greater selectivity. A qualitative transition occurs when perception and decision-making directly influence product-level actuation, shifting harvesting from distributed or bulk interaction toward localized and selective manipulation. The proposed framework provides a common conceptual basis for positioning and comparing mechanized, automated, and robotic harvesting technologies. By separating the physical mechanism of product removal from the automation level and resulting selectivity, the taxonomy clarifies technological boundaries, identifies intermediate configurations, and supports the analysis and development of future harvesting systems.",
-      "authors": [
-        "Renato Cristiano Torres",
-        "Fabiano Mariath D Oliveira",
-        "Claudio Gottschalg Duque"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.13688v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13688v1",
-      "published": "2026-10-09T14:52:52+00:00",
-      "updated": "2026-10-09T14:52:52+00:00",
-      "comment": "14 pages, 1 figure, 6 tables",
-      "journal_ref": "",
-      "categories": [
-        "cs.RO"
-      ],
-      "primary_category": "cs.RO",
-      "sources": [
-        {
-          "category": "cs.RO",
-          "title": "Robotics"
-        }
-      ],
-      "matched_keywords": [],
-      "matched_authors": [],
-      "score": 0,
-      "published_local": "2026-10-09 22:52",
-      "updated_local": "2026-10-09 22:52",
-      "summary_short": "Harvesting technologies have evolved from conventional mechanized systems based on bulk mechanical interaction toward increasingly automated and robotic systems capable of perception, decision-making, and localized actuation. This evolution has also created a classification problem, as harvesting systems are commonly described according to crop type, mechanical removal principle, sensing technology, robotic..."
     },
     {
       "id": "2610.13678v1",
