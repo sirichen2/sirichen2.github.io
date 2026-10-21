@@ -1,13 +1,10 @@
 {
-  "status": "partial",
-  "generated_at_utc": "2026-10-21 06:02",
-  "generated_at_local": "2026-10-21 14:02",
-  "paper_count": 50,
-  "featured_count": 36,
-  "errors": [
-    "cs.AI: HTTP Error 503: Service Unavailable",
-    "cs.LG: HTTP Error 429: Too Many Requests"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-10-21 12:57",
+  "generated_at_local": "2026-10-21 20:57",
+  "paper_count": 85,
+  "featured_count": 51,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
@@ -19,13 +16,13 @@
       "category": "cs.AI",
       "title": "Artificial Intelligence",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.LG",
       "title": "Machine Learning",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.RO",
