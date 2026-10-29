@@ -23,14 +23,12 @@
   ],
   "authors": [],
   "meta": {
-    "status": "partial",
-    "generated_at_utc": "2026-10-29 07:06",
-    "generated_at_local": "2026-10-29 15:06",
-    "paper_count": 72,
-    "featured_count": 47,
-    "errors": [
-      "cs.LG: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
-    ],
+    "status": "fresh",
+    "generated_at_utc": "2026-10-29 14:23",
+    "generated_at_local": "2026-10-29 22:23",
+    "paper_count": 87,
+    "featured_count": 51,
+    "errors": [],
     "sources": [
       {
         "category": "cs.CL",
@@ -48,7 +46,7 @@
         "category": "cs.LG",
         "title": "Machine Learning",
         "max_results": 30,
-        "visible_papers": 0
+        "visible_papers": 30
       },
       {
         "category": "cs.RO",
@@ -59,6 +57,48 @@
     ]
   },
   "papers": [
+    {
+      "id": "2610.37648v1",
+      "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "summary": "We explore how to build performant large language model (LLM) tool-use agents that complete complex, multi-step tasks. Specifically, we study how data composition in synthetically generated tool-use environments affects the training of such agents. To do so, we propose the SynthAPI pipeline, which explicitly controls the diversity of generated environments along the axes of tools, tasks, and the databases on which the tools operate. By systematically varying SynthAPI's generation controls in 458,752 tasks across 849 trained models of four different sizes, we derive a scaling law that predicts downstream tool-use agent generalization based on the scale and composition of the synthesized environments. These predictable relationships reveal several lessons for scaling tool-use agent data. As data budgets grow, scaling tool and database diversity becomes more effective than increasing the number of tasks, and increasing data complexity yields larger gains. Scaling according to these findings yields agents that outperform models trained on data from prior work in large-scale tool-use agent and synthetic environment generation across four evaluation benchmarks.",
+      "authors": [
+        "Andrew Szot",
+        "Samira Abnar",
+        "Omar Attia",
+        "Abbas Kazerouni",
+        "Michael Kirchhof",
+        "Cheng-Yu Hsieh",
+        "Raviteja Vemulapalli",
+        "Alexander Toshev"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.37648v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37648v1",
+      "published": "2026-10-27T17:56:46+00:00",
+      "updated": "2026-10-27T17:56:46+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [
+        "agent",
+        "agents",
+        "large language model",
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 4,
+      "published_local": "2026-10-28 01:56",
+      "updated_local": "2026-10-28 01:56",
+      "summary_short": "We explore how to build performant large language model (LLM) tool-use agents that complete complex, multi-step tasks. Specifically, we study how data composition in synthetically generated tool-use environments affects the training of such agents. To do so, we propose the SynthAPI pipeline, which explicitly controls the diversity of generated environments along the axes of tools, tasks, and the databases on which..."
+    },
     {
       "id": "2610.23284v3",
       "title": "Annotrace: A Workbench for Step-Level Annotation of Agent Traces",
@@ -131,6 +171,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [
@@ -167,6 +211,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [
@@ -422,6 +470,10 @@
       ],
       "primary_category": "cs.RO",
       "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        },
         {
           "category": "cs.RO",
           "title": "Robotics"
@@ -716,6 +768,10 @@
         {
           "category": "cs.CL",
           "title": "Computation and Language"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [
@@ -912,6 +968,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [
@@ -1157,6 +1217,10 @@
         {
           "category": "cs.CL",
           "title": "Computation and Language"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [
@@ -1266,6 +1330,10 @@
         {
           "category": "cs.CL",
           "title": "Computation and Language"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [
@@ -1300,6 +1368,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [
@@ -1310,6 +1382,42 @@
       "published_local": "2026-10-28 01:25",
       "updated_local": "2026-10-28 01:25",
       "summary_short": "World models are widely proposed as core components for enabling agents to reason over long temporal and spatial horizons. Yet current evaluations often emphasize task performance while providing limited insight into whether learned world models acquire predictive latent dynamics that reflect the underlying structure of the environment. Here we introduce the concept of faithful latent world models as an..."
+    },
+    {
+      "id": "2610.37583v1",
+      "title": "Zero-Shot Multimodal Event Spotting in Soccer Broadcasts",
+      "summary": "Automatic soccer event spotting supports highlight generation, video indexing, and sports analytics, but existing methods depend on large annotated datasets and soccer-specific training. We present a zero-shot framework that detects, classifies, and temporally localizes events in full-length soccer broadcasts without task-specific parameter training. Each match is segmented into overlapping clips represented by a compact visual storyboard and the aligned commentary transcript, which a general-purpose multimodal model processes jointly. On three manually annotated matches containing 130 events, the best configuration achieves 72.0% F1@5s and outperforms SoccerNet-trained CALF and NetVLAD++ in a cross-dataset setting, while the storyboard representation reduces inference cost by 72% compared with individual frames. We further analyze the effects of model family, input representation, and prompt optimization, and introduce an evidence-grounded excitement-scoring stage that ranks detected events with natural-language explanations for highlight selection.",
+      "authors": [
+        "Sadia Kamal",
+        "Mahmudul Hasan",
+        "Tony Braskich"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.37583v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37583v1",
+      "published": "2026-10-27T17:24:35+00:00",
+      "updated": "2026-10-27T17:24:35+00:00",
+      "comment": "Accepted to the Main Conference at the IEEE International Symposium on Multimedia: ISM 2026",
+      "journal_ref": "",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "primary_category": "cs.CV",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [
+        "multimodal"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-10-28 01:24",
+      "updated_local": "2026-10-28 01:24",
+      "summary_short": "Automatic soccer event spotting supports highlight generation, video indexing, and sports analytics, but existing methods depend on large annotated datasets and soccer-specific training. We present a zero-shot framework that detects, classifies, and temporally localizes events in full-length soccer broadcasts without task-specific parameter training. Each match is segmented into overlapping clips represented by a..."
     },
     {
       "id": "2610.37571v1",
@@ -1348,6 +1456,77 @@
       "published_local": "2026-10-28 01:15",
       "updated_local": "2026-10-28 01:15",
       "summary_short": "Many real-world decisions require teams to integrate information distributed across participants. Yet AI agents are still primarily trained and benchmarked in isolation. We introduce TeamGym, an environment for evaluating and training language model-based agents on team decision-making problems constructed from real-world legal, finance, medical, and software engineering corpora. TeamGym introduces a method to..."
+    },
+    {
+      "id": "2610.37570v1",
+      "title": "LCM-Promo: An LLM-Based Uplift Model for Promotion Allocation",
+      "summary": "We present LCM-Promo, an LLM-based uplift model for promotion allocation. LCM-Promo is a task-specific Large Commerce Model (LCM): a finetuned LLM trained on transactional commerce data to predict user intent and promotion response. It learns monotonic promotion-response curves from production logs by interpreting single-token outputs as conversion-threshold probabilities, while conditioning on session context such as day and delivery shift. In a production A/B test on churn reactivation, LCM-Promo increased conversion by 1% and reduced promotion cost by 6% relative to the Segment-EMA production baseline.",
+      "authors": [
+        "Nesta Midavaine",
+        "Floris Fok",
+        "Paulo Mendes",
+        "Joao Silva",
+        "Önder Akaçık",
+        "Dimas Lima",
+        "Zülküf Genç"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.37570v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37570v1",
+      "published": "2026-10-27T17:15:15+00:00",
+      "updated": "2026-10-27T17:15:15+00:00",
+      "comment": "4 pages, 2 tables. Accepted at ECML PKDD 2026 (Industrial Track)",
+      "journal_ref": "In: Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track, Demo Track and Industrial Track. ECML PKDD 2026. Lecture Notes in Computer Science (LNAI), vol 16950, pp. 450-453. Springer, Cham (2026)",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [
+        "llm"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-10-28 01:15",
+      "updated_local": "2026-10-28 01:15",
+      "summary_short": "We present LCM-Promo, an LLM-based uplift model for promotion allocation. LCM-Promo is a task-specific Large Commerce Model (LCM): a finetuned LLM trained on transactional commerce data to predict user intent and promotion response. It learns monotonic promotion-response curves from production logs by interpreting single-token outputs as conversion-threshold probabilities, while conditioning on session context such..."
+    },
+    {
+      "id": "2610.37553v1",
+      "title": "Collective Dynamics of Self-Reinforcement: How Cross-Task Coupling Drives Policy Collapse in Unsupervised RLVR",
+      "summary": "Label-free reinforcement learning with verifiable rewards (RLVR) rewards a language model for agreeing with its own majority vote. It improves reasoning at first but eventually collapses: the self-assessed reward goes to one while accuracy falls, often until the model gives the same answer to every problem. The collapse appears only when training uses many problems. We explain this dataset-size dependence as a collective instability. In a solvable many-problem model in which problems share parameters, a population whose problems prefer different answers amplifies any shared perturbation for as long as the population-averaged slope $\\langle F'\\rangle$ of the single-problem self-reinforcement drift $F$ is positive. This holds while problems are still uncertain about their answers. Per-problem sharpening, slowed by $1/N$ for $N$ training problems, races against the shared mode, which grows at a rate $\\proptoλ^2$ independent of $N$, where $λ$ is the strength of the shared coupling. This yields a critical number of problems $N_c\\simeq\\ln(1/δ)/(λ^2G)$, where $δ$ seeds the shared mode and $G$ decreases with the initial confidence. Simulations of the model confirm the predictions: a sharp transition, $N_c\\proptoλ^{-2}$ up to a logarithmic correction, a single critical amplification $λ^2NG$ across couplings, confidence profiles and training variants, a logarithmic dependence on batch size, and no collapse for confident initial models. A kernel version of the theory identifies a protective coupling (generalization of sharpening) and a marginal-entropy bonus that stabilizes the uniform collective mode. In label-free RL of a small Transformer, removing the shared direction prevents collapse entirely, restoring it causes collapse, and collapse grows with training-set size and base-model entropy.",
+      "authors": [
+        "Peize Ding"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.37553v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37553v1",
+      "published": "2026-10-27T17:01:55+00:00",
+      "updated": "2026-10-27T17:01:55+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [
+        "reasoning"
+      ],
+      "matched_authors": [],
+      "score": 1,
+      "published_local": "2026-10-28 01:01",
+      "updated_local": "2026-10-28 01:01",
+      "summary_short": "Label-free reinforcement learning with verifiable rewards (RLVR) rewards a language model for agreeing with its own majority vote. It improves reasoning at first but eventually collapses: the self-assessed reward goes to one while accuracy falls, often until the model gives the same answer to every problem. The collapse appears only when training uses many problems. We explain this dataset-size dependence as a..."
     },
     {
       "id": "2610.37547v1",
@@ -1493,6 +1672,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [
@@ -2006,6 +2189,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [],
@@ -2014,6 +2201,39 @@
       "published_local": "2026-10-28 01:59",
       "updated_local": "2026-10-28 01:59",
       "summary_short": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for efficient 3D scene and 2D image representation. Hexels exploit locally planar regions with smoothly varying appearance..."
+    },
+    {
+      "id": "2610.37658v1",
+      "title": "When Should We Intervene at Test Time?",
+      "summary": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failures and cannot tell a model when to use an intervention. Target labels can guide this decision, but they are scarce and some choices are already clear. We introduce PORTAL, a controller that chooses when to deploy an intervention, which inputs to label, and when to stop querying. Each available prediction rule is a candidate, and its predictions are fixed before current feedback arrives. Every acquired label therefore evaluates all candidates on the same input. PORTAL combines these shared comparisons and directs queries toward candidates that can still overtake the current leader. It stops when the remaining labels cannot change the choice or when the possible accuracy gain no longer justifies another query. Our analysis links the required feedback to accuracy gaps and shared mistakes, explaining why some choices need much less evidence. Experiments show that this control turns an intervention that loses accuracy overall into a useful choice on selected batches. It prevents severe failures caused by changes in arrival order and preserves gains across complete corruption streams. When a fixed rule already works well, PORTAL uses little feedback to retain its performance. Periodic label checks reveal when past evidence needs refreshing and help the controller recover as conditions change. The acquired labels also train stronger candidates for future batches, and selection brings nearly all of their accuracy gains into deployment. The same feedback therefore improves both the choice made now and the predictions available to later batches.",
+      "authors": [
+        "Jiahao Zhang",
+        "Xinling Wen",
+        "Liangliang Li",
+        "Yu Chen"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.37658v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37658v1",
+      "published": "2026-10-27T17:58:53+00:00",
+      "updated": "2026-10-27T17:58:53+00:00",
+      "comment": "79 pages; preprint",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-10-28 01:58",
+      "updated_local": "2026-10-28 01:58",
+      "summary_short": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failures and cannot tell a model when to use an intervention. Target labels can guide this decision, but they are scarce..."
     },
     {
       "id": "2610.37656v1",
@@ -2040,6 +2260,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [],
@@ -2082,6 +2306,40 @@
       "summary_short": "Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preprocessor that generates differentiable, just-in-time compiled, and vectorisable chemistry code in JAX from mechanisms..."
     },
     {
+      "id": "2609.07974v2",
+      "title": "A Tight 3-Approximation for Fair $k$-Means",
+      "summary": "Fairness in clustering has attracted sustained research interest, motivated by the need to ensure equitable representation of protected groups in machine learning applications. We study fair $k$-means clustering in Euclidean space, where the proportion of each protected group in every cluster must lie within specified lower and upper bounds. These constraints make it challenging to determine both cluster centers and point assignments. Our algorithm first splits the input into many small fair clusters and then merges them into $k$ clusters with a weighted $k$-means algorithm. The merge is cheap only when the small clusters do not move points away from their optimal centers, so we add a displacement penalty to the split, which charges each point for how far the small clusters move it. Given a $ρ$-approximate algorithm for weighted $k$-means and any $ε>0$, our algorithm returns a fractional solution whose cost is at most $3ρ+ε$ times the optimal integral fair cost. With a PTAS as the subroutine, the approximation ratio becomes $3+O(ε)$, improving the previous factor of $5+O(ε)$. This ratio is the best possible: unless P=NP, no polynomial-time algorithm achieves the ratio $3-δ$ for any fixed $δ>0$, even in one dimension. The solution satisfies all fairness constraints exactly and can be rounded to an integral assignment with a bounded additive violation of fairness and no increase in cost. The same approximation guarantee extends to the $k$-sparse Wasserstein barycenter problem.",
+      "authors": [
+        "Kangke Cheng",
+        "Guanlin Mo",
+        "Shihong Song",
+        "Hu Ding"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.07974v2",
+      "pdf_url": "https://arxiv.org/pdf/2609.07974v2",
+      "published": "2026-09-07T20:54:36+00:00",
+      "updated": "2026-10-27T17:56:47+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.CG",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-09-08 04:54",
+      "updated_local": "2026-10-28 01:56",
+      "summary_short": "Fairness in clustering has attracted sustained research interest, motivated by the need to ensure equitable representation of protected groups in machine learning applications. We study fair $k$-means clustering in Euclidean space, where the proportion of each protected group in every cluster must lie within specified lower and upper bounds. These constraints make it challenging to determine both cluster centers..."
+    },
+    {
       "id": "2610.37647v1",
       "title": "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control",
       "summary": "Weight decay and explicit weight-norm constraints improve optimizer performance in language model pretraining, yet a unified understanding of why such control helps and how much is needed remains incomplete. We analyze norm control in Muon over the entire training trajectory using the \\emph{accumulated effective learning rate}, $C_T=\\sum_{t<T}η_t/\\|W_t\\|_F$, where $η_t$ is the nominal learning rate and $η_t/\\|W_t\\|_F$ is the effective learning rate relative to the weight norm. For bounded update directions, accumulation over any training interval bounds relative weight displacement. We show that vanilla Muon can accumulate only logarithmically, potentially limiting exploration and helping explain its slower empirical progress, whereas MuonW and MuonH guarantee at least linear accumulation under the stated conditions. Going beyond bounded-norm control, we show that sufficiently slow norm growth guarantees faster accumulation than the logarithmic worst case, opening up less restrictive optimizer designs. Based on this insight, we propose MuonGS, which uses Gram--Schmidt (GS) projection to remove the radial component of each Muon update without fixing the weight norm. With bounded update directions and a constant nominal learning rate, we prove that the weight norm grows at most proportionally to $\\sqrt{t}$ after $t$ steps. Consequently, MuonGS guarantees $C_T=Ω(\\sqrt{T})$, with accumulation sustained even in later training. Further, for smooth scale-invariant objectives we establish its $O(T^{-1/2})$ stationarity guarantee. In pretraining experiments with 160M- and 400M-parameter dense models as well as a 135M active- and 1B total- parameter MoE model, MuonGS achieves lower validation perplexity than MuonH at long training horizons. In particular, for the dense model it achieves an estimated token-equivalent speedup up to about $15\\%$ at matched validation loss to MuonH.",
@@ -2106,6 +2364,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [],
@@ -2181,6 +2443,45 @@
       "summary_short": "Language models pretrained on web corpora collected over multiple years learn both general and domain-specific knowledge. How these different kinds of knowledge are learned as pretraining progresses remains unclear. Recent point-in-time models trained on web snapshots from different years provide a way to probe how knowledge prevalence varies over time. Using these models, we propose a temporal variability score..."
     },
     {
+      "id": "2602.10156v2",
+      "title": "STRAND: Sequence-Conditioned Transport for Single-Cell Perturbations",
+      "summary": "Prediction of the transcriptional response of a cell to a genetic perturbation is a central problem in the computational modeling of gene regulation. Perturbations of the same gene can produce different transcriptional responses depending on the targeted locus, such as an alternative transcription start site or a distal regulatory element, and gene-level perturbation models represent these distinct interventions with a single gene identifier. We introduce STRAND, a generative model that encodes the regulatory DNA sequence at the perturbation locus and uses this encoding to parameterize a conditional transport process from control to perturbed single-cell states. Sequence conditioning enables zero-shot prediction for perturbation targets absent from training and supports locus-resolved inputs at 128 bp model resolution within a 524 kb sequence window. On CRISPRi screens in K562, Jurkat, and RPE1 cells, STRAND achieves the best average rank on few-shot and unseen-gene benchmarks, with gains of up to 33% in perturbation discrimination, and improves transfer to held-out cell lines by up to 0.12 in $Δ$Pearson. Ablation studies attribute these gains to sequence conditioning and to conditional transport. At the locus level, STRAND distinguishes alternative transcription start sites and validated regulatory elements that gene-identifier models represent as a single perturbation. STRAND is available at https://github.com/mims-harvard/STRAND.",
+      "authors": [
+        "Boyang Fu",
+        "Sameer Gabbita",
+        "George Dasoulas",
+        "Xiang Lin",
+        "Shanghua Gao",
+        "Xiaorui Su",
+        "Soumya Ghosh",
+        "Marinka Zitnik"
+      ],
+      "abs_url": "https://arxiv.org/abs/2602.10156v2",
+      "pdf_url": "https://arxiv.org/pdf/2602.10156v2",
+      "published": "2026-02-10T00:57:38+00:00",
+      "updated": "2026-10-27T17:50:07+00:00",
+      "comment": "10 pages for main draft, 5 main figures",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG",
+        "q-bio.CB",
+        "q-bio.GN"
+      ],
+      "primary_category": "q-bio.GN",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-02-10 08:57",
+      "updated_local": "2026-10-28 01:50",
+      "summary_short": "Prediction of the transcriptional response of a cell to a genetic perturbation is a central problem in the computational modeling of gene regulation. Perturbations of the same gene can produce different transcriptional responses depending on the targeted locus, such as an alternative transcription start site or a distal regulatory element, and gene-level perturbation models represent these distinct interventions..."
+    },
+    {
       "id": "2610.37619v1",
       "title": "Perceiving and Predicting Dynamic Sports: Spatiotemporal Intelligence in Vision Models for Egocentric Tennis Video",
       "summary": "Agile robots require spatiotemporal intelligence to interpret scenes, reason about interactions, and anticipate future events. Yet it remains unclear how well foundation vision models support these capabilities, particularly from a moving egocentric camera, which is a natural view for robots. To investigate this, we collect an annotated tennis dataset and train a suite of vision models on spatiotemporal tasks. Our dataset contains egocentric video synchronized with five allocentric videos, estimated global positions, labeled contact times, and annotated stroke types. We then evaluate seven prediction tasks from egocentric images: 2D ego player and 3D ball localization, future player and ball trajectories, forehand or backhand stroke anticipation, time to the next ego player ball contact, and 3D ball position at that contact. We compare image encoders, video encoders, and vision-language models with jointly trained prediction heads. The best performing models achieve mean current-frame localization errors of 0.14 m for the ego player and 0.54 m for the ball, future forecasting errors of 0.34 m for the ego player and 0.91 m for the ball over 1.1 s, and a mean contact-time prediction error of 0.14 s. Auxiliary depth information substantially improves 3D ball localization, suggesting that inferring metric depth remains a challenge. Longer image histories do not improve ball forecasting, indicating that representations exploit scene context rather than rely solely on inter-frame motion. Finally, we propose a conditional diffusion model to generate whole-body kinematic tennis motion from vision encoder predictions on egocentric video at real-time rates, adapting movements as predictions are refined. These results move towards a deeper understanding of how foundation vision models can support real-time dynamic robots using egocentric video.",
@@ -2216,6 +2517,106 @@
       "published_local": "2026-10-28 01:47",
       "updated_local": "2026-10-28 01:47",
       "summary_short": "Agile robots require spatiotemporal intelligence to interpret scenes, reason about interactions, and anticipate future events. Yet it remains unclear how well foundation vision models support these capabilities, particularly from a moving egocentric camera, which is a natural view for robots. To investigate this, we collect an annotated tennis dataset and train a suite of vision models on spatiotemporal tasks. Our..."
+    },
+    {
+      "id": "2510.13992v2",
+      "title": "Optimizing Spectral Signature in Code Backdoor Detection",
+      "summary": "As Large Language Models (LLMs) are increasingly integrated into software development workflows, they also become prime targets for adversarial attacks. Among these, backdoor attacks are a significant threat, allowing attackers to manipulate model outputs through hidden triggers embedded in training data. Detecting such backdoors remains a challenge, and one promising approach is the use of Spectral Signature defense methods that identify poisoned data by analyzing feature representations through eigenvectors. While some prior works have explored Spectral Signatures for backdoor detection in neural networks, recent studies suggest that these methods may not be optimally effective for code models. In this paper, we revisit the applicability of Spectral Signature-based defenses in the context of backdoor attacks on code models. We systematically evaluate their effectiveness under various attack scenarios and defense configurations, analyzing their strengths and limitations. We found that the widely used setting of Spectral Signature in code backdoor detection is often suboptimal. Hence, we explored the impact of different settings of the key factors. We discovered a new proxy metric that can more accurately estimate the actual performance of Spectral Signature without model retraining after the defense. Our findings contribute to a deeper understanding of the configurations of Spectral Signature defenses in securing code models and offer insights into potential improvements for future research.",
+      "authors": [
+        "Quoc Hung Le",
+        "Thanh Le-Cong",
+        "Bach Le",
+        "Bowen Xu"
+      ],
+      "abs_url": "https://arxiv.org/abs/2510.13992v2",
+      "pdf_url": "https://arxiv.org/pdf/2510.13992v2",
+      "published": "2025-10-15T18:18:08+00:00",
+      "updated": "2026-10-27T17:45:08+00:00",
+      "comment": "Accepted at the IEEE International Conference on Software Maintenance and Evolution (ICSME 2026). 12 pages, 4 figures",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2025-10-16 02:18",
+      "updated_local": "2026-10-28 01:45",
+      "summary_short": "As Large Language Models (LLMs) are increasingly integrated into software development workflows, they also become prime targets for adversarial attacks. Among these, backdoor attacks are a significant threat, allowing attackers to manipulate model outputs through hidden triggers embedded in training data. Detecting such backdoors remains a challenge, and one promising approach is the use of Spectral Signature..."
+    },
+    {
+      "id": "2601.22766v4",
+      "title": "Sparse Attention as Compact Kernel Regression",
+      "summary": "Recent work has revealed a link between self-attention mechanisms in transformers and test-time kernel regression via the Nadaraya-Watson estimator, with standard softmax attention corresponding to a Gaussian kernel. However, a kernel-theoretic understanding of sparse attention mechanisms is currently missing. In this paper, we establish a formal correspondence between sparse attention and compact (bounded support) kernels. We show that normalized ReLU and sparsemax attention arise from Epanechnikov kernel regression under fixed and adaptive normalizations, respectively. More generally, we demonstrate that widely used kernels in nonparametric density estimation -- including Epanechnikov, biweight, and triweight -- correspond to $α$-entmax attention with $α= 1 + \\frac{1}{n}$ for $n \\in \\mathbb{N}$, while the softmax/Gaussian relationship emerges in the limit $n \\to \\infty$. This unified perspective explains how sparsity naturally emerges from kernel design and provides principled alternatives to heuristic top-$k$ attention and other associative memory mechanisms. Experiments with a kernel-regression-based variant of transformers -- Memory Mosaics -- show that kernel-based sparse attention achieves competitive performance on language modeling, in-context learning, and length generalization tasks, offering a principled framework for designing attention mechanisms.",
+      "authors": [
+        "Saul Santos",
+        "Nuno Gonçalves",
+        "Daniel C. McNamee",
+        "Marcos Treviso",
+        "André F. T Martins"
+      ],
+      "abs_url": "https://arxiv.org/abs/2601.22766v4",
+      "pdf_url": "https://arxiv.org/pdf/2601.22766v4",
+      "published": "2026-01-30T09:45:35+00:00",
+      "updated": "2026-10-27T17:41:09+00:00",
+      "comment": "16 pages, 5 figures",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-01-30 17:45",
+      "updated_local": "2026-10-28 01:41",
+      "summary_short": "Recent work has revealed a link between self-attention mechanisms in transformers and test-time kernel regression via the Nadaraya-Watson estimator, with standard softmax attention corresponding to a Gaussian kernel. However, a kernel-theoretic understanding of sparse attention mechanisms is currently missing. In this paper, we establish a formal correspondence between sparse attention and compact (bounded support)..."
+    },
+    {
+      "id": "2610.29578v2",
+      "title": "What Prediction-Market Contracts Reveal at Launch: Trading Volume and Dispute Risk",
+      "summary": "Using a near-census of 802,863 resolved markets listed on Polymarket between January 2023 and May 2026, and only information available at listing (the market's title and description, named resolution source, and contract metadata), we predict lifetime trading volume and whether settlement is later disputed. Contract information predicts trading volume well (out-of-sample $R^2 = 0.747$ for log volume), and most of the signal is interpretable: market topic provides the largest gain ($+0.289$ $R^2$ over a $0.220$ contract-feature baseline), wording and resolution-rule design add smaller but measurable improvements ($+0.027$ combined), and neural text models add little beyond the interpretable features. This performance does not survive a period of platform change coinciding with a shift in listing formats: accuracy in predicting whether a market reaches \\$1,000 falls from AUC $0.940$ under same-period evaluation to $0.577$ when training on past quarters and testing on later ones. The loss concentrates in markets whose question forms were absent from training (76.9% of test markets; on familiar forms the model still reaches $0.778$), and a decomposition attributes more of it to a changed relationship between contract characteristics and demand than to an outdated mapping from text to features. Dispute predictors are more stable but less precise: launch-time features rank dispute risk far better than chance (AUC $0.78$), yet at a 0.31% base rate precision is too low for case-by-case prediction (average precision $0.012$), so the scores suit ranking groups of markets rather than forecasting individual disputes.",
+      "authors": [
+        "Ahmed Mahrous",
+        "Roberto Di Pietro"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.29578v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.29578v2",
+      "published": "2026-10-21T11:20:35+00:00",
+      "updated": "2026-10-27T17:36:58+00:00",
+      "comment": "Accepted at the 7th ACM International Conference on AI in Finance (ICAIF 2026). 8 pages, 5 figures. Code and data: https://doi.org/10.5281/zenodo.23376383",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG",
+        "q-fin.ST"
+      ],
+      "primary_category": "q-fin.ST",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-10-21 19:20",
+      "updated_local": "2026-10-28 01:36",
+      "summary_short": "Using a near-census of 802,863 resolved markets listed on Polymarket between January 2023 and May 2026, and only information available at listing (the market's title and description, named resolution source, and contract metadata), we predict lifetime trading volume and whether settlement is later disputed. Contract information predicts trading volume well (out-of-sample $R^2 = 0.747$ for log volume), and most of..."
     },
     {
       "id": "2610.37605v1",
@@ -2353,6 +2754,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [],
@@ -2821,6 +3226,38 @@
       "summary_short": "Supernumerary robotic fingers augment human dexterity by enabling a single hand to perform complex \"hold-and-manipulate\" tasks that typically require bimanual coordination. However, existing devices are often hindered by bulky hardware that limits interaction to large objects and rely on explicit hand motion triggers that lack environmental context. To address these challenges, we present EgoThumb, a fully..."
     },
     {
+      "id": "2610.37580v1",
+      "title": "Spectral Braids: A Topological Descriptor for Dynamic Directed Networks",
+      "summary": "Eigenvalues are a workhorse of graph machine learning: spectral clustering, spectral graph neural networks, and graph kernels all summarize a network by the eigenvalues of a matrix. These eigenvalues are almost always treated as a static list of numbers. When a graph changes, however, its eigenvalues move, and when the matrix is not symmetric, they move in the complex plane, where they can wind around each other. The pattern of this winding is a braid, a classical object from topology. We propose spectral braids, a methodology for dynamic directed networks: each snapshot is aggregated into a community-level transition matrix, its complex eigenvalues are tracked over time, and the braid they trace is read off as a word. The word is then mapped to a matrix by the Burau representation, which gives a fixed-size feature vector for any classifier. The braid has a concrete meaning: each eigenvalue describes how a group of communities behaves, and each crossing records one group overtaking another. We evaluate the method on dynamic network classification, using synthetic networks of online communities whose labels describe how the network evolved between the same starting and ending states. Our experimental results show that the proposed features reach 97.1% accuracy on four classes, against 44.5% for the best feature set that does not track eigenvalues, and that the Burau features also separate networks containing the same events in a different order, which simple counts of crossings cannot do. To the best of our knowledge, this is the first study that defines braids and braid monodromy on graph data and uses them as features for learning on dynamic networks.",
+      "authors": [
+        "Mehmet Emin Aktas",
+        "Esra Akbas"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.37580v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37580v1",
+      "published": "2026-10-27T17:21:19+00:00",
+      "updated": "2026-10-27T17:21:19+00:00",
+      "comment": "15 pages, 5 figures, 2 tables. Accepted at the 2026 IEEE International Conference on Big Data (IEEE BigData 2026)",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG",
+        "cs.SI"
+      ],
+      "primary_category": "cs.SI",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-10-28 01:21",
+      "updated_local": "2026-10-28 01:21",
+      "summary_short": "Eigenvalues are a workhorse of graph machine learning: spectral clustering, spectral graph neural networks, and graph kernels all summarize a network by the eigenvalues of a matrix. These eigenvalues are almost always treated as a static list of numbers. When a graph changes, however, its eigenvalues move, and when the matrix is not symmetric, they move in the complex plane, where they can wind around each other...."
+    },
+    {
       "id": "2609.20077v2",
       "title": "Tailored to you: longitudinal effects of personalising language models",
       "summary": "Interest in developing personalised language models is rapidly growing. While personalisation is often viewed as a mechanism to better serve diverse user needs, the effects of sustained interactions with personalised models on people's perception of and behaviour toward AI remain poorly understood. Most critically, downstream consequences outside the immediate human--AI interaction loop, such as effects on users' self-perceptions and interpersonal relationships, remain largely unexamined. In this study, we recruited 992 participants to complete daily advice-seeking interactions with language models over the course of five days, comparing outcomes from a non-personalised baseline against two personalisation approaches: memory-based (conditioned on prior conversational history) and survey-based (conditioned on information collected through a pre-study intake survey). We find that several changes in human-AI interaction over time are driven primarily by repeated exposure rather than personalisation itself. However, participants interacting with personalised models experienced differences in advice-seeking and information-sharing attitudes and behaviours. We conclude by highlighting the nuanced effects of different personalisation approaches on interaction outcomes, and discussing the implications of these findings for the responsible design and deployment of personalised AI systems.",
@@ -2859,6 +3296,43 @@
       "summary_short": "Interest in developing personalised language models is rapidly growing. While personalisation is often viewed as a mechanism to better serve diverse user needs, the effects of sustained interactions with personalised models on people's perception of and behaviour toward AI remain poorly understood. Most critically, downstream consequences outside the immediate human--AI interaction loop, such as effects on users'..."
     },
     {
+      "id": "2610.37563v1",
+      "title": "Pneuma: A Large-Scale Real-World Time Series Benchmark for Commercial Aircraft Predictive Maintenance",
+      "summary": "Predictive maintenance is vital for commercial aviation, yet progress remains hindered by the lack of public, large-scale real-world datasets. As a result, most methods are developed and evaluated on proprietary data, limiting reproducibility. We introduce Pneuma, the first publicly available large-scale benchmark for predictive maintenance using onboard time series from in-service commercial aircraft. Built around bleed air systems, Pneuma contains over 920 million multivariate time steps across four aircraft types and 9 verified fault scenarios, directly aligned with real maintenance logs. The dataset exhibits key real-world challenges, including substantial class imbalance, subtle fault evolution patterns, and significant variance across aircraft configurations. We structure the benchmark around three tasks: multivariate forecasting, supervised fault classification, and unsupervised anomaly detection, with labels derived from actual maintenance records. Under unified settings, we evaluate over 25 models from four methodological families on 9 carefully curated subsets. The results reveal that even strong contemporary models struggle with subtle fault signatures. Further analyses show consistent gains from additional in-context examples and multivariate inference, while forecasting quality is strongly associated with anomaly detection performance. Together, these findings provide practical insights into effectively modeling complex real-world aviation time series. We hope Pneuma will serve as a rigorous and reproducible foundation for advancing data-driven predictive maintenance toward real-world deployment in commercial aviation.",
+      "authors": [
+        "Jiafeng Lin",
+        "Yutian Zhang",
+        "Huan Zhang",
+        "Yuxuan Wang",
+        "Jinyan Feng",
+        "Yuhui Liu",
+        "Zhongyi Pei",
+        "Jianmin Wang"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.37563v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37563v1",
+      "published": "2026-10-27T17:09:19+00:00",
+      "updated": "2026-10-27T17:09:19+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-10-28 01:09",
+      "updated_local": "2026-10-28 01:09",
+      "summary_short": "Predictive maintenance is vital for commercial aviation, yet progress remains hindered by the lack of public, large-scale real-world datasets. As a result, most methods are developed and evaluated on proprietary data, limiting reproducibility. We introduce Pneuma, the first publicly available large-scale benchmark for predictive maintenance using onboard time series from in-service commercial aircraft. Built around..."
+    },
+    {
       "id": "2610.37561v1",
       "title": "When uncertainty quantification fails: structural vulnerabilities and corrections for selective prediction under clinical class imbalance",
       "summary": "Background. Selective prediction systems improve the safety of clinical artificial intelligence by deferring ambiguous cases to human experts while automating high-confidence decisions. However, this safety mechanism relies entirely on the premise that uncertainty scores accurately reflect clinical ambiguity. In prognostic tasks characterized by severe class imbalance, where the clinical outcome of interest is a minority, this assumption breaks down. Standard uncertainty measures cease to capture clinically aligned ambiguity; instead, they become a proxy for class membership, systematically penalizing minority patients regardless of their individual predictive clarity. Results. Across 56 synthetic conditions and three neurodegenerative cohorts spanning severe class imbalance to near-balanced conditions (multiple sclerosis, Parkinson's Disease, Alzheimer's Disease), our framework consistently maintained bounded, balanced risk across trajectories. In contrast, global metrics either collapsed minority Sensitivity or protected the minority at the expense of majority patients. Applying CCR with standard entropy fails to protect the minority because it breaks within-class monotonicity when tau=0.5. Combining CCR with threshold-aware metrics restores strict monotonicity, correctly identifies ambiguous patients, and safely mitigates minority exclusion. Conclusions. Under clinical class imbalance, standard uncertainty quantification measures dataset sparsity rather than clinical ambiguity, creating a systemic illusion of safety. This bias is a correctable structural flaw. Clinical pipelines deploying selective prediction under imbalance should adopt threshold-aligned uncertainty measures and class-stratified evaluation. This reduces class-specific risk imbalance, supporting safer selective prediction under the evaluated conditions without silently excluding the most vulnerable patients.",
@@ -2886,6 +3360,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [],
@@ -2964,6 +3442,10 @@
         {
           "category": "cs.AI",
           "title": "Artificial Intelligence"
+        },
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
         }
       ],
       "matched_keywords": [],
@@ -3004,6 +3486,102 @@
       "published_local": "2026-10-28 00:53",
       "updated_local": "2026-10-28 00:53",
       "summary_short": "A joint of pipe run into the hole swings from the elevator over the well and strikes a fixed stabbing guide at whatever speed the swing has. StabBot, a robotic stabbing system, predicts the swing and meets the pipe at its own speed. A pendulum Kalman filter tuned from the pipe tally tracks the joint in stereo images. A six-axis arm with an open V-shaped roller head closes in at matched velocity, confirms the last..."
+    },
+    {
+      "id": "2610.37524v1",
+      "title": "GTFormer: A Syntax-Free Graph Network Alternative to Transformers for 8192$\\times$ Length Extrapolation in Linear Time",
+      "summary": "Self-attention mechanisms have established the Transformer as the dominant backbone across natural language processing, source code intelligence, and automated theorem proving. However, all-to-all pairwise token comparison enforces a quadratic $\\mathcal{O}(N^2)$ compute and memory barrier alongside severe softmax attention dilution as sequence length $N$ scales beyond the training horizon. Inspired by recent advances in algebraic graph learning (\\textbf{WPNet}), this work introduces \\textbf{GTFormer}, a syntax-free hierarchical Graph Neural Network (GNN) that replaces flat self-attention for general long-context sequence modeling. GTFormer organizes raw token streams into a bounded-degree hierarchy combining a balanced binary reduction tree ($\\lceil \\log_2 N \\rceil$ depth), horizontal boundary-bridging shift edges, random expander shortcuts, multi-channel convex highway gating, and a top-down broadcast pass. Across eight long-context code, log, and multi-hop retrieval benchmarks trained exclusively on sequences of length $N \\le 512$, GTFormer extrapolates zero-shot to $N = 4{,}194{,}304$ ($8192\\times$) on a single commodity GPU in linear $\\mathcal{O}(N)$ memory, maintaining near-perfect accuracy where standard and RoPE Transformers suffer from out-of-distribution attention collapse and out-of-memory exhaustion.",
+      "authors": [
+        "Elisabeth Fink"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.37524v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37524v1",
+      "published": "2026-10-27T16:45:29+00:00",
+      "updated": "2026-10-27T16:45:29+00:00",
+      "comment": "20 pages",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-10-28 00:45",
+      "updated_local": "2026-10-28 00:45",
+      "summary_short": "Self-attention mechanisms have established the Transformer as the dominant backbone across natural language processing, source code intelligence, and automated theorem proving. However, all-to-all pairwise token comparison enforces a quadratic $\\mathcal{O}(N^2)$ compute and memory barrier alongside severe softmax attention dilution as sequence length $N$ scales beyond the training horizon. Inspired by recent..."
+    },
+    {
+      "id": "2605.16433v4",
+      "title": "Edge-AI-Driven Learning-to-Rank for Decentralized Task Allocation in Circular Smart Manufacturing",
+      "summary": "Task allocation in smart manufacturing systems must operate under decentralized decision-making, dynamic workloads, and shared-resource constraints. In circular manufacturing settings, these challenges are further intensified because tasks compete for reusable, capacity-constrained assets, and machine selection also might affect processing energy. Although learning-based approaches have been explored for task allocation, improvements in predictive modeling do not necessarily translate into better allocation outcomes under decentralized negotiation. This work proposes an Edge-AI-driven decentralized task-allocation framework. We develop lightweight decision intelligence deployed at the machine level. It is developed progressively: first, a resource-aware heuristic establishes the decentralized bidding structure; a regression-based Edge-AI formulation then examines learned local bid approximation, and a compact autoencoder-regularized pairwise ranking model finally provides a learned correction to the analytical bid ordering. Each machine evaluates incoming tasks by using its processing capability, queue state, energy characteristics, and a compact signal representing contention over the reusable shared production asset. The framework is assessed using discrete-event simulation in scenarios characterized by high load and dependence on shared resources. Compared to the heuristic, the proposed ranking method increases completed tasks, reduces average tardiness, and lowers the deadline-miss rate, with statistically significant paired differences. Mean energy per completed task is also reduced. The results indicate that effective learning-assisted allocation depends not only on approximating local decision quantities, but also on shaping the relative preferences that determine negotiation outcomes.",
+      "authors": [
+        "Mohammadhossein Ghahramani",
+        "Yan Qiao",
+        "Mengchu Zhou"
+      ],
+      "abs_url": "https://arxiv.org/abs/2605.16433v4",
+      "pdf_url": "https://arxiv.org/pdf/2605.16433v4",
+      "published": "2026-05-14T20:38:25+00:00",
+      "updated": "2026-10-27T16:43:10+00:00",
+      "comment": "",
+      "journal_ref": "Under review at IEEE IoT J, 2026",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-05-15 04:38",
+      "updated_local": "2026-10-28 00:43",
+      "summary_short": "Task allocation in smart manufacturing systems must operate under decentralized decision-making, dynamic workloads, and shared-resource constraints. In circular manufacturing settings, these challenges are further intensified because tasks compete for reusable, capacity-constrained assets, and machine selection also might affect processing energy. Although learning-based approaches have been explored for task..."
+    },
+    {
+      "id": "2607.07767v2",
+      "title": "Distributionally Faithful Imputation via Positive Semi-Definite Kernel Density Estimation",
+      "summary": "Missing values undermine statistical inference and machine learning pipelines, yet most imputation methods rely on heuristics or restrictive parametric assumptions that ignore the joint data distribution. We recast imputation under missing completely at random (MCAR) as density estimation from masked observations: estimate a distribution whose observed marginals exactly match those in the data. Leveraging positive semidefinite (PSD) kernel densities we obtain a convex empirical risk problem with closed form marginals, solvable by a Newton interior point method. We further introduce a non convex extension that supports adaptive hyperparameter selection through alternating minimization. The resulting PSD-Impute model yields both single and multiple imputations from the same fitted density, enjoys statistical consistency, beating the curse of dimensionality for very regular probabilities. Experiments indicate competitive distributional accuracy compared with popular imputation baselines, suggesting strong practical promise.",
+      "authors": [
+        "Andrea Basteri",
+        "Carlo Ciliberto",
+        "Alessandro Rudi"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07767v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.07767v2",
+      "published": "2026-07-08T15:51:05+00:00",
+      "updated": "2026-10-27T16:41:12+00:00",
+      "comment": "",
+      "journal_ref": "",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "primary_category": "stat.ML",
+      "sources": [
+        {
+          "category": "cs.LG",
+          "title": "Machine Learning"
+        }
+      ],
+      "matched_keywords": [],
+      "matched_authors": [],
+      "score": 0,
+      "published_local": "2026-07-08 23:51",
+      "updated_local": "2026-10-28 00:41",
+      "summary_short": "Missing values undermine statistical inference and machine learning pipelines, yet most imputation methods rely on heuristics or restrictive parametric assumptions that ignore the joint data distribution. We recast imputation under missing completely at random (MCAR) as density estimation from masked observations: estimate a distribution whose observed marginals exactly match those in the data. Leveraging positive..."
     },
     {
       "id": "2609.31035v3",

@@ -1,12 +1,10 @@
 {
-  "status": "partial",
-  "generated_at_utc": "2026-10-29 07:06",
-  "generated_at_local": "2026-10-29 15:06",
-  "paper_count": 72,
-  "featured_count": 47,
-  "errors": [
-    "cs.LG: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>"
-  ],
+  "status": "fresh",
+  "generated_at_utc": "2026-10-29 14:23",
+  "generated_at_local": "2026-10-29 22:23",
+  "paper_count": 87,
+  "featured_count": 51,
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
@@ -24,7 +22,7 @@
       "category": "cs.LG",
       "title": "Machine Learning",
       "max_results": 30,
-      "visible_papers": 0
+      "visible_papers": 30
     },
     {
       "category": "cs.RO",
