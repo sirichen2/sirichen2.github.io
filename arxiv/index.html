@@ -39,13 +39,13 @@
                 </div>
                 <div class="stat-card">
                     <span class="stat-label">Last build</span>
-                    <strong>2026-11-09 02:19</strong>
+                    <strong>2026-11-09 15:58</strong>
                     <small>Singapore time</small>
                 </div>
                 <div class="stat-card">
                     <span class="stat-label">Total papers</span>
-                    <strong>83</strong>
-                    <small>50 matched keywords</small>
+                    <strong>90</strong>
+                    <small>57 matched keywords</small>
                 </div>
             </div>
         </section>
@@ -101,16 +101,34 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08219v1" target="_blank" rel="noopener noreferrer">Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2602.02474v3" target="_blank" rel="noopener noreferrer">MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08219v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2602.02474v3" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 00:08 SGT</span>
-                <span>Teng Pan, Zixuan Wang, Yuchen Yan, Qifei Wu, Yao Chen, Yingqi Qu</span>
+                <span>Updated 2026-11-07 00:31 SGT</span>
+                <span>Haozhen Zhang, Quanyu Long, Jianzhu Bao, Tao Feng, Weizhi Zhang, Haodong Yue</span>
             </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">llm</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workflows, understanding heterogeneous file contexts, and producing usable deliverables under fine-grained requirements. A...</p>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">large language model</span><span class="badge accent">llm</span></div>
+            <p class="paper-summary">Most Large Language Model (LLM) agent memory systems rely on a small set of static, hand-designed operations for extracting memory. These fixed procedures hard-code human priors about what to store and how to revise memory, making them rigid under diverse interaction patterns and inefficient on long histories. To this end, we present \textbf{MemSkill}, which reframes these operations as learnable and evolvable...</p>
+            <p class="paper-note">Accepted by NeurIPS 2026. Code is available at https://github.com/ViktorAxelsen/MemSkill</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09822v1" target="_blank" rel="noopener noreferrer">Discovering formally verified quantum programs with AI</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09822v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:08 SGT</span>
+                <span>Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johannes Bausch, Eric Wieser</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">large language model</span></div>
+            <p class="paper-summary">The timeline by which quantum computers can solve breakthrough problems in science depends on improved quantum algorithms as much as on better hardware. Such algorithmic advances are typically achieved through many years of expert human collaboration. In mathematics and computer science, large language models have accelerated progress through automated discovery loops. However, quantum algorithms can only be...</p>
             
             
         </article>
@@ -119,16 +137,70 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08483v1" target="_blank" rel="noopener noreferrer">SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2611.09802v1" target="_blank" rel="noopener noreferrer">When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08483v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09802v1" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:59 SGT</span>
-                <span>Qile Jiang, George Em Karniadakis</span>
+                <span>Updated 2026-11-07 01:54 SGT</span>
+                <span>Tural Mehtiyev, Biruk Tadesse, Lawrence Arkoh, Wesley Assunção</span>
             </div>
             <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">llm</span></div>
-            <p class="paper-summary">LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds...</p>
+            <p class="paper-summary">LLM-based coding agents such as Claude Code are guided by repository instruction files (also called context files or agent configuration files) like AGENTS.md and CLAUDE.md, which are read in every agent session. As any documentation artifact, these files can fall behind the code and become stale (e.g., a test folder moves, but the file still points to the old one). In technical debt terms, such a stale instruction...</p>
+            <p class="paper-note">11 pages, 5 figures, 3 tables. Replication package: https://doi.org/10.5281/zenodo.23992004</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2505.20726v3" target="_blank" rel="noopener noreferrer">ManiTaskGen: A Comprehensive Task Generator for Benchmarking and Improving Vision-Language Agents on Embodied Decision-Making</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2505.20726v3" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 01:52 SGT</span>
+                <span>Liu Dai, Haina Wang, Weikang Wan, Hao Su</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">robot</span></div>
+            <p class="paper-summary">Building embodied agents capable of accomplishing arbitrary tasks is a core objective towards achieving embodied artificial general intelligence (E-AGI). While recent work has advanced such general robot policies, their training and evaluation are often limited to tasks within specific scenes, involving restricted instructions and scenarios. Existing benchmarks also typically rely on manual annotation of limited...</p>
+            <p class="paper-note">Project Website: https://manitaskgen.github.io/</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2608.11624v2" target="_blank" rel="noopener noreferrer">Learning to Persuade Exposes How Easily LLMs Abandon Correct Beliefs</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2608.11624v2" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 01:32 SGT</span>
+                <span>Nimet Beyza Bozdag, Emre Can Acikgoz, Gokhan Tur, Dilek Hakkani-Tür</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">llm</span></div>
+            <p class="paper-summary">Persuasion is a core dynamic of natural language communication, shaping how large language models (LLMs) update beliefs, resolve disagreements, and reach decisions. As LLMs increasingly debate, advise, and think collaboratively with humans and each other, resistance to harmful persuasion becomes a core requirement for reliable behavior. Yet a single targeted persuasive argument can be enough to collapse model...</p>
+            <p class="paper-note">To be published in NeurIPS 2026</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09768v1" target="_blank" rel="noopener noreferrer">Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09768v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 01:31 SGT</span>
+                <span>Yuchen Li, Lisa Liu, Runqi Zou, Shuxuan Kuang, Qingquan Zhang, Julian Togelius</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge">cs.AI</span><span class="badge accent">agents</span><span class="badge accent">large language model</span><span class="badge accent">llm</span></div>
+            <p class="paper-summary">Large language model (LLM) agents coordinate through conversation, and the same message can be phrased in simpler or more complex language, bluntly or politely. We test whether such differences change how other agents judge and act, using the LURK Werewolf framework, which separates each utterance&#x27;s speech-act predicate from its natural-language realization. We rewrite only the realization, check that the game...</p>
             
             
         </article>
@@ -137,16 +209,16 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08449v1" target="_blank" rel="noopener noreferrer">VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2611.09721v1" target="_blank" rel="noopener noreferrer">MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08449v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09721v1" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:44 SGT</span>
-                <span>Yu-Cheng Chou, Shihao Wang, Jin Huang, Chi-Pin Huang, Chiao-An Yang, Xianzhe Fan</span>
+                <span>Updated 2026-11-07 01:00 SGT</span>
+                <span>David H. Yang, Blake Bullwinkel, Amanda Minnich, Mohammad Mohammadi Amiri, Giorgio Severi</span>
             </div>
-            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">planning</span><span class="badge accent">robot</span><span class="badge accent">robotics</span></div>
-            <p class="paper-summary">Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast,...</p>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">llm</span></div>
+            <p class="paper-summary">LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces a critical attack surface. Malicious instructions encountered in one session may be stored and propagated through memory before being retrieved and acted upon in later sessions. Because memory systems differ in how they process and retrieve information, the downstream effects of...</p>
             
             
         </article>
@@ -155,89 +227,17 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2609.30137v2" target="_blank" rel="noopener noreferrer">Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2507.08038v4" target="_blank" rel="noopener noreferrer">AblationBench: Evaluating Automated Planning of Ablations in Empirical AI Research</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2609.30137v2" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2507.08038v4" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:38 SGT</span>
-                <span>Edesio Alcobaça, Kevin Rossell, Aman Gupta, Shao Tang, Jiwoo Hong, Pabel Carrillo-Mendoza</span>
+                <span>Updated 2026-11-06 23:07 SGT</span>
+                <span>Talor Abramovich, Gal Chechik</span>
             </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Customer experience (CX) agents use tools and large language models to address customer requests and guide conversational interactions with an organization&#x27;s products. Improving these agents, especially in regulated industries, is difficult: they must detect intent, follow complex operational policies and use tools reliably. Manual end-to-end testing offers limited coverage, while live experiments expose customers...</p>
-            <p class="paper-note">17 pages, 11 figures</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2605.30858v2" target="_blank" rel="noopener noreferrer">ForecastCompass: Guiding Agentic Forecasting with Adaptive Factor Memory</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2605.30858v2" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:24 SGT</span>
-                <span>Yurui Chang, Yongkang Du, Yuanpu Cao, Jinghui Chen, Lu Lin</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.LG</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Agentic forecasting is important for decision-making in dynamic environments, but it remains challenging because agents must reason from incomplete, time-limited evidence and produce calibrated probabilities before outcomes are resolved. Memory provides a natural mechanism for transferring experience from resolved forecasts to future prediction tasks. However, existing agent-memory methods are not tailored to...</p>
-            <p class="paper-note">NeurIPS 2026</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08390v1" target="_blank" rel="noopener noreferrer">SCALE: Real-Time Latent Communication for Cyber-Physical Agents</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08390v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:05 SGT</span>
-                <span>Shanghao Shi, Jian Xiao, Ching-Hsiang Chan, Sanjoy Baruah, Sastry Kompella, Yevgeniy Vorobeychik</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">agents</span><span class="badge accent">llm</span><span class="badge accent">robot</span></div>
-            <p class="paper-summary">Latent communication enables agents to collaborate efficiently by directly exchanging intermediate model representations rather than raw sensor data or text messages. Existing approaches, however, are primarily designed for LLM agents and do not consider the bandwidth constraints and heterogeneous task deadlines faced by cyber-physical agents. In this work, we propose SCALE, a real-time latent communication method...</p>
-            
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08369v1" target="_blank" rel="noopener noreferrer">NPCBench: A Clinical Apprenticeship Benchmark for Multimodal Care-Pathway Reasoning in Nasopharyngeal Carcinoma</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08369v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:48 SGT</span>
-                <span>Pengkai Wang, Wei-Wei Zhang, Yan Li, Min Tang, Zhitian Hou, Zeyu Liu</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">multimodal</span><span class="badge accent">planning</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Current medical benchmarks typically break down clinical competence into isolated factual questions, single-image tasks, or static case vignettes. These tests score individual answers, but reveal less about whether a model can integrate subspecialty knowledge with multimodal evidence and track a patient&#x27;s condition throughout a course of care. To close this gap, we introduce NPCBench, a clinical apprenticeship...</p>
-            <p class="paper-note">Accepted at the 40th Conference on Neural Information Processing Systems (NeurIPS 2026), Evaluations and Datasets Track</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2609.30467v2" target="_blank" rel="noopener noreferrer">Where Does Retrieval-Based Open-Ended Evaluation Fail? Automatic Taxonomy Induction from Long-Form Medical Answer Factuality Verification</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2609.30467v2" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:22 SGT</span>
-                <span>Heyuan Huang, Jirui Dai, Alexandra DeLucia, Sonal Joshi, Mahsa Yarmohammadi, Jie Gao</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">llm</span><span class="badge accent">rag</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Retrieval-based factuality evaluation, where LLM-generated claims are verified against evidence from authoritative medical corpora, has become the dominant paradigm for scalable hallucination detection in high-stakes clinical settings. Despite the urgency of reliable and transparent medical fact verification, most systems measure performance with aggregate metrics like F1, which obscure where and why failures...</p>
-            <p class="paper-note">All experiments were done before May 2026 (also all corpus knowledge cutoff date). Accepted as an Oral paper (Best Paper Finalist) at NeurIPS 2026 Generative AI for Health</p>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">planning</span></div>
+            <p class="paper-summary">Language model agents are increasingly used to automate scientific research, yet evaluating their scientific contributions remains a challenge. A key mechanism to obtain such insights is through ablation experiments. To this end, we introduce AblationBench, a benchmark suite for evaluating agents on ablation planning tasks in empirical AI research. It includes two tasks: AuthorAblation, which helps authors propose...</p>
+            <p class="paper-note">Findings of the EMNLP 2026; Project page: https://ablation-bench.github.io/</p>
             
         </article>
     </div>
@@ -253,16 +253,34 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08219v1" target="_blank" rel="noopener noreferrer">Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2602.02474v3" target="_blank" rel="noopener noreferrer">MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08219v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2602.02474v3" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 00:08 SGT</span>
-                <span>Teng Pan, Zixuan Wang, Yuchen Yan, Qifei Wu, Yao Chen, Yingqi Qu</span>
+                <span>Updated 2026-11-07 00:31 SGT</span>
+                <span>Haozhen Zhang, Quanyu Long, Jianzhu Bao, Tao Feng, Weizhi Zhang, Haodong Yue</span>
             </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">llm</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workflows, understanding heterogeneous file contexts, and producing usable deliverables under fine-grained requirements. A...</p>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">large language model</span><span class="badge accent">llm</span></div>
+            <p class="paper-summary">Most Large Language Model (LLM) agent memory systems rely on a small set of static, hand-designed operations for extracting memory. These fixed procedures hard-code human priors about what to store and how to revise memory, making them rigid under diverse interaction patterns and inefficient on long histories. To this end, we present \textbf{MemSkill}, which reframes these operations as learnable and evolvable...</p>
+            <p class="paper-note">Accepted by NeurIPS 2026. Code is available at https://github.com/ViktorAxelsen/MemSkill</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09822v1" target="_blank" rel="noopener noreferrer">Discovering formally verified quantum programs with AI</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09822v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:08 SGT</span>
+                <span>Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johannes Bausch, Eric Wieser</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">large language model</span></div>
+            <p class="paper-summary">The timeline by which quantum computers can solve breakthrough problems in science depends on improved quantum algorithms as much as on better hardware. Such algorithmic advances are typically achieved through many years of expert human collaboration. In mathematics and computer science, large language models have accelerated progress through automated discovery loops. However, quantum algorithms can only be...</p>
             
             
         </article>
@@ -271,35 +289,17 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08483v1" target="_blank" rel="noopener noreferrer">SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2611.09802v1" target="_blank" rel="noopener noreferrer">When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08483v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09802v1" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:59 SGT</span>
-                <span>Qile Jiang, George Em Karniadakis</span>
+                <span>Updated 2026-11-07 01:54 SGT</span>
+                <span>Tural Mehtiyev, Biruk Tadesse, Lawrence Arkoh, Wesley Assunção</span>
             </div>
             <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">llm</span></div>
-            <p class="paper-summary">LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds...</p>
-            
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08449v1" target="_blank" rel="noopener noreferrer">VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08449v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:44 SGT</span>
-                <span>Yu-Cheng Chou, Shihao Wang, Jin Huang, Chi-Pin Huang, Chiao-An Yang, Xianzhe Fan</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">planning</span><span class="badge accent">robot</span><span class="badge accent">robotics</span></div>
-            <p class="paper-summary">Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast,...</p>
-            
+            <p class="paper-summary">LLM-based coding agents such as Claude Code are guided by repository instruction files (also called context files or agent configuration files) like AGENTS.md and CLAUDE.md, which are read in every agent session. As any documentation artifact, these files can fall behind the code and become stale (e.g., a test folder moves, but the file still points to the old one). In technical debt terms, such a stale instruction...</p>
+            <p class="paper-note">11 pages, 5 figures, 3 tables. Replication package: https://doi.org/10.5281/zenodo.23992004</p>
             
         </article>
     
@@ -307,125 +307,17 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2609.30137v2" target="_blank" rel="noopener noreferrer">Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2505.20726v3" target="_blank" rel="noopener noreferrer">ManiTaskGen: A Comprehensive Task Generator for Benchmarking and Improving Vision-Language Agents on Embodied Decision-Making</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2609.30137v2" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2505.20726v3" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:38 SGT</span>
-                <span>Edesio Alcobaça, Kevin Rossell, Aman Gupta, Shao Tang, Jiwoo Hong, Pabel Carrillo-Mendoza</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Customer experience (CX) agents use tools and large language models to address customer requests and guide conversational interactions with an organization&#x27;s products. Improving these agents, especially in regulated industries, is difficult: they must detect intent, follow complex operational policies and use tools reliably. Manual end-to-end testing offers limited coverage, while live experiments expose customers...</p>
-            <p class="paper-note">17 pages, 11 figures</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2605.30858v2" target="_blank" rel="noopener noreferrer">ForecastCompass: Guiding Agentic Forecasting with Adaptive Factor Memory</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2605.30858v2" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:24 SGT</span>
-                <span>Yurui Chang, Yongkang Du, Yuanpu Cao, Jinghui Chen, Lu Lin</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.LG</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Agentic forecasting is important for decision-making in dynamic environments, but it remains challenging because agents must reason from incomplete, time-limited evidence and produce calibrated probabilities before outcomes are resolved. Memory provides a natural mechanism for transferring experience from resolved forecasts to future prediction tasks. However, existing agent-memory methods are not tailored to...</p>
-            <p class="paper-note">NeurIPS 2026</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08390v1" target="_blank" rel="noopener noreferrer">SCALE: Real-Time Latent Communication for Cyber-Physical Agents</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08390v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:05 SGT</span>
-                <span>Shanghao Shi, Jian Xiao, Ching-Hsiang Chan, Sanjoy Baruah, Sastry Kompella, Yevgeniy Vorobeychik</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">agents</span><span class="badge accent">llm</span><span class="badge accent">robot</span></div>
-            <p class="paper-summary">Latent communication enables agents to collaborate efficiently by directly exchanging intermediate model representations rather than raw sensor data or text messages. Existing approaches, however, are primarily designed for LLM agents and do not consider the bandwidth constraints and heterogeneous task deadlines faced by cyber-physical agents. In this work, we propose SCALE, a real-time latent communication method...</p>
-            
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08369v1" target="_blank" rel="noopener noreferrer">NPCBench: A Clinical Apprenticeship Benchmark for Multimodal Care-Pathway Reasoning in Nasopharyngeal Carcinoma</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08369v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:48 SGT</span>
-                <span>Pengkai Wang, Wei-Wei Zhang, Yan Li, Min Tang, Zhitian Hou, Zeyu Liu</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">multimodal</span><span class="badge accent">planning</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Current medical benchmarks typically break down clinical competence into isolated factual questions, single-image tasks, or static case vignettes. These tests score individual answers, but reveal less about whether a model can integrate subspecialty knowledge with multimodal evidence and track a patient&#x27;s condition throughout a course of care. To close this gap, we introduce NPCBench, a clinical apprenticeship...</p>
-            <p class="paper-note">Accepted at the 40th Conference on Neural Information Processing Systems (NeurIPS 2026), Evaluations and Datasets Track</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2609.30467v2" target="_blank" rel="noopener noreferrer">Where Does Retrieval-Based Open-Ended Evaluation Fail? Automatic Taxonomy Induction from Long-Form Medical Answer Factuality Verification</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2609.30467v2" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:22 SGT</span>
-                <span>Heyuan Huang, Jirui Dai, Alexandra DeLucia, Sonal Joshi, Mahsa Yarmohammadi, Jie Gao</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">llm</span><span class="badge accent">rag</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Retrieval-based factuality evaluation, where LLM-generated claims are verified against evidence from authoritative medical corpora, has become the dominant paradigm for scalable hallucination detection in high-stakes clinical settings. Despite the urgency of reliable and transparent medical fact verification, most systems measure performance with aggregate metrics like F1, which obscure where and why failures...</p>
-            <p class="paper-note">All experiments were done before May 2026 (also all corpus knowledge cutoff date). Accepted as an Oral paper (Best Paper Finalist) at NeurIPS 2026 Generative AI for Health</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2605.27354v2" target="_blank" rel="noopener noreferrer">Teach the Way It Thinks: Guiding LLM Post-training Data Engineering with Sparse Autoencoders</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2605.27354v2" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:21 SGT</span>
-                <span>Yi Jing, Zao Dai, Jinwu Hu, Zijun Yao, Lei Hou, Juanzi Li</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">large language model</span><span class="badge accent">llm</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Data engineering for large language model (LLM) reinforcement learning (RL) decides which samples to train on, when to present them, and which to batch together. Existing methods mostly rely on external feedback, such as pass rates or difficulty labels, which observes only the outcome on each sample. We argue that model internals offer richer and more model-intrinsic feedback that can guide all three decisions. We...</p>
-            
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08318v1" target="_blank" rel="noopener noreferrer">Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08318v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:14 SGT</span>
-                <span>Wenbo Huang, Jianxin Bi, Shunyu Yang, Ruiyang Si, Rui Ni, Qiang Wang</span>
+                <span>Updated 2026-11-07 01:52 SGT</span>
+                <span>Liu Dai, Haina Wang, Weikang Wan, Hao Su</span>
             </div>
             <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">robot</span></div>
-            <p class="paper-summary">Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark&#x27;s success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by imitation learning, often demand more than the corresponding language instructions, so a score from such a verifier...</p>
-            <p class="paper-note">22 pages, 8 figures, 10 tables. Project page: https://dagroup-pku.github.io/PyRUA-Lean/RSIJudge</p>
+            <p class="paper-summary">Building embodied agents capable of accomplishing arbitrary tasks is a core objective towards achieving embodied artificial general intelligence (E-AGI). While recent work has advanced such general robot policies, their training and evaluation are often limited to tasks within specific scenes, involving restricted instructions and scenarios. Existing benchmarks also typically rely on manual annotation of limited...</p>
+            <p class="paper-note">Project Website: https://manitaskgen.github.io/</p>
             
         </article>
     
@@ -433,16 +325,34 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08281v1" target="_blank" rel="noopener noreferrer">Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2608.11624v2" target="_blank" rel="noopener noreferrer">Learning to Persuade Exposes How Easily LLMs Abandon Correct Beliefs</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08281v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2608.11624v2" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 00:46 SGT</span>
-                <span>Zhitao He, Chi Him Zhang, Chengru Han, Yi R Fung</span>
+                <span>Updated 2026-11-07 01:32 SGT</span>
+                <span>Nimet Beyza Bozdag, Emre Can Acikgoz, Gokhan Tur, Dilek Hakkani-Tür</span>
             </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">multimodal</span></div>
-            <p class="paper-summary">Personal AI agents face social engineering attacks supported by forged multimodal content, but existing evaluations mainly focus on text-based dialogue, leaving their intrinsic security under such attacks insufficiently studied. We introduce Multimodal-SEA, an interactive benchmark comprising 608 expert-designed tasks grounded in real-world fraud cases, covering 14 domains and 152 attack scenarios with prepared...</p>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">llm</span></div>
+            <p class="paper-summary">Persuasion is a core dynamic of natural language communication, shaping how large language models (LLMs) update beliefs, resolve disagreements, and reach decisions. As LLMs increasingly debate, advise, and think collaboratively with humans and each other, resistance to harmful persuasion becomes a core requirement for reliable behavior. Yet a single targeted persuasive argument can be enough to collapse model...</p>
+            <p class="paper-note">To be published in NeurIPS 2026</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09768v1" target="_blank" rel="noopener noreferrer">Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09768v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 01:31 SGT</span>
+                <span>Yuchen Li, Lisa Liu, Runqi Zou, Shuxuan Kuang, Qingquan Zhang, Julian Togelius</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge">cs.AI</span><span class="badge accent">agents</span><span class="badge accent">large language model</span><span class="badge accent">llm</span></div>
+            <p class="paper-summary">Large language model (LLM) agents coordinate through conversation, and the same message can be phrased in simpler or more complex language, bluntly or politely. We test whether such differences change how other agents judge and act, using the LURK Werewolf framework, which separates each utterance&#x27;s speech-act predicate from its natural-language realization. We rewrite only the realization, check that the game...</p>
             
             
         </article>
@@ -451,52 +361,16 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2505.15715v3" target="_blank" rel="noopener noreferrer">Beyond Empathy: Integrating Diagnostic and Therapeutic Reasoning with Large Language Models for Mental Health Counseling</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2611.09721v1" target="_blank" rel="noopener noreferrer">MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2505.15715v3" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09721v1" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 00:28 SGT</span>
-                <span>He Hu, Juzheng Si, Qianning Wang, Fei Ma, Fuji Ren, Sicheng Zhao</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">large language model</span><span class="badge accent">llm</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Large language models (LLMs) hold significant potential for psychological support, capable of generating empathetic responses and simulating therapeutic conversations. However, existing LLM-based approaches often lack sufficient grounding in structured diagnostic reasoning and diverse therapeutic strategies, limiting their effectiveness in complex counseling scenarios. To address these limitations, we propose...</p>
-            
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08237v1" target="_blank" rel="noopener noreferrer">Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08237v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 00:18 SGT</span>
-                <span>Xiaojun Wu, Cehao Yang, Xuhui Jiang, Chengjin Xu, Jia Li, Jian Guo</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">llm</span><span class="badge accent">multimodal</span></div>
-            <p class="paper-summary">Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible reference and physically feasible; existing benchmarks either score solver fragments or grade reports with an LLM judge, leaving those numbers unchecked. We introduce TB-MathModel (the Terminal-style Mathematical Modeling...</p>
-            <p class="paper-note">20 pages, 4 figures, 14 tables</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08231v1" target="_blank" rel="noopener noreferrer">From Twisted Facts to Rogue Agents: Can LLMs Reliably Detect Multi-Dimensional Hallucinations?</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08231v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 00:15 SGT</span>
-                <span>Hanyu Qiu, Ze Liu, Zhe Zhao, Kuang Xiong, Blaze Chen, Zhenxiang Yan</span>
+                <span>Updated 2026-11-07 01:00 SGT</span>
+                <span>David H. Yang, Blake Bullwinkel, Amanda Minnich, Mohammad Mohammadi Amiri, Giorgio Severi</span>
             </div>
             <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">llm</span></div>
-            <p class="paper-summary">Large language models (LLMs) are widely used for information access, content production, and agent-based task execution, but their outputs remain vulnerable to subtle, high-risk hallucinations. To systematically evaluate and advance post-generation hallucination detection, we introduce HaluCheck, a large-scale, bilingual benchmark comprising over 42k instances spanning both factual hallucinations in text and...</p>
+            <p class="paper-summary">LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces a critical attack surface. Malicious instructions encountered in one session may be stored and propagated through memory before being retrieved and acted upon in later sessions. Because memory systems differ in how they process and retrieve information, the downstream effects of...</p>
             
             
         </article>
@@ -505,16 +379,232 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08472v1" target="_blank" rel="noopener noreferrer">XStack: A Benchmark for ML Repo Migration</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2507.08038v4" target="_blank" rel="noopener noreferrer">AblationBench: Evaluating Automated Planning of Ablations in Empirical AI Research</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08472v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2507.08038v4" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:55 SGT</span>
-                <span>Linrong Cai, Taiming Lu, Haozhe Chen, Zhuang Liu</span>
+                <span>Updated 2026-11-06 23:07 SGT</span>
+                <span>Talor Abramovich, Gal Chechik</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">agent</span><span class="badge accent">agents</span><span class="badge accent">planning</span></div>
+            <p class="paper-summary">Language model agents are increasingly used to automate scientific research, yet evaluating their scientific contributions remains a challenge. A key mechanism to obtain such insights is through ablation experiments. To this end, we introduce AblationBench, a benchmark suite for evaluating agents on ablation planning tasks in empirical AI research. It includes two tasks: AuthorAblation, which helps authors propose...</p>
+            <p class="paper-note">Findings of the EMNLP 2026; Project page: https://ablation-bench.github.io/</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09892v1" target="_blank" rel="noopener noreferrer">On Agentic Manipulation Policies</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09892v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:59 SGT</span>
+                <span>Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji, Jesse T. Gonzalez, Negin Heravi, Fahad Islam</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge">cs.LG</span><span class="badge">cs.RO</span><span class="badge accent">agent</span><span class="badge accent">robot</span></div>
+            <p class="paper-summary">Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its...</p>
+            <p class="paper-note">Videos and code available at: https://apple-aiml-research.github.io/ml-amp/</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09891v1" target="_blank" rel="noopener noreferrer">CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09891v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:58 SGT</span>
+                <span>Peter Belcak, Greg Heinrich, Saurav Muralidharan, Shizhe Diao, Pavlo Molchanov</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">llm</span><span class="badge accent">reasoning</span></div>
+            <p class="paper-summary">Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task has been reasoned through, the application of its solution to a new problem instance can be done very efficiently and with little involvement from language models. We introduce agentic reasoning caching, a method for...</p>
+            <p class="paper-note">Tech report. 28 pages, 9 figures, 11 tables</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09882v1" target="_blank" rel="noopener noreferrer">FlowMoP: Stochastic Multi-Person Motion Prediction</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09882v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:56 SGT</span>
+                <span>Aadya Agrawal, Ho Kei Cheng, Alexander Schwing</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.LG</span><span class="badge accent">agent</span><span class="badge accent">agents</span></div>
+            <p class="paper-summary">Predicting the future motion of multiple people is inherently stochastic: the same observed history admits many plausible continuations depending on intent, coordination, and social context. Yet the dominant paradigm in multi-person 3D motion prediction remains deterministic, with existing methods producing a fixed number of outputs per agent. In contrast, we present a conditional flow matching framework that...</p>
+            <p class="paper-note">Accepted at NeurIPS 2026. 22 pages, including references and appendix</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2605.10707v2" target="_blank" rel="noopener noreferrer">ObjView-Bench: Rethinking Difficulty and Deployment for Object-Centric View Planning</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2605.10707v2" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:48 SGT</span>
+                <span>Sicong Pan, Hao Hu, Xuying Huang, Benno Wingender, Maren Bennewitz</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">planning</span><span class="badge accent">robotics</span></div>
+            <p class="paper-summary">Object-centric view planning is a core component of active geometric 3D reconstruction in robotics, yet existing evaluations often conflate object complexity, planning difficulty, budget assumptions, and physical reachability constraints. As a result, conclusions drawn from idealized view-planning evaluations may not reliably predict performance under realistic reconstruction settings. We introduce ObjView-Bench,...</p>
+            <p class="paper-note">Accepted to NeurIPS 2026</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09864v1" target="_blank" rel="noopener noreferrer">Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09864v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:44 SGT</span>
+                <span>Xun Tu, Minghao Zou, Karthik Desingh</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge">cs.LG</span><span class="badge">cs.RO</span><span class="badge accent">robot</span><span class="badge accent">robotics</span></div>
+            <p class="paper-summary">Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearrangement in applications such as service robotics and warehouse automation. Despite recent progress, reliably executing these tasks remains challenging because performance depends on complex robot-object and object-environment interaction dynamics. Existing...</p>
+            <p class="paper-note">10 pages, 6 figures</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09863v1" target="_blank" rel="noopener noreferrer">Flow-Guided Target-Space Alignment via Path Consistency</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09863v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:44 SGT</span>
+                <span>Ruizhi Yuan, Zeqiu Yu, Wei Gao, Wei Chen, Xiwei Tang, Lu Tang</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge">cs.LG</span><span class="badge accent">alignment</span><span class="badge accent">multimodal</span></div>
+            <p class="paper-summary">Many multimodal alignment problems require mapping a source modality into a fixed space defined by a target modality, where the target space is not merely an intermediate embedding but is used directly for downstream analysis. In this setting, successful alignment should preserve both the global structure of the target distribution and the instance-level correspondence observed in paired source--target training...</p>
+            <p class="paper-note">Accepted at NeurIPS 2026</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09847v1" target="_blank" rel="noopener noreferrer">Computer-Use Agents Are Embodied Generalists</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09847v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:31 SGT</span>
+                <span>Pranjal Aggarwal, Sean Welleck</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.LG</span><span class="badge">cs.RO</span><span class="badge accent">agent</span><span class="badge accent">agents</span></div>
+            <p class="paper-summary">In many areas of AI, general-purpose models have increasingly replaced handcrafted methods and specialized architectures. We argue that embodied AI is poised for a similar shift. Our key claim is that embodied tasks can be formulated as interaction with digital software. Specifically, we build software that renders an agent&#x27;s view of a physical environment on a screen and provides controls for acting in it. A...</p>
+            <p class="paper-note">14 pages, 3 figures, 2 tables</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2605.20299v2" target="_blank" rel="noopener noreferrer">Mechanisms of Misgeneralization in Physical Sequence Modeling</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2605.20299v2" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:25 SGT</span>
+                <span>Kento Nishi, Raphael Tang, Karun Kumar, Core Francisco Park, Hidenori Tanaka</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge">cs.LG</span><span class="badge">cs.RO</span><span class="badge accent">agent</span><span class="badge accent">robotics</span></div>
+            <p class="paper-summary">Generative sequence models are often trained to plan motion in physical domains, from robotics to mechanical simulations. When constructing a dataset to train such a model, engineers may curate demonstrations to specify how trajectories should be distributed over a physical quantity like travel distance or mechanical energy. For example, a roboticist building a maze navigation agent might choose demonstrations...</p>
+            <p class="paper-note">40th Conference on Neural Information Processing Systems (NeurIPS 2026). kentonishi.com/physical-misgeneralization</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2605.06136v2" target="_blank" rel="noopener noreferrer">Build-and-Find: An Effort-Aware Protocol for Evaluating Agent-Managed Codebases</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2605.06136v2" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:16 SGT</span>
+                <span>Jhen-Ke Lin</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span></div>
+            <p class="paper-summary">Most coding-agent benchmarks ask whether generated code behaves correctly. That remains essential, but repository-level engineering is increasingly agent-managed: one agent writes a repository, and later agents inspect, audit, or extend it as working context. In that setting, a generated repository is not only an answer to a task but also a communication artifact for future work. Even when strong agents nearly...</p>
+            <p class="paper-note">36 pages, 8 figures. Accepted at NeurIPS 2026. Code: https://github.com/JacobLinCool/Build-and-Find</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09798v1" target="_blank" rel="noopener noreferrer">Test-Time Compute Scales Better with Parallel Agent Teams</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09798v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 01:53 SGT</span>
+                <span>Junlin Wang, Haozhe Chen, Ang Li, Rahul Chalamala, Zhuang Liu</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span></div>
+            <p class="paper-summary">Test-time scaling improves the performance of a fixed model by spending more computation at inference. There are two common ways to spend it on agents when a verifier can score every attempt. Best-of-N sampling runs many independent agents and keeps the best result but saturates quickly. One large team of collaborating agents can score higher but stops improving as it grows. Can we get the best of both? Our method,...</p>
+            <p class="paper-note">29 pages, 18 figures, 4 tables. Code: https://github.com/modal-projects/parallel-agent-teams-scaling</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09794v1" target="_blank" rel="noopener noreferrer">Seeing What Matters: Benchmarking Task-Conditioned Actionable Spatial Belief for Manipulation</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09794v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 01:49 SGT</span>
+                <span>Yina Jian, Mingkun Xu</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">reasoning</span><span class="badge accent">robot</span></div>
+            <p class="paper-summary">When should a robot look at the cup, and when at the portafilter? Spatial-reasoning benchmarks evaluate whether a model can describe a scene, but manipulation needs something more specific: the ability to acquire the particular evidence that makes the current command executable. A view that is informative for one task can be useless for another, even at the same workstation. We introduce Seeing What Matters, a...</p>
+            <p class="paper-note">22 pages (8 main + 14 supplement). Extended cross-domain evaluation and physical robot validation in progress</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09792v1" target="_blank" rel="noopener noreferrer">Knowing When to Intervene: Causal Evaluation of AI Agents</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09792v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 01:46 SGT</span>
+                <span>Ayush Sawarni, Wenqian Xing, Tijana Zrnic, Ramesh Johari, Vasilis Syrgkanis</span>
             </div>
             <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge">cs.LG</span><span class="badge accent">agent</span><span class="badge accent">agents</span></div>
-            <p class="paper-summary">ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need, since it unlocks different hardware for researchers, and (2) a natural benchmark: it involves...</p>
+            <p class="paper-summary">Current evaluations of agentic AI systems primarily rely on benchmarks. However, the static nature of benchmarks makes them uninformative about the value of auditing interventions at deployment time. For reliable deployment, we often need to determine within an agent&#x27;s trajectory whether or not to intervene, e.g., by verifying the agent&#x27;s current output or steering it toward different behavior, using either human...</p>
             
             
         </article>
@@ -523,16 +613,34 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08452v1" target="_blank" rel="noopener noreferrer">ReproBridge: Building Reproducibility into ML Research Artifacts</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2611.09785v1" target="_blank" rel="noopener noreferrer">Are These Programmers Ripe Enough to Eat? Evaluating How LLMs Handle Lexical Knowledge Conflicts in Translation</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08452v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09785v1" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:45 SGT</span>
-                <span>Yubo Wang, Rui Meng, Jaehyun Nam, Tomas Pfister, Jinsung Yoon</span>
+                <span>Updated 2026-11-07 01:44 SGT</span>
+                <span>Dongxu Wu, Sara Court, Micha Elsner</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge">cs.LG</span><span class="badge accent">llm</span><span class="badge accent">reasoning</span></div>
+            <p class="paper-summary">External lexical resources can help large language models (LLMs) translate texts in low-resource languages and specialized domains, but these resources may conflict with models&#x27; prior lexical knowledge. To isolate this conflict, we construct a controlled Mandarin-to-English translation task in which familiar source words are assigned new meanings within and across semantic categories. We treat these prompt-supplied...</p>
+            
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09730v1" target="_blank" rel="noopener noreferrer">What to Delegate, What to Preserve: Human Preferences for Agentic AI Across Everyday Life and Work</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09730v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 01:06 SGT</span>
+                <span>Sarah Wheeler, Veronica Rammouz, Yaoyao Qian, Zexuan Liu, Mengyi Wei, Anthony Rios</span>
             </div>
             <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span></div>
-            <p class="paper-summary">Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures and decisions improves subsequent independent reproduction....</p>
+            <p class="paper-summary">AI agents can execute multi-step tasks on users&#x27; behalf, yet the boundaries of acceptable delegation remain unclear. We report a scenario-based survey of 289 U.S. adults with prior AI experience covering 45 use cases across nine life domains. Each respondent evaluated one scenario per domain, producing repeated measures of automation preference, trust, collaboration, AI leadership, privacy concern, and willingness...</p>
             
             
         </article>
@@ -541,178 +649,16 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2605.06223v5" target="_blank" rel="noopener noreferrer">ProCompNav: Proactive Instance Navigation with Comparative Judgment for Ambiguous User Queries</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2611.09684v1" target="_blank" rel="noopener noreferrer">SURE:Spatiotemporal Uncertainty Representation for Efficient Vision-Language-Action Learning</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2605.06223v5" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09684v1" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:29 SGT</span>
-                <span>Junhyuk Kwon, Seungjoon Lee, Hyejin Park, Kyle Min, Jungseul Ok</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge">cs.RO</span><span class="badge accent">agent</span><span class="badge accent">robot</span></div>
-            <p class="paper-summary">In human-robot interaction, agentic robots should resolve ambiguous user requests through proactive clarification while keeping user burden low. We study this challenge in interactive instance navigation, where an agent must identify and reach the user-intended target among similar objects. Existing approaches ask open-ended questions and select a candidate that strongly matches the accumulated user-provided...</p>
-            <p class="paper-note">Accepted to NeurIPS 2026 (Oral), Project page: https://tree-jhk.github.io/procompnav/ Code: https://github.com/ml-postech/ProCompNav</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08428v1" target="_blank" rel="noopener noreferrer">The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08428v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:22 SGT</span>
-                <span>Julian Kunkel, Ali Doosthosseini</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">large language model</span><span class="badge accent">llm</span></div>
-            <p class="paper-summary">Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface itself and propose a ladder of levels: feature tutoring; metadata, settings, and preference access;...</p>
-            
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08417v1" target="_blank" rel="noopener noreferrer">Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08417v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:18 SGT</span>
-                <span>E. Kelly Buchanan, Crystal Zhou, Scott W. Linderman, Christopher Ré</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span></div>
-            <p class="paper-summary">Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, they can discover valid solutions that existing verifiers reject, while changes to evaluation infrastructure can invalidate assumptions embedded in tasks and tests. We call the...</p>
-            
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08413v1" target="_blank" rel="noopener noreferrer">T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08413v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:17 SGT</span>
-                <span>Mohammed Hassan, Zhenyang Chen, Zheng Wang, Zhixin Zhu, Tianlong Chen, Yingyan</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">llm</span><span class="badge accent">robot</span></div>
-            <p class="paper-summary">Vision-Language-Action (VLA) models enable end-to-end robot control, but inference is increasingly expensive. Each decision processes hundreds of visual tokens, often across multiple cameras, leading to substantial computation while allowing irrelevant background content to distract action prediction under distribution shift. We argue that these issues stem from two complementary forms of redundancy: many visual...</p>
-            
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08407v1" target="_blank" rel="noopener noreferrer">Social Humanoid: Socially Responsive Human-Humanoid Interaction</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08407v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:14 SGT</span>
-                <span>Vongani H. Maluleke, James Ni, Kie Horiuchi, Lea Wilken, Jiahui Lei, Evonne Ng</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.LG</span><span class="badge">cs.RO</span><span class="badge accent">agents</span><span class="badge accent">robot</span></div>
-            <p class="paper-summary">Humanoid robots are typically trained as solitary agents, leaving them unable to coordinate physically with human partners who naturally anticipate and adjust to one another. To bridge this gap, we present Social Humanoid, a hierarchical system that generates and executes socially responsive whole-body motion on a 29-DoF Unitree G1 conditioned on a human partner&#x27;s motion. Its high-level policy performs flexible...</p>
-            <p class="paper-note">CoRL 2026, Project page: https://von31.github.io/social-humanoid/</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08383v1" target="_blank" rel="noopener noreferrer">FedReason: Large Language Models as Weight-Space Meta-Aggregators for Heterogeneous Federated Learning</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08383v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 02:00 SGT</span>
-                <span>Ali Mohammadi Ruzbahani, Abbas Yazdinejad, Hadis Karimipour</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">large language model</span><span class="badge accent">llm</span></div>
-            <p class="paper-summary">Federated learning servers combine client models with a fixed aggregation rule, and each rule in common use is designed for one kind of heterogeneity. We study whether a large language model (LLM) that inspects the client models can choose the rule itself, without any training on the server. In FedReason, the LLM is called every ten rounds. It analyses the weights by running code in a restricted server-side...</p>
-            <p class="paper-note">Ali Mohammadi Ruzbahani (corresponding)</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08373v1" target="_blank" rel="noopener noreferrer">SLA: Scaling Spatial-Language-Action Model via Continual Pre-training</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08373v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:52 SGT</span>
-                <span>Fuhao Li, Wenxuan Song, Qizhou Huang, Ziyang Zhou, Jingbo Wang, Junwu E</span>
+                <span>Updated 2026-11-07 00:32 SGT</span>
+                <span>Jingye Zhang, Choo Sin Wai, Dake Zhong, Zhifang Liu, Yuhong Zhang, Siyao Xiao</span>
             </div>
             <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">alignment</span><span class="badge accent">robot</span></div>
-            <p class="paper-summary">Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore...</p>
-            <p class="paper-note">Project page: https://SLA.github.io/ ; Github: https://github.com/OpenHelix-Team/Spatial-Forcing/tree/master/SLA</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08341v1" target="_blank" rel="noopener noreferrer">Enhancing Local and Global Structure in Compressed AI Agent Memory</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08341v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:27 SGT</span>
-                <span>Henry Han</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">agent</span><span class="badge accent">agents</span></div>
-            <p class="paper-summary">AI agents store text as embedding vectors and compress them at scale. A compression is accepted when each item&#x27;s nearest neighbors survive, but agents also consolidate, delete, and compare memories, tasks that depend on which items lie far apart. We evaluate both ends with two label-free fidelities from our prior work: the local fidelity $L$ at 10 neighbors and the global fidelity $G$ at 30 to 50 percent of the...</p>
-            <p class="paper-note">28 pages, 12 figures, 10 tables</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08338v1" target="_blank" rel="noopener noreferrer">GPWM: Modeling the World as 3D Particle Motion</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08338v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:24 SGT</span>
-                <span>Robert Ren, Matthew Bronars, He Zhu, Yikai Tang, Jianing Zhang, Sergey Zakharov</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">planning</span><span class="badge accent">robot</span></div>
-            <p class="paper-summary">We introduce GPWM, a Generative Particle World Model that predicts how 3D scenes evolve by generating the motion of particles and rigid bodies over time. Unlike video world models that generate scene appearance, GPWM operates directly in 3D physical space. A single representation and architecture cover rigid, deformable, cloth, and granular materials, in both passive physics and robotic interaction. GPWM is an...</p>
-            <p class="paper-note">39 pages, 27 figures, 7 tables. Robert Ren and Matthew Bronars contributed equally (ordered by coin flip). Project page: https://robertren1122.github.io/gpwm/</p>
-            
-        </article>
-    
-        <article class="paper-card">
-            <div class="paper-head">
-                <div>
-                    <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08315v1" target="_blank" rel="noopener noreferrer">Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation</a></h2>
-                </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08315v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            </div>
-            <div class="paper-meta">
-                <span>Updated 2026-11-06 01:12 SGT</span>
-                <span>Ali Sarabadani, Kheirolah Rahsepar Fard, Tahereh Jeirani</span>
-            </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">llm</span><span class="badge accent">reasoning</span></div>
-            <p class="paper-summary">Large language models (LLMs) are increasingly used in biomedical and cognitive neuroscience, but their ability to reason reliably over heterogeneous knowledge graphs (KGs) remains unclear. We benchmark five LLMs (GPT-5.1, Gemini 2.0 Pro, Llama 3, Qwen, and BioGPT) across five KGs: DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG. We introduce a multitier query dataset to evaluate reasoning depth and...</p>
+            <p class="paper-summary">Vision-language-action (VLA) policies have become a promising paradigm for end-to-end robot control, but their effectiveness still depends heavily on large volumes of demonstration data. In manipulation tasks, this dependence is compounded by structured spatiotemporal uncertainty in the action space: multiple nearby actions or trajectories may successfully solve the same task, while semantically equivalent...</p>
             
             
         </article>
@@ -721,17 +667,17 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2611.08433v1" target="_blank" rel="noopener noreferrer">MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2611.09877v1" target="_blank" rel="noopener noreferrer">Locating Contact on Tendon-Driven Continuum Robots From Tendon Measurements Alone via Constrained Moving Horizon Estimation</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2611.08433v1" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09877v1" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:27 SGT</span>
-                <span>Donghua Zhang, Zizheng Wang, Ze Dong, Yiding Feng, Siyu Qian</span>
+                <span>Updated 2026-11-07 02:53 SGT</span>
+                <span>Haitham El-Hussieny</span>
             </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge">cs.AI</span><span class="badge accent">llm</span></div>
-            <p class="paper-summary">LLM-based medical assistants that follow a patient across visits need a memory that keeps the patient&#x27;s clinical state correct as it changes. We examine the errors of five memory systems on longitudinal medical dialogue and find three recurring causes: the retrieved evidence gives an outdated state, includes another person&#x27;s health facts, or lacks a safety fact the answer depends on. We present MedGraph, a graph...</p>
-            <p class="paper-note">14 pages, 5 figures, 8 tables</p>
+            <div class="paper-badges"><span class="badge">cs.RO</span><span class="badge accent">robot</span></div>
+            <p class="paper-summary">Tendon-driven continuum robots can reach through constrained spaces, but contact along their bodies is invisible to the sensors at their motors. We show that this is a structural limitation rather than a tuning problem: the map from contact forces to tendon measurements has a null space of dimension at least seven, so no estimator that leaves the contact support free can locate contact. When the obstacle geometry...</p>
+            
             
         </article>
     
@@ -739,25 +685,79 @@
             <div class="paper-head">
                 <div>
                     <span class="paper-flag">Matched to your radar</span>
-                    <h2><a href="https://arxiv.org/abs/2606.13668v2" target="_blank" rel="noopener noreferrer">Influcoder: Distilling Decoders&#x27; Gradient Influence Rankings into an Encoder for Data Attribution</a></h2>
+                    <h2><a href="https://arxiv.org/abs/2611.09872v1" target="_blank" rel="noopener noreferrer">On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning</a></h2>
                 </div>
-                <a class="pdf-link" href="https://arxiv.org/pdf/2606.13668v2" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09872v1" target="_blank" rel="noopener noreferrer">PDF</a>
             </div>
             <div class="paper-meta">
-                <span>Updated 2026-11-06 02:19 SGT</span>
-                <span>Dimitri Kachler, Damien Sileo, Pascal Denis</span>
+                <span>Updated 2026-11-07 02:49 SGT</span>
+                <span>Haoyu Wang, Ru Wang, Yuanyuan Wang, Jiaxian Guo, Mingming Gong</span>
             </div>
-            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">llm</span></div>
-            <p class="paper-summary">With the growth of LLMs&#x27; (Large Language Models) capabilities, there has been an increasing push to curate high quality datasets by filtering samples in the training data. In general, Data Attribution (DA) methods aim to estimate how individual samples in a training dataset can precondition a model to generate certain outputs. As an example, one might be interested in which samples in the data could be the source...</p>
-            <p class="paper-note">Accepted to AACL-IJCNLP 2026 (Main Conference). 9 pages, 4 figures</p>
-            <p class="paper-journal">Journal ref: Proceedings of IJCNLP-AACL 2026 (Volume 2: Short Papers), pages 780-788</p>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">reasoning</span></div>
+            <p class="paper-summary">Test-time reinforcement learning (TTRL) adapts pretrained language models to unlabeled target-domain data using self-generated pseudo-labels, whose reliability remains poorly understood. We analyze majority-vote supervision for TTRL with online Direct Preference Optimization (DPO) and decompose its error into population-majority bias and prompt-dependent finite-rollout variation. Because population-majority bias is...</p>
+            
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09868v1" target="_blank" rel="noopener noreferrer">CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09868v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:48 SGT</span>
+                <span>Xingyu Liu, Xiangyang Yin, Tianhua Xia, Haiyu Wang, Sai Qian Zhang</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.CL</span><span class="badge accent">reasoning</span></div>
+            <p class="paper-summary">Large reasoning models (LRMs) improve task performance by generating longer intermediate reasoning traces, but this substantially increases inference costs and makes low-precision quantization increasingly important. However, aggressively quantized models often perform poorly on reasoning tasks. We observe larger activation fluctuations during the first decoding steps of reasoning. Calibration that omits these...</p>
+            
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2611.09846v1" target="_blank" rel="noopener noreferrer">Ensemble Methodology for Reference-Free Confidence Estimation in LLM-based Code Summarization</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2611.09846v1" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:29 SGT</span>
+                <span>Marco Colombo, Balaji A Jayaram, Sowmyakumari Selvaraj, Sumit Tokkar, Animesh Kumar, Aravinda Prasad Sistla</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.AI</span><span class="badge accent">llm</span></div>
+            <p class="paper-summary">This paper describes an approach and use case to estimate the correctness of LLM-generated COBOL summaries without access to human-authored references. The core intuition is that inter-model agreement on semantics is informative about truth, and that an LLM-as-judge can provide higher-fidelity pairwise assessments than traditional string- or embedding-based metrics. We operationalise this intuition with (i)...</p>
+            <p class="paper-note">9 pages, 3 figures, 1 table</p>
+            
+        </article>
+    
+        <article class="paper-card">
+            <div class="paper-head">
+                <div>
+                    <span class="paper-flag">Matched to your radar</span>
+                    <h2><a href="https://arxiv.org/abs/2510.03086v3" target="_blank" rel="noopener noreferrer">Chaining 2-FWL GNNs for Combinatorial Graph Alignment</a></h2>
+                </div>
+                <a class="pdf-link" href="https://arxiv.org/pdf/2510.03086v3" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="paper-meta">
+                <span>Updated 2026-11-07 02:29 SGT</span>
+                <span>Marc Lelarge</span>
+            </div>
+            <div class="paper-badges"><span class="badge">cs.LG</span><span class="badge accent">alignment</span></div>
+            <p class="paper-summary">For the combinatorial graph alignment problem (GAP), finding the node correspondence that maximizes the number of common edges (nce) between two unlabeled graphs, the classical Frank-Wolfe heuristic FAQ remains a strong baseline once it is properly initialized, while existing GNN approaches struggle in the purely structural setting. We introduce a chaining procedure: a sequence of Folklore-type (2-FWL) GNNs in...</p>
+            <p class="paper-note">Accepted at NeurIPS 2026</p>
+            
         </article>
     </div>
         </section>
 
         <footer class="page-footer">
             <p>Generated from the public arXiv API.</p>
-            <p>Last refreshed at 2026-11-09 02:19 SGT (2026-11-08 18:19 UTC).</p>
+            <p>Last refreshed at 2026-11-09 15:58 SGT (2026-11-09 07:58 UTC).</p>
         </footer>
     </main>
 </body>
