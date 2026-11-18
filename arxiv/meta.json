@@ -1,15 +1,10 @@
 {
-  "status": "stale",
-  "generated_at_utc": "2026-11-18 16:29",
-  "generated_at_local": "2026-11-19 00:29",
+  "status": "fresh",
+  "generated_at_utc": "2026-11-18 21:23",
+  "generated_at_local": "2026-11-19 05:23",
   "paper_count": 85,
   "featured_count": 45,
-  "errors": [
-    "cs.CL: HTTP Error 429: Unknown Error",
-    "cs.AI: HTTP Error 429: Unknown Error",
-    "cs.LG: HTTP Error 429: Unknown Error",
-    "cs.RO: HTTP Error 429: Unknown Error"
-  ],
+  "errors": [],
   "sources": [
     {
       "category": "cs.CL",
